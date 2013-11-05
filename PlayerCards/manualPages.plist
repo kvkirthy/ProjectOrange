@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>page1</key>
+	<string>This is page1 content, test test test test test test test test test test test test test test test test test testtest test test test test test test test test</string>
+	<key>page2</key>
+	<string>This is page2 content, test test test</string>
+	<key>page3</key>
+	<string>This is page3 content, test test test</string>
+	<key>page4</key>
+	<string>This is page4 content, test test test</string>
+</dict>
+</plist>
