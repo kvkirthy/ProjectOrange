@@ -16,5 +16,5 @@
 @property (atomic) NSString *page4;
 
 +(VCKiManualPageContentSerializer *) getSingletonObject;
-
+ 
 @end

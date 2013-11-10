@@ -20,13 +20,29 @@ static NSArray* availablePlayers = nil;
 static NSString* _resourcePath = nil;
 static NSDictionary* _playerDataCollection = nil;
 
+-(VCKiPlayerEntity *)getNextSecondaryPlayer
+{
+    if (_secondSquad.count <= 0) {
+        return nil;
+    }
+    
+    VCKiPlayerEntity *returnData = [_secondSquad objectAtIndex: 0];
+    [_secondSquad removeObjectAtIndex:0];
+    [_secondSquad addObject:returnData];
+    
+    return returnData;
+}
+
 -(VCKiPlayerEntity *)getNextPrimaryPlayer
 {
     if (_primarySquad.count <= 0) {
         return nil;
     }
+    
     VCKiPlayerEntity *returnData = [_primarySquad objectAtIndex: 0];
     [_primarySquad removeObjectAtIndex:0];
+    [_primarySquad addObject:returnData];
+    
     return returnData;
 }
 
@@ -38,6 +54,10 @@ static NSDictionary* _playerDataCollection = nil;
     
     if(!_primarySquad){
         _primarySquad = [[NSMutableArray alloc]init];
+    }
+    
+    if(!_secondSquad){
+        _secondSquad = [[NSMutableArray alloc]init];
     }
     
     availablePlayers =  [_playerDataCollection allKeys];
@@ -57,16 +77,16 @@ static NSDictionary* _playerDataCollection = nil;
     NSArray* ps = [allSquadData allObjects];
     int i;
     
-    for(i=0; i< [ps count]; i++){
+    for(i=0; i< [ps count]/2; i++){
         NSString* playerIndex = [ps objectAtIndex:i];
         VCKiPlayerEntity *player =[self getPlayerRecordWithIndex:  playerIndex];
         [_primarySquad addObject: player];
     }
     
-    /*
+    
     for(; i< [ps count]; i++){
-        [_primarySquad addObject:[ps objectAtIndex:i]];
-    }*/
+        [_secondSquad addObject:[self getPlayerRecordWithIndex:  [ps objectAtIndex:i]]];
+    }
     
    
 }

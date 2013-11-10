@@ -6,14 +6,14 @@
 //  Copyright (c) 2013 VenCKi. All rights reserved.
 //
 
-#import "VCKiSquadIViewCtrl.h"
+#import "VCKiPrimarySquadIViewCtrl.h"
 #import "VCKiPlayerRecordReader.h"
 
-@interface VCKiSquadIViewCtrl ()
+@interface VCKiPrimarySquadIViewCtrl ()
 
 @end
 
-@implementation VCKiSquadIViewCtrl
+@implementation VCKiPrimarySquadIViewCtrl
 
 @synthesize tableView = _tableView;
 VCKiPlayerRecordReader* playerManager;
@@ -38,8 +38,10 @@ NSMutableArray* _playersList;
     playerManager = [[VCKiPlayerRecordReader alloc]init];
     
     VCKiPlayerEntity *player = [playerManager getNextPrimaryPlayer];
+    int i=1;
     
-    while (player){
+    while (player && i <= playerManager.primarySquad.count){
+        i=i+1;
         [_playersList addObject:player];
         player = [playerManager getNextPrimaryPlayer];
     }

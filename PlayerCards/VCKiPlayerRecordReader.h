@@ -15,6 +15,7 @@
 @property (atomic, strong) NSMutableArray* secondSquad;
 
 - (VCKiPlayerEntity *) getNextPrimaryPlayer;
+- (VCKiPlayerEntity *) getNextSecondaryPlayer;
 - (VCKiPlayerEntity *) getPlayerRecordWithIndex: (NSString *) indexValue;
 
 @end

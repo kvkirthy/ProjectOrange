@@ -20,6 +20,7 @@
 		101420C01828B448001FF7FF /* VCKiTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 101420BF1828B448001FF7FF /* VCKiTimerViewController.m */; };
 		101B953B1804971C009FD942 /* VCKiManualPagesViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 101B953A1804971C009FD942 /* VCKiManualPagesViewCtrl.m */; };
 		101B953E180498B0009FD942 /* VCKiRootPageViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 101B953D180498B0009FD942 /* VCKiRootPageViewCtrl.m */; };
+		1031F980182E2C1F00637D9E /* VCKiSeondarySquatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1031F97F182E2C1F00637D9E /* VCKiSeondarySquatViewController.m */; };
 		103433CA180DBA8B00058CC1 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 103433C9180DBA8B00058CC1 /* 1.png */; };
 		103433CC180DBF5F00058CC1 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 103433CB180DBF5F00058CC1 /* 2.png */; };
 		1042BE8617FC829D00FE9298 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1042BE8517FC829D00FE9298 /* Foundation.framework */; };
@@ -39,7 +40,7 @@
 		1042BEBE17FDF35100FE9298 /* VCKiIntroViews.m in Sources */ = {isa = PBXBuildFile; fileRef = 1042BEBD17FDF35100FE9298 /* VCKiIntroViews.m */; };
 		10710D55180BCC17003F26BD /* PreResultScreen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10710D54180BCC17003F26BD /* PreResultScreen.jpg */; };
 		10710D57180C0B0C003F26BD /* MahimulHaq.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10710D56180C0B0C003F26BD /* MahimulHaq.jpg */; };
-		10A49CAC18131BFB00DA5609 /* VCKiSquadIViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A49CAB18131BFB00DA5609 /* VCKiSquadIViewCtrl.m */; };
+		10A49CAC18131BFB00DA5609 /* VCKiPrimarySquadIViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A49CAB18131BFB00DA5609 /* VCKiPrimarySquadIViewCtrl.m */; };
 		10FE0140180A7527007CF6F8 /* VCKiConfirmBetScreenViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 10FE013F180A7527007CF6F8 /* VCKiConfirmBetScreenViewCtrl.m */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +75,8 @@
 		101B953A1804971C009FD942 /* VCKiManualPagesViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCKiManualPagesViewCtrl.m; sourceTree = "<group>"; };
 		101B953C180498B0009FD942 /* VCKiRootPageViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCKiRootPageViewCtrl.h; sourceTree = "<group>"; };
 		101B953D180498B0009FD942 /* VCKiRootPageViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCKiRootPageViewCtrl.m; sourceTree = "<group>"; };
+		1031F97E182E2C1F00637D9E /* VCKiSeondarySquatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCKiSeondarySquatViewController.h; sourceTree = "<group>"; };
+		1031F97F182E2C1F00637D9E /* VCKiSeondarySquatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCKiSeondarySquatViewController.m; sourceTree = "<group>"; };
 		103433C9180DBA8B00058CC1 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1.png; path = Pattern/1.png; sourceTree = "<group>"; };
 		103433CB180DBF5F00058CC1 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2.png; path = Pattern/2.png; sourceTree = "<group>"; };
 		1042BE8217FC829D00FE9298 /* PlayerCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayerCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,8 +101,8 @@
 		1042BEBD17FDF35100FE9298 /* VCKiIntroViews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCKiIntroViews.m; sourceTree = "<group>"; };
 		10710D54180BCC17003F26BD /* PreResultScreen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PreResultScreen.jpg; sourceTree = "<group>"; };
 		10710D56180C0B0C003F26BD /* MahimulHaq.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MahimulHaq.jpg; sourceTree = "<group>"; };
-		10A49CAA18131BFB00DA5609 /* VCKiSquadIViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCKiSquadIViewCtrl.h; sourceTree = "<group>"; };
-		10A49CAB18131BFB00DA5609 /* VCKiSquadIViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCKiSquadIViewCtrl.m; sourceTree = "<group>"; };
+		10A49CAA18131BFB00DA5609 /* VCKiPrimarySquadIViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCKiPrimarySquadIViewCtrl.h; sourceTree = "<group>"; };
+		10A49CAB18131BFB00DA5609 /* VCKiPrimarySquadIViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCKiPrimarySquadIViewCtrl.m; sourceTree = "<group>"; };
 		10FE013E180A7527007CF6F8 /* VCKiConfirmBetScreenViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCKiConfirmBetScreenViewCtrl.h; sourceTree = "<group>"; };
 		10FE013F180A7527007CF6F8 /* VCKiConfirmBetScreenViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCKiConfirmBetScreenViewCtrl.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -227,8 +230,10 @@
 				100390071808782B008B9453 /* VCKiPlayScreenViewCtrl.m */,
 				10FE013E180A7527007CF6F8 /* VCKiConfirmBetScreenViewCtrl.h */,
 				10FE013F180A7527007CF6F8 /* VCKiConfirmBetScreenViewCtrl.m */,
-				10A49CAA18131BFB00DA5609 /* VCKiSquadIViewCtrl.h */,
-				10A49CAB18131BFB00DA5609 /* VCKiSquadIViewCtrl.m */,
+				10A49CAA18131BFB00DA5609 /* VCKiPrimarySquadIViewCtrl.h */,
+				10A49CAB18131BFB00DA5609 /* VCKiPrimarySquadIViewCtrl.m */,
+				1031F97E182E2C1F00637D9E /* VCKiSeondarySquatViewController.h */,
+				1031F97F182E2C1F00637D9E /* VCKiSeondarySquatViewController.m */,
 			);
 			name = viewControllers;
 			sourceTree = "<group>";
@@ -374,9 +379,10 @@
 				101420C01828B448001FF7FF /* VCKiTimerViewController.m in Sources */,
 				1042BEBE17FDF35100FE9298 /* VCKiIntroViews.m in Sources */,
 				1042BE9617FC829D00FE9298 /* VCKiAppDelegate.m in Sources */,
-				10A49CAC18131BFB00DA5609 /* VCKiSquadIViewCtrl.m in Sources */,
+				10A49CAC18131BFB00DA5609 /* VCKiPrimarySquadIViewCtrl.m in Sources */,
 				101B953E180498B0009FD942 /* VCKiRootPageViewCtrl.m in Sources */,
 				101B953B1804971C009FD942 /* VCKiManualPagesViewCtrl.m in Sources */,
+				1031F980182E2C1F00637D9E /* VCKiSeondarySquatViewController.m in Sources */,
 				1003900218084F9F008B9453 /* VCKiPlayerEntity.m in Sources */,
 				100390081808782B008B9453 /* VCKiPlayScreenViewCtrl.m in Sources */,
 				10038FFF1807D41C008B9453 /* VCKiManualPageContentSerializer.m in Sources */,
