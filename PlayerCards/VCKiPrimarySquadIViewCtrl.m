@@ -40,7 +40,7 @@ NSMutableArray* _playersList;
     VCKiPlayerEntity *player = [playerManager getNextPrimaryPlayer];
     int i=1;
     
-    while (player && i <= playerManager.primarySquad.count){
+    while (player && i <= playerManager.playerSquadCount){
         i=i+1;
         [_playersList addObject:player];
         player = [playerManager getNextPrimaryPlayer];

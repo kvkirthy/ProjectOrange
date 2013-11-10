@@ -11,12 +11,14 @@
 #import "VCKiPlayerEntity.h"
 #import "VCKiPlayerRecordReader.h"
 #import "VCKiConfirmBetScreenViewCtrl.h"
+#import "VCKiPlayResultViewController.h"
 
 @interface VCKiPlayScreenViewCtrl (){
     
     NSString* _givenPlayerStatCaption;
-    NSString* _givenPlayerStatValue;
-    
+    double _givenPlayerStatValue;
+    double _secondPlayerStatValue;
+    VCKiPlayerEntity *_secondPlayer;
 }
 @end
 
@@ -37,9 +39,14 @@
 {
     [super viewDidLoad];
     
-    NSUInteger randomNumber = arc4random() % 11;
+    //NSUInteger randomNumber = arc4random() % 11;
 	
-    VCKiPlayerEntity *player = [ [[VCKiPlayerRecordReader alloc]init] getPlayerRecordWithIndex:[NSString stringWithFormat:@"%d",randomNumber]];
+    //VCKiPlayerEntity *player = [ [[VCKiPlayerRecordReader alloc]init] getPlayerRecordWithIndex:[NSString stringWithFormat:@"%d",randomNumber]];
+    
+    VCKiPlayerRecordReader* recordReader = [[VCKiPlayerRecordReader alloc]init];
+    VCKiPlayerEntity *player = [recordReader getNextPrimaryPlayer];
+    _secondPlayer = [recordReader getNextSecondaryPlayer];
+
 
     self.fullName.text = player.fullName;
     self.teamName.text = player.team;
@@ -71,14 +78,31 @@
     if([segue.identifier  isEqual: @"goToConfirmScreen"]){
         VCKiConfirmBetScreenViewCtrl *confirmVc = [segue destinationViewController];
         confirmVc.givenPlayerStatCaption = _givenPlayerStatCaption;
-        confirmVc.givenPlayerStatValue = _givenPlayerStatValue;
+        
+        confirmVc.playerImage.image = self.playerImage.image;
+        
+#warning TODO: .00 doesn't make sense for some and does for someother. Need to think through.
+        
+        confirmVc.givenPlayerStatValue = [[NSString alloc]initWithFormat:@"%f", _givenPlayerStatValue];
+    }
+    else if([segue.identifier isEqual:@"playStatusSegue"])
+    {
+        VCKiPlayResultViewController *resultVc = [segue destinationViewController];
+        resultVc.primaryStatValue = _givenPlayerStatValue;
+        resultVc.secondaryStatValue = _secondPlayerStatValue;
+        resultVc.statCaption = _givenPlayerStatCaption;
+        resultVc.secondaryPlayerName = _secondPlayer.fullName;
+        resultVc.primaryPlayerPicture.image = self.playerImage.image;
+        resultVc.secondaryPlayerPicture.image = [UIImage imageNamed:_secondPlayer.playerPicture];
+        
         
     }
 }
 
 - (IBAction)testRunBet:(id)sender {
     _givenPlayerStatCaption = self.testRunsCaption.text;
-    _givenPlayerStatValue = self.testRuns.titleLabel.text;
+    _givenPlayerStatValue = [self.testRuns.titleLabel.text doubleValue];
+    _secondPlayerStatValue =_secondPlayer.totalTestRuns ;
     [self performSegueWithIdentifier:@"goToConfirmScreen" sender:self];
 }
 @end

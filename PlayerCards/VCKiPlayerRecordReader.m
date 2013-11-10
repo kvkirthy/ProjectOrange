@@ -11,8 +11,8 @@
 
 @implementation VCKiPlayerRecordReader
 
-@synthesize primarySquad = _primarySquad;
-@synthesize secondSquad = _secondSquad;
+static NSMutableArray* _primarySquad;
+static NSMutableArray* _secondSquad;
 
 const int squadBeginCount = 5;
 
@@ -49,6 +49,7 @@ static NSDictionary* _playerDataCollection = nil;
 - (id) init{
     self = [super init];
     
+    self.playerSquadCount = squadBeginCount;
     _resourcePath = [[NSBundle mainBundle] pathForResource:@"playerData" ofType:@"plist"];
     _playerDataCollection  = [[NSDictionary alloc]initWithContentsOfFile:_resourcePath];
     
@@ -69,25 +70,27 @@ static NSDictionary* _playerDataCollection = nil;
 
 - (void) createSquad
 {
-    NSMutableSet* allSquadData = [[NSMutableSet alloc]init];
-    while ([allSquadData count] < squadBeginCount * 2) {
-        [allSquadData addObject: [NSString stringWithFormat:@"%d", arc4random_uniform([availablePlayers count])]];
+    if (_primarySquad && _secondSquad && [_primarySquad count] <= 0 && [_secondSquad count] <=0) {
+        NSMutableSet* allSquadData = [[NSMutableSet alloc]init];
+        
+        while ([allSquadData count] < squadBeginCount * 2) {
+            [allSquadData addObject: [NSString stringWithFormat:@"%d", arc4random_uniform([availablePlayers count])]];
+        }
+        
+        NSArray* ps = [allSquadData allObjects];
+        int i;
+        
+        for(i=0; i< [ps count]/2; i++){
+            NSString* playerIndex = [ps objectAtIndex:i];
+            //NSLog(playerIndex);
+            VCKiPlayerEntity *player =[self getPlayerRecordWithIndex:  playerIndex];
+            [_primarySquad addObject: player];
+        }
+        
+        for(; i< [ps count]; i++){
+            [_secondSquad addObject:[self getPlayerRecordWithIndex:  [ps objectAtIndex:i]]];
+        }
     }
-    
-    NSArray* ps = [allSquadData allObjects];
-    int i;
-    
-    for(i=0; i< [ps count]/2; i++){
-        NSString* playerIndex = [ps objectAtIndex:i];
-        VCKiPlayerEntity *player =[self getPlayerRecordWithIndex:  playerIndex];
-        [_primarySquad addObject: player];
-    }
-    
-    
-    for(; i< [ps count]; i++){
-        [_secondSquad addObject:[self getPlayerRecordWithIndex:  [ps objectAtIndex:i]]];
-    }
-    
    
 }
 

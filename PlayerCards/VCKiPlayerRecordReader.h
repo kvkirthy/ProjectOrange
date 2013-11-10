@@ -11,8 +11,7 @@
 
 @interface VCKiPlayerRecordReader : NSObject
 
-@property (atomic, strong) NSMutableArray* primarySquad;
-@property (atomic, strong) NSMutableArray* secondSquad;
+@property int playerSquadCount;
 
 - (VCKiPlayerEntity *) getNextPrimaryPlayer;
 - (VCKiPlayerEntity *) getNextSecondaryPlayer;

@@ -18,6 +18,7 @@
 		1003901118096B4D008B9453 /* wood2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1003901018096B4D008B9453 /* wood2.jpg */; };
 		100390131809D6E6008B9453 /* ResultScreen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 100390121809D6E6008B9453 /* ResultScreen.jpg */; };
 		101420C01828B448001FF7FF /* VCKiTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 101420BF1828B448001FF7FF /* VCKiTimerViewController.m */; };
+		10185A22182FEC0300F5AF17 /* VCKiPlayResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10185A21182FEC0300F5AF17 /* VCKiPlayResultViewController.m */; };
 		101B953B1804971C009FD942 /* VCKiManualPagesViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 101B953A1804971C009FD942 /* VCKiManualPagesViewCtrl.m */; };
 		101B953E180498B0009FD942 /* VCKiRootPageViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 101B953D180498B0009FD942 /* VCKiRootPageViewCtrl.m */; };
 		1031F980182E2C1F00637D9E /* VCKiSeondarySquatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1031F97F182E2C1F00637D9E /* VCKiSeondarySquatViewController.m */; };
@@ -71,6 +72,8 @@
 		100390121809D6E6008B9453 /* ResultScreen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ResultScreen.jpg; sourceTree = "<group>"; };
 		101420BE1828B448001FF7FF /* VCKiTimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCKiTimerViewController.h; sourceTree = "<group>"; };
 		101420BF1828B448001FF7FF /* VCKiTimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCKiTimerViewController.m; sourceTree = "<group>"; };
+		10185A20182FEC0300F5AF17 /* VCKiPlayResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCKiPlayResultViewController.h; sourceTree = "<group>"; };
+		10185A21182FEC0300F5AF17 /* VCKiPlayResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCKiPlayResultViewController.m; sourceTree = "<group>"; };
 		101B95391804971C009FD942 /* VCKiManualPagesViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCKiManualPagesViewCtrl.h; sourceTree = "<group>"; };
 		101B953A1804971C009FD942 /* VCKiManualPagesViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCKiManualPagesViewCtrl.m; sourceTree = "<group>"; };
 		101B953C180498B0009FD942 /* VCKiRootPageViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCKiRootPageViewCtrl.h; sourceTree = "<group>"; };
@@ -234,6 +237,8 @@
 				10A49CAB18131BFB00DA5609 /* VCKiPrimarySquadIViewCtrl.m */,
 				1031F97E182E2C1F00637D9E /* VCKiSeondarySquatViewController.h */,
 				1031F97F182E2C1F00637D9E /* VCKiSeondarySquatViewController.m */,
+				10185A20182FEC0300F5AF17 /* VCKiPlayResultViewController.h */,
+				10185A21182FEC0300F5AF17 /* VCKiPlayResultViewController.m */,
 			);
 			name = viewControllers;
 			sourceTree = "<group>";
@@ -379,6 +384,7 @@
 				101420C01828B448001FF7FF /* VCKiTimerViewController.m in Sources */,
 				1042BEBE17FDF35100FE9298 /* VCKiIntroViews.m in Sources */,
 				1042BE9617FC829D00FE9298 /* VCKiAppDelegate.m in Sources */,
+				10185A22182FEC0300F5AF17 /* VCKiPlayResultViewController.m in Sources */,
 				10A49CAC18131BFB00DA5609 /* VCKiPrimarySquadIViewCtrl.m in Sources */,
 				101B953E180498B0009FD942 /* VCKiRootPageViewCtrl.m in Sources */,
 				101B953B1804971C009FD942 /* VCKiManualPagesViewCtrl.m in Sources */,
@@ -446,6 +452,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: ADP India (SS42A4AAFV)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -486,6 +493,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: ADP India (SS42A4AAFV)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
