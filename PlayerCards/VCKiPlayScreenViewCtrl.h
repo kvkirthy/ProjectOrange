@@ -14,6 +14,8 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *fullName;
 @property (weak, nonatomic) IBOutlet UILabel *teamName;
+@property (weak, nonatomic) IBOutlet UILabel *playerCount;
+@property (weak, nonatomic) IBOutlet UILabel *oppositionCount;
 
 
 @property (weak, nonatomic) IBOutlet UILabel *testRunsCaption;

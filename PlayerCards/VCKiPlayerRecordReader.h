@@ -12,6 +12,7 @@
 @interface VCKiPlayerRecordReader : NSObject
 
 @property int playerSquadCount;
+@property int oppositionSquadCount;
 
 - (VCKiPlayerEntity *) getNextPrimaryPlayer;
 - (VCKiPlayerEntity *) getNextSecondaryPlayer;

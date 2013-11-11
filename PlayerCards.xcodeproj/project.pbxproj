@@ -13,10 +13,7 @@
 		1003900218084F9F008B9453 /* VCKiPlayerEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 1003900118084F9F008B9453 /* VCKiPlayerEntity.m */; };
 		10039005180863C8008B9453 /* VCKiPlayerRecordReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 10039004180863C8008B9453 /* VCKiPlayerRecordReader.m */; };
 		100390081808782B008B9453 /* VCKiPlayScreenViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 100390071808782B008B9453 /* VCKiPlayScreenViewCtrl.m */; };
-		1003900C18093DBC008B9453 /* wood.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1003900B18093DBC008B9453 /* wood.jpg */; };
 		1003900F180957D0008B9453 /* rikcy-pointing.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1003900E180957D0008B9453 /* rikcy-pointing.jpg */; };
-		1003901118096B4D008B9453 /* wood2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1003901018096B4D008B9453 /* wood2.jpg */; };
-		100390131809D6E6008B9453 /* ResultScreen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 100390121809D6E6008B9453 /* ResultScreen.jpg */; };
 		101420C01828B448001FF7FF /* VCKiTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 101420BF1828B448001FF7FF /* VCKiTimerViewController.m */; };
 		10185A22182FEC0300F5AF17 /* VCKiPlayResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10185A21182FEC0300F5AF17 /* VCKiPlayResultViewController.m */; };
 		101B953B1804971C009FD942 /* VCKiManualPagesViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 101B953A1804971C009FD942 /* VCKiManualPagesViewCtrl.m */; };
@@ -39,7 +36,8 @@
 		1042BEB517FC82F000FE9298 /* iPhonePlayerCardsMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1042BEB417FC82F000FE9298 /* iPhonePlayerCardsMain.storyboard */; };
 		1042BEBB17FC889A00FE9298 /* PlayerFirstscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 1042BEBA17FC889A00FE9298 /* PlayerFirstscreen.png */; };
 		1042BEBE17FDF35100FE9298 /* VCKiIntroViews.m in Sources */ = {isa = PBXBuildFile; fileRef = 1042BEBD17FDF35100FE9298 /* VCKiIntroViews.m */; };
-		10710D55180BCC17003F26BD /* PreResultScreen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10710D54180BCC17003F26BD /* PreResultScreen.jpg */; };
+		105277D71831764E00739B87 /* bluecap.png in Resources */ = {isa = PBXBuildFile; fileRef = 105277D61831764E00739B87 /* bluecap.png */; };
+		105277D918317B7600739B87 /* Redcaps.png in Resources */ = {isa = PBXBuildFile; fileRef = 105277D818317B7600739B87 /* Redcaps.png */; };
 		10710D57180C0B0C003F26BD /* MahimulHaq.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10710D56180C0B0C003F26BD /* MahimulHaq.jpg */; };
 		10A49CAC18131BFB00DA5609 /* VCKiPrimarySquadIViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A49CAB18131BFB00DA5609 /* VCKiPrimarySquadIViewCtrl.m */; };
 		10FE0140180A7527007CF6F8 /* VCKiConfirmBetScreenViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 10FE013F180A7527007CF6F8 /* VCKiConfirmBetScreenViewCtrl.m */; };
@@ -66,10 +64,7 @@
 		10039004180863C8008B9453 /* VCKiPlayerRecordReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCKiPlayerRecordReader.m; sourceTree = "<group>"; };
 		100390061808782B008B9453 /* VCKiPlayScreenViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCKiPlayScreenViewCtrl.h; sourceTree = "<group>"; };
 		100390071808782B008B9453 /* VCKiPlayScreenViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCKiPlayScreenViewCtrl.m; sourceTree = "<group>"; };
-		1003900B18093DBC008B9453 /* wood.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wood.jpg; sourceTree = "<group>"; };
 		1003900E180957D0008B9453 /* rikcy-pointing.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "rikcy-pointing.jpg"; sourceTree = "<group>"; };
-		1003901018096B4D008B9453 /* wood2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wood2.jpg; sourceTree = "<group>"; };
-		100390121809D6E6008B9453 /* ResultScreen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ResultScreen.jpg; sourceTree = "<group>"; };
 		101420BE1828B448001FF7FF /* VCKiTimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCKiTimerViewController.h; sourceTree = "<group>"; };
 		101420BF1828B448001FF7FF /* VCKiTimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCKiTimerViewController.m; sourceTree = "<group>"; };
 		10185A20182FEC0300F5AF17 /* VCKiPlayResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCKiPlayResultViewController.h; sourceTree = "<group>"; };
@@ -102,7 +97,8 @@
 		1042BEBA17FC889A00FE9298 /* PlayerFirstscreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlayerFirstscreen.png; sourceTree = "<group>"; };
 		1042BEBC17FDF35100FE9298 /* VCKiIntroViews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCKiIntroViews.h; sourceTree = "<group>"; };
 		1042BEBD17FDF35100FE9298 /* VCKiIntroViews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCKiIntroViews.m; sourceTree = "<group>"; };
-		10710D54180BCC17003F26BD /* PreResultScreen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PreResultScreen.jpg; sourceTree = "<group>"; };
+		105277D61831764E00739B87 /* bluecap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bluecap.png; sourceTree = "<group>"; };
+		105277D818317B7600739B87 /* Redcaps.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Redcaps.png; sourceTree = "<group>"; };
 		10710D56180C0B0C003F26BD /* MahimulHaq.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MahimulHaq.jpg; sourceTree = "<group>"; };
 		10A49CAA18131BFB00DA5609 /* VCKiPrimarySquadIViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCKiPrimarySquadIViewCtrl.h; sourceTree = "<group>"; };
 		10A49CAB18131BFB00DA5609 /* VCKiPrimarySquadIViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCKiPrimarySquadIViewCtrl.m; sourceTree = "<group>"; };
@@ -246,15 +242,13 @@
 		10FE0142180ACB7C007CF6F8 /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				105277D818317B7600739B87 /* Redcaps.png */,
+				105277D61831764E00739B87 /* bluecap.png */,
 				103433CB180DBF5F00058CC1 /* 2.png */,
 				103433C9180DBA8B00058CC1 /* 1.png */,
-				10710D54180BCC17003F26BD /* PreResultScreen.jpg */,
-				1003901018096B4D008B9453 /* wood2.jpg */,
 				10038FF91807B1E6008B9453 /* playerData.plist */,
 				10038FFB1807D2A8008B9453 /* manualPages.plist */,
-				100390121809D6E6008B9453 /* ResultScreen.jpg */,
 				1042BEBA17FC889A00FE9298 /* PlayerFirstscreen.png */,
-				1003900B18093DBC008B9453 /* wood.jpg */,
 			);
 			name = resources;
 			sourceTree = "<group>";
@@ -351,17 +345,15 @@
 				1003900F180957D0008B9453 /* rikcy-pointing.jpg in Resources */,
 				1042BEB517FC82F000FE9298 /* iPhonePlayerCardsMain.storyboard in Resources */,
 				103433CC180DBF5F00058CC1 /* 2.png in Resources */,
-				100390131809D6E6008B9453 /* ResultScreen.jpg in Resources */,
 				10038FFC1807D2A8008B9453 /* manualPages.plist in Resources */,
 				1042BEBB17FC889A00FE9298 /* PlayerFirstscreen.png in Resources */,
+				105277D71831764E00739B87 /* bluecap.png in Resources */,
 				103433CA180DBA8B00058CC1 /* 1.png in Resources */,
-				1003901118096B4D008B9453 /* wood2.jpg in Resources */,
 				10038FFA1807B1E6008B9453 /* playerData.plist in Resources */,
+				105277D918317B7600739B87 /* Redcaps.png in Resources */,
 				1042BE9017FC829D00FE9298 /* InfoPlist.strings in Resources */,
 				10710D57180C0B0C003F26BD /* MahimulHaq.jpg in Resources */,
 				1042BE9817FC829D00FE9298 /* Images.xcassets in Resources */,
-				1003900C18093DBC008B9453 /* wood.jpg in Resources */,
-				10710D55180BCC17003F26BD /* PreResultScreen.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

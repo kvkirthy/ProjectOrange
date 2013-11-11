@@ -47,7 +47,10 @@
     VCKiPlayerEntity *player = [recordReader getNextPrimaryPlayer];
     _secondPlayer = [recordReader getNextSecondaryPlayer];
 
+    self.playerCount.text = [NSString stringWithFormat:@"%d", recordReader.playerSquadCount];
 
+    self.oppositionCount.text = [NSString stringWithFormat:@"%d", recordReader.oppositionSquadCount];
+    
     self.fullName.text = player.fullName;
     self.teamName.text = player.team;
     

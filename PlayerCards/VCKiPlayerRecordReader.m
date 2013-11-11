@@ -50,6 +50,8 @@ static NSDictionary* _playerDataCollection = nil;
     self = [super init];
     
     self.playerSquadCount = squadBeginCount;
+    self.oppositionSquadCount = squadBeginCount;
+    
     _resourcePath = [[NSBundle mainBundle] pathForResource:@"playerData" ofType:@"plist"];
     _playerDataCollection  = [[NSDictionary alloc]initWithContentsOfFile:_resourcePath];
     
