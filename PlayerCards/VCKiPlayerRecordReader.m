@@ -20,6 +20,26 @@ static NSArray* availablePlayers = nil;
 static NSString* _resourcePath = nil;
 static NSDictionary* _playerDataCollection = nil;
 
+-(VCKiPlayerEntity *) getRandomPrimaryPlayer: (NSUInteger *) refPlayerIndex
+{
+    if (_primarySquad && _primarySquad.count > 0) {
+       *refPlayerIndex = arc4random_uniform([_primarySquad count]);
+       return [_primarySquad objectAtIndex: *refPlayerIndex];
+    }
+
+    return nil;
+}
+
+-(VCKiPlayerEntity *) getRandomSecondaryPlayer: (NSUInteger *) refPlayerIndex
+{
+    if (_secondSquad && _secondSquad.count > 0) {
+        *refPlayerIndex = arc4random_uniform([_primarySquad count]);
+        return [_secondSquad objectAtIndex: *refPlayerIndex];
+    }
+    
+    return nil;
+}
+
 -(VCKiPlayerEntity *)getNextSecondaryPlayer
 {
     if (_secondSquad.count <= 0) {
@@ -46,24 +66,31 @@ static NSDictionary* _playerDataCollection = nil;
     return returnData;
 }
 
+-(BOOL)movePrimaryPlayerToSecondary:(NSUInteger )player{
+    if (_primarySquad && _primarySquad.count > 0) {
+        [_secondSquad addObject: [_primarySquad objectAtIndex:player]];
+        [_primarySquad removeObjectAtIndex:player];
+        return YES;
+    }
+    
+    return NO;
+}
+
+-(BOOL) moveSecondaryPlayerToPrimary:(NSUInteger ) player{
+    if (_secondSquad && _secondSquad.count > 0) {
+        [_primarySquad addObject:[_secondSquad objectAtIndex:player]];
+        [_secondSquad removeObjectAtIndex:player];
+        
+        return YES;
+    }
+    
+    return NO;
+}
+
 - (id) init{
     self = [super init];
     
-    self.playerSquadCount = squadBeginCount;
-    self.oppositionSquadCount = squadBeginCount;
-    
-    _resourcePath = [[NSBundle mainBundle] pathForResource:@"playerData" ofType:@"plist"];
-    _playerDataCollection  = [[NSDictionary alloc]initWithContentsOfFile:_resourcePath];
-    
-    if(!_primarySquad){
-        _primarySquad = [[NSMutableArray alloc]init];
-    }
-    
-    if(!_secondSquad){
-        _secondSquad = [[NSMutableArray alloc]init];
-    }
-    
-    availablePlayers =  [_playerDataCollection allKeys];
+
     [self createSquad];
     
     return self;
@@ -72,7 +99,21 @@ static NSDictionary* _playerDataCollection = nil;
 
 - (void) createSquad
 {
-    if (_primarySquad && _secondSquad && [_primarySquad count] <= 0 && [_secondSquad count] <=0) {
+    if(!_primarySquad){
+        _primarySquad = [[NSMutableArray alloc]init];
+    }
+    
+    if(!_secondSquad){
+        _secondSquad = [[NSMutableArray alloc]init];
+    }
+    
+    if ([_primarySquad count] <= 0 && [_secondSquad count] <=0) {
+        
+        _resourcePath = [[NSBundle mainBundle] pathForResource:@"playerData" ofType:@"plist"];
+        _playerDataCollection  = [[NSDictionary alloc]initWithContentsOfFile:_resourcePath];
+        
+        availablePlayers =  [_playerDataCollection allKeys];
+        
         NSMutableSet* allSquadData = [[NSMutableSet alloc]init];
         
         while ([allSquadData count] < squadBeginCount * 2) {
@@ -93,6 +134,8 @@ static NSDictionary* _playerDataCollection = nil;
             [_secondSquad addObject:[self getPlayerRecordWithIndex:  [ps objectAtIndex:i]]];
         }
     }
+    self.playerSquadCount = _primarySquad.count;
+    self.oppositionSquadCount = _secondSquad.count;
    
 }
 

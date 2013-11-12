@@ -19,6 +19,8 @@
     double _givenPlayerStatValue;
     double _secondPlayerStatValue;
     VCKiPlayerEntity *_secondPlayer;
+    NSUInteger _primaryPlayerIndex;
+    NSUInteger _secondaryPlayerIndex;
 }
 @end
 
@@ -44,8 +46,8 @@
     //VCKiPlayerEntity *player = [ [[VCKiPlayerRecordReader alloc]init] getPlayerRecordWithIndex:[NSString stringWithFormat:@"%d",randomNumber]];
     
     VCKiPlayerRecordReader* recordReader = [[VCKiPlayerRecordReader alloc]init];
-    VCKiPlayerEntity *player = [recordReader getNextPrimaryPlayer];
-    _secondPlayer = [recordReader getNextSecondaryPlayer];
+    VCKiPlayerEntity *player = [recordReader getRandomPrimaryPlayer: &_primaryPlayerIndex];
+    _secondPlayer = [recordReader getRandomSecondaryPlayer: &_secondaryPlayerIndex];
 
     self.playerCount.text = [NSString stringWithFormat:@"%d", recordReader.playerSquadCount];
 
@@ -97,6 +99,8 @@
         resultVc.secondaryPlayerName = _secondPlayer.fullName;
         resultVc.primaryPlayerPicture.image = self.playerImage.image;
         resultVc.secondaryPlayerPicture.image = [UIImage imageNamed:_secondPlayer.playerPicture];
+        resultVc.primaryPlayerIndex = _primaryPlayerIndex;
+        resultVc.secondaryPlayerIndex = _secondaryPlayerIndex;
         
         
     }

@@ -14,8 +14,15 @@
 @property int playerSquadCount;
 @property int oppositionSquadCount;
 
+- (VCKiPlayerEntity *) getRandomPrimaryPlayer: (NSUInteger *) refPlayerIndex;
+- (VCKiPlayerEntity *) getRandomSecondaryPlayer: (NSUInteger *) refPlayerIndex;;
+
 - (VCKiPlayerEntity *) getNextPrimaryPlayer;
 - (VCKiPlayerEntity *) getNextSecondaryPlayer;
 - (VCKiPlayerEntity *) getPlayerRecordWithIndex: (NSString *) indexValue;
+
+-(BOOL) movePrimaryPlayerToSecondary: (NSUInteger ) player;
+-(BOOL) moveSecondaryPlayerToPrimary: (NSUInteger ) player;
+
 
 @end

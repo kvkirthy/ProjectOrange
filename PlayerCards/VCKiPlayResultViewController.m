@@ -8,6 +8,7 @@
 
 #import "VCKiPlayResultViewController.h"
 #import "VCKiPlayScreenViewCtrl.h"
+#import "VCKiPlayerRecordReader.h"
 
 @interface VCKiPlayResultViewController ()
 
@@ -29,6 +30,8 @@
 {
     [super viewDidLoad];
     
+    VCKiPlayerRecordReader* player = [[VCKiPlayerRecordReader alloc]init];
+    
     VCKiPlayScreenViewCtrl *playscreen = (VCKiPlayScreenViewCtrl *)[self presentingViewController];
     
     if(self.primaryStatValue == self.secondaryStatValue){
@@ -38,14 +41,18 @@
 
     }
     else if (self.primaryStatValue > self.secondaryStatValue){
-        self.winnerMessage.text = [NSString stringWithFormat:@"About %@, %@ wins over %@.", self.statCaption,playscreen.fullName.text, self.secondaryPlayerName];
-        self.primaryPlayerWinLossMessage.text = @"You won over the player!";
-        self.playerScores.text = [NSString stringWithFormat:@"%@ %@ is %f. And for %@ it's %f",self.statCaption,playscreen.fullName.text, self.primaryStatValue, self.secondaryPlayerName, self.secondaryStatValue ];
+        if([player moveSecondaryPlayerToPrimary:self.secondaryPlayerIndex]){
+            self.winnerMessage.text = [NSString stringWithFormat:@"About %@, %@ wins over %@.", self.statCaption,playscreen.fullName.text, self.secondaryPlayerName];
+            self.primaryPlayerWinLossMessage.text = @"You won over the player!";
+            self.playerScores.text = [NSString stringWithFormat:@"%@ %@ is %f. And for %@ it's %f",self.statCaption,playscreen.fullName.text, self.primaryStatValue, self.secondaryPlayerName, self.secondaryStatValue ];
+        }
     }
     else {
-        self.winnerMessage.text = [NSString stringWithFormat:@"About %@, %@ wins over %@.", self.statCaption,self.secondaryPlayerName, playscreen.fullName.text];
-        self.primaryPlayerWinLossMessage.text = @"You lost the player!";
-        self.playerScores.text = [NSString stringWithFormat:@"%@ %@ is %f. And for %@ it's %f",self.statCaption,playscreen.fullName.text, self.primaryStatValue, self.secondaryPlayerName, self.secondaryStatValue ];
+        if([player movePrimaryPlayerToSecondary:self.primaryPlayerIndex]){
+            self.winnerMessage.text = [NSString stringWithFormat:@"About %@, %@ wins over %@.", self.statCaption,self.secondaryPlayerName, playscreen.fullName.text];
+            self.primaryPlayerWinLossMessage.text = @"You lost the player!";
+            self.playerScores.text = [NSString stringWithFormat:@"%@ %@ is %f. And for %@ it's %f",self.statCaption,playscreen.fullName.text, self.primaryStatValue, self.secondaryPlayerName, self.secondaryStatValue ];
+        }
     }
     
     
