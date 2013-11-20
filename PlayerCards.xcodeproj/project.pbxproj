@@ -14,6 +14,7 @@
 		10039005180863C8008B9453 /* VCKiPlayerRecordReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 10039004180863C8008B9453 /* VCKiPlayerRecordReader.m */; };
 		100390081808782B008B9453 /* VCKiPlayScreenViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 100390071808782B008B9453 /* VCKiPlayScreenViewCtrl.m */; };
 		1003900F180957D0008B9453 /* rikcy-pointing.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1003900E180957D0008B9453 /* rikcy-pointing.jpg */; };
+		1006120C1834187800FDE096 /* VCKiFinalResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1006120B1834187800FDE096 /* VCKiFinalResultViewController.m */; };
 		101420C01828B448001FF7FF /* VCKiTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 101420BF1828B448001FF7FF /* VCKiTimerViewController.m */; };
 		10185A22182FEC0300F5AF17 /* VCKiPlayResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10185A21182FEC0300F5AF17 /* VCKiPlayResultViewController.m */; };
 		101B953B1804971C009FD942 /* VCKiManualPagesViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 101B953A1804971C009FD942 /* VCKiManualPagesViewCtrl.m */; };
@@ -65,6 +66,8 @@
 		100390061808782B008B9453 /* VCKiPlayScreenViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCKiPlayScreenViewCtrl.h; sourceTree = "<group>"; };
 		100390071808782B008B9453 /* VCKiPlayScreenViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCKiPlayScreenViewCtrl.m; sourceTree = "<group>"; };
 		1003900E180957D0008B9453 /* rikcy-pointing.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "rikcy-pointing.jpg"; sourceTree = "<group>"; };
+		1006120A1834187800FDE096 /* VCKiFinalResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCKiFinalResultViewController.h; sourceTree = "<group>"; };
+		1006120B1834187800FDE096 /* VCKiFinalResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCKiFinalResultViewController.m; sourceTree = "<group>"; };
 		101420BE1828B448001FF7FF /* VCKiTimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCKiTimerViewController.h; sourceTree = "<group>"; };
 		101420BF1828B448001FF7FF /* VCKiTimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCKiTimerViewController.m; sourceTree = "<group>"; };
 		10185A20182FEC0300F5AF17 /* VCKiPlayResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCKiPlayResultViewController.h; sourceTree = "<group>"; };
@@ -235,6 +238,8 @@
 				1031F97F182E2C1F00637D9E /* VCKiSeondarySquatViewController.m */,
 				10185A20182FEC0300F5AF17 /* VCKiPlayResultViewController.h */,
 				10185A21182FEC0300F5AF17 /* VCKiPlayResultViewController.m */,
+				1006120A1834187800FDE096 /* VCKiFinalResultViewController.h */,
+				1006120B1834187800FDE096 /* VCKiFinalResultViewController.m */,
 			);
 			name = viewControllers;
 			sourceTree = "<group>";
@@ -378,6 +383,7 @@
 				1042BE9617FC829D00FE9298 /* VCKiAppDelegate.m in Sources */,
 				10185A22182FEC0300F5AF17 /* VCKiPlayResultViewController.m in Sources */,
 				10A49CAC18131BFB00DA5609 /* VCKiPrimarySquadIViewCtrl.m in Sources */,
+				1006120C1834187800FDE096 /* VCKiFinalResultViewController.m in Sources */,
 				101B953E180498B0009FD942 /* VCKiRootPageViewCtrl.m in Sources */,
 				101B953B1804971C009FD942 /* VCKiManualPagesViewCtrl.m in Sources */,
 				1031F980182E2C1F00637D9E /* VCKiSeondarySquatViewController.m in Sources */,

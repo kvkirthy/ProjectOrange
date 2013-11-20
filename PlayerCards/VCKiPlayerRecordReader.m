@@ -33,7 +33,7 @@ static NSDictionary* _playerDataCollection = nil;
 -(VCKiPlayerEntity *) getRandomSecondaryPlayer: (NSUInteger *) refPlayerIndex
 {
     if (_secondSquad && _secondSquad.count > 0) {
-        *refPlayerIndex = arc4random_uniform([_primarySquad count]);
+        *refPlayerIndex = arc4random_uniform([_secondSquad count]);
         return [_secondSquad objectAtIndex: *refPlayerIndex];
     }
     
@@ -70,6 +70,10 @@ static NSDictionary* _playerDataCollection = nil;
     if (_primarySquad && _primarySquad.count > 0) {
         [_secondSquad addObject: [_primarySquad objectAtIndex:player]];
         [_primarySquad removeObjectAtIndex:player];
+        
+        self.playerSquadCount = _primarySquad.count;
+        self.oppositionSquadCount = _secondSquad.count;
+        
         return YES;
     }
     
@@ -80,6 +84,9 @@ static NSDictionary* _playerDataCollection = nil;
     if (_secondSquad && _secondSquad.count > 0) {
         [_primarySquad addObject:[_secondSquad objectAtIndex:player]];
         [_secondSquad removeObjectAtIndex:player];
+        
+        self.playerSquadCount = _primarySquad.count;
+        self.oppositionSquadCount = _secondSquad.count;
         
         return YES;
     }

@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *primaryPlayerWinLossMessage;
 @property (weak, nonatomic) IBOutlet UILabel *playerScores;
 
+
 @property NSUInteger primaryPlayerIndex;
 @property NSUInteger secondaryPlayerIndex;
 @property NSString* statCaption;
@@ -22,4 +23,6 @@
 @property NSString* secondaryPlayerName;
 @property double secondaryStatValue;
 
+
+- (IBAction)buttonPlayOnClicked:(id)sender;
 @end

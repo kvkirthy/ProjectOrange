@@ -678,7 +678,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Cdk-7q-jlc" kind="modal" id="Njs-wD-1Zp"/>
+                                    <action selector="buttonPlayOnClicked:" destination="rtR-sr-hR2" eventType="touchUpInside" id="jh8-9c-6It"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rikcy-pointing.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="olE-3l-BXB">
@@ -729,11 +729,47 @@
                         <outlet property="primaryPlayerWinLossMessage" destination="ycn-vw-1yF" id="BaV-76-X2X"/>
                         <outlet property="secondaryPlayerPicture" destination="tEe-h1-dYZ" id="jea-mY-2cq"/>
                         <outlet property="winnerMessage" destination="VcF-mA-0A7" id="USD-Cx-Xue"/>
+                        <segue destination="jak-ZO-EXC" kind="modal" identifier="finalResultSegue" id="7kJ-3h-HIR"/>
+                        <segue destination="Cdk-7q-jlc" kind="modal" identifier="seguePlayOn" id="bCc-E8-VfK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e0c-EK-8Of" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="697" y="-361"/>
+            <point key="canvasLocation" x="863" y="-368"/>
+        </scene>
+        <!--Ki Final Result View Controller-->
+        <scene sceneID="ih9-Mr-qiF">
+            <objects>
+                <viewController id="jak-ZO-EXC" customClass="VCKiFinalResultViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8Ev-KP-XPh"/>
+                        <viewControllerLayoutGuide type="bottom" id="tFG-cJ-NK1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4Kl-lj-Gf6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1.png" translatesAutoresizingMaskIntoConstraints="NO" id="9XK-Af-15J">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Winner Vs loser" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="275" translatesAutoresizingMaskIntoConstraints="NO" id="pYj-2y-GMv">
+                                <rect key="frame" x="20" y="195" width="275" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="finalResultMessage" destination="pYj-2y-GMv" id="hFU-bm-uwV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XPh-MS-KPu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1493" y="-368"/>
         </scene>
         <!--Ki Manual Pages View Ctrl-->
         <scene sceneID="J5h-Yb-Iy5">
@@ -798,7 +834,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="bCc-E8-VfK"/>
         <segue reference="E3C-xh-gfR"/>
-        <segue reference="Njs-wD-1Zp"/>
     </inferredMetricsTieBreakers>
 </document>
