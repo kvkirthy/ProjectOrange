@@ -35,8 +35,10 @@
 		1042BEA917FC829D00FE9298 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1042BEA717FC829D00FE9298 /* InfoPlist.strings */; };
 		1042BEAB17FC829D00FE9298 /* PlayerCardsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1042BEAA17FC829D00FE9298 /* PlayerCardsTests.m */; };
 		1042BEB517FC82F000FE9298 /* iPhonePlayerCardsMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1042BEB417FC82F000FE9298 /* iPhonePlayerCardsMain.storyboard */; };
-		1042BEBB17FC889A00FE9298 /* PlayerFirstscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 1042BEBA17FC889A00FE9298 /* PlayerFirstscreen.png */; };
 		1042BEBE17FDF35100FE9298 /* VCKiIntroViews.m in Sources */ = {isa = PBXBuildFile; fileRef = 1042BEBD17FDF35100FE9298 /* VCKiIntroViews.m */; };
+		10487D45183E149F0087B377 /* 132-ghost.png in Resources */ = {isa = PBXBuildFile; fileRef = 10487D43183E149F0087B377 /* 132-ghost.png */; };
+		10487D46183E149F0087B377 /* 135-hockeymask.png in Resources */ = {isa = PBXBuildFile; fileRef = 10487D44183E149F0087B377 /* 135-hockeymask.png */; };
+		10487D48183E17F00087B377 /* 156-controlpad.png in Resources */ = {isa = PBXBuildFile; fileRef = 10487D47183E17F00087B377 /* 156-controlpad.png */; };
 		105277D71831764E00739B87 /* bluecap.png in Resources */ = {isa = PBXBuildFile; fileRef = 105277D61831764E00739B87 /* bluecap.png */; };
 		105277D918317B7600739B87 /* Redcaps.png in Resources */ = {isa = PBXBuildFile; fileRef = 105277D818317B7600739B87 /* Redcaps.png */; };
 		10710D57180C0B0C003F26BD /* MahimulHaq.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10710D56180C0B0C003F26BD /* MahimulHaq.jpg */; };
@@ -97,9 +99,11 @@
 		1042BEA817FC829D00FE9298 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1042BEAA17FC829D00FE9298 /* PlayerCardsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayerCardsTests.m; sourceTree = "<group>"; };
 		1042BEB417FC82F000FE9298 /* iPhonePlayerCardsMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhonePlayerCardsMain.storyboard; sourceTree = "<group>"; };
-		1042BEBA17FC889A00FE9298 /* PlayerFirstscreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlayerFirstscreen.png; sourceTree = "<group>"; };
 		1042BEBC17FDF35100FE9298 /* VCKiIntroViews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCKiIntroViews.h; sourceTree = "<group>"; };
 		1042BEBD17FDF35100FE9298 /* VCKiIntroViews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCKiIntroViews.m; sourceTree = "<group>"; };
+		10487D43183E149F0087B377 /* 132-ghost.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "132-ghost.png"; sourceTree = "<group>"; };
+		10487D44183E149F0087B377 /* 135-hockeymask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "135-hockeymask.png"; sourceTree = "<group>"; };
+		10487D47183E17F00087B377 /* 156-controlpad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "156-controlpad.png"; sourceTree = "<group>"; };
 		105277D61831764E00739B87 /* bluecap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bluecap.png; sourceTree = "<group>"; };
 		105277D818317B7600739B87 /* Redcaps.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Redcaps.png; sourceTree = "<group>"; };
 		10710D56180C0B0C003F26BD /* MahimulHaq.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MahimulHaq.jpg; sourceTree = "<group>"; };
@@ -247,13 +251,15 @@
 		10FE0142180ACB7C007CF6F8 /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				10487D47183E17F00087B377 /* 156-controlpad.png */,
+				10487D43183E149F0087B377 /* 132-ghost.png */,
+				10487D44183E149F0087B377 /* 135-hockeymask.png */,
 				105277D818317B7600739B87 /* Redcaps.png */,
 				105277D61831764E00739B87 /* bluecap.png */,
 				103433CB180DBF5F00058CC1 /* 2.png */,
 				103433C9180DBA8B00058CC1 /* 1.png */,
 				10038FF91807B1E6008B9453 /* playerData.plist */,
 				10038FFB1807D2A8008B9453 /* manualPages.plist */,
-				1042BEBA17FC889A00FE9298 /* PlayerFirstscreen.png */,
 			);
 			name = resources;
 			sourceTree = "<group>";
@@ -351,13 +357,15 @@
 				1042BEB517FC82F000FE9298 /* iPhonePlayerCardsMain.storyboard in Resources */,
 				103433CC180DBF5F00058CC1 /* 2.png in Resources */,
 				10038FFC1807D2A8008B9453 /* manualPages.plist in Resources */,
-				1042BEBB17FC889A00FE9298 /* PlayerFirstscreen.png in Resources */,
+				10487D46183E149F0087B377 /* 135-hockeymask.png in Resources */,
 				105277D71831764E00739B87 /* bluecap.png in Resources */,
 				103433CA180DBA8B00058CC1 /* 1.png in Resources */,
 				10038FFA1807B1E6008B9453 /* playerData.plist in Resources */,
 				105277D918317B7600739B87 /* Redcaps.png in Resources */,
+				10487D45183E149F0087B377 /* 132-ghost.png in Resources */,
 				1042BE9017FC829D00FE9298 /* InfoPlist.strings in Resources */,
 				10710D57180C0B0C003F26BD /* MahimulHaq.jpg in Resources */,
+				10487D48183E17F00087B377 /* 156-controlpad.png in Resources */,
 				1042BE9817FC829D00FE9298 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
