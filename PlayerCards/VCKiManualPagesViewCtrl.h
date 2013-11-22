@@ -11,6 +11,7 @@
 @interface VCKiManualPagesViewCtrl : UIViewController
 @property (nonatomic) NSNumber *pageIndex;
 @property (nonatomic) IBOutlet UILabel *titleText;
+@property (weak, nonatomic) IBOutlet UIImageView *backgroundImage;
 
 - (IBAction)skipToAction:(id)sender;
 

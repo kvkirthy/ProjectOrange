@@ -19,6 +19,7 @@
 		10185A22182FEC0300F5AF17 /* VCKiPlayResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10185A21182FEC0300F5AF17 /* VCKiPlayResultViewController.m */; };
 		101B953B1804971C009FD942 /* VCKiManualPagesViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 101B953A1804971C009FD942 /* VCKiManualPagesViewCtrl.m */; };
 		101B953E180498B0009FD942 /* VCKiRootPageViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 101B953D180498B0009FD942 /* VCKiRootPageViewCtrl.m */; };
+		10242AB3183EF9FA00DBF9F2 /* iPhonePlayerCardsMain3_5firmfactor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10242AB2183EF9FA00DBF9F2 /* iPhonePlayerCardsMain3_5firmfactor.storyboard */; };
 		1031F980182E2C1F00637D9E /* VCKiSeondarySquatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1031F97F182E2C1F00637D9E /* VCKiSeondarySquatViewController.m */; };
 		103433CA180DBA8B00058CC1 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 103433C9180DBA8B00058CC1 /* 1.png */; };
 		103433CC180DBF5F00058CC1 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 103433CB180DBF5F00058CC1 /* 2.png */; };
@@ -78,6 +79,7 @@
 		101B953A1804971C009FD942 /* VCKiManualPagesViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCKiManualPagesViewCtrl.m; sourceTree = "<group>"; };
 		101B953C180498B0009FD942 /* VCKiRootPageViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCKiRootPageViewCtrl.h; sourceTree = "<group>"; };
 		101B953D180498B0009FD942 /* VCKiRootPageViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCKiRootPageViewCtrl.m; sourceTree = "<group>"; };
+		10242AB2183EF9FA00DBF9F2 /* iPhonePlayerCardsMain3_5firmfactor.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhonePlayerCardsMain3_5firmfactor.storyboard; sourceTree = "<group>"; };
 		1031F97E182E2C1F00637D9E /* VCKiSeondarySquatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCKiSeondarySquatViewController.h; sourceTree = "<group>"; };
 		1031F97F182E2C1F00637D9E /* VCKiSeondarySquatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCKiSeondarySquatViewController.m; sourceTree = "<group>"; };
 		103433C9180DBA8B00058CC1 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1.png; path = Pattern/1.png; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 		1042BE8B17FC829D00FE9298 /* PlayerCards */ = {
 			isa = PBXGroup;
 			children = (
+				10242AB2183EF9FA00DBF9F2 /* iPhonePlayerCardsMain3_5firmfactor.storyboard */,
 				1042BEB417FC82F000FE9298 /* iPhonePlayerCardsMain.storyboard */,
 				10FE0143180ACBC4007CF6F8 /* applicationLogic */,
 				10FE0142180ACB7C007CF6F8 /* resources */,
@@ -360,6 +363,7 @@
 				10487D46183E149F0087B377 /* 135-hockeymask.png in Resources */,
 				105277D71831764E00739B87 /* bluecap.png in Resources */,
 				103433CA180DBA8B00058CC1 /* 1.png in Resources */,
+				10242AB3183EF9FA00DBF9F2 /* iPhonePlayerCardsMain3_5firmfactor.storyboard in Resources */,
 				10038FFA1807B1E6008B9453 /* playerData.plist in Resources */,
 				105277D918317B7600739B87 /* Redcaps.png in Resources */,
 				10487D45183E149F0087B377 /* 132-ghost.png in Resources */,

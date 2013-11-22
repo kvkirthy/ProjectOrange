@@ -34,6 +34,10 @@ VCKiPlayScreenViewCtrl *playscreen;
 {
     [super viewDidLoad];
     
+    #warning "rounded corners not applied"
+    self.primaryPlayerPicture.layer.cornerRadius = 10;
+    self.secondaryPlayerPicture.layer.cornerRadius = 10;
+    
     player = [[VCKiPlayerRecordReader alloc]init];
     
     playscreen = (VCKiPlayScreenViewCtrl *)[self presentingViewController];

@@ -12,6 +12,27 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    CGSize iOSDeviceScreenSize = [[UIScreen mainScreen] bounds].size;
+    UIStoryboard *storyboard;
+    
+    if (iOSDeviceScreenSize.height == 480)
+    {
+        self.storyBoardInUse = @"iPhonePlayerCardsMain3_5firmfactor";
+        
+    }
+    else{
+        self.storyBoardInUse = @"iPhonePlayerCardsMain";
+    }
+    
+    storyboard = [UIStoryboard storyboardWithName:self.storyBoardInUse bundle:nil];
+    
+    UIViewController *initialViewController = [storyboard instantiateInitialViewController];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.rootViewController  = initialViewController;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

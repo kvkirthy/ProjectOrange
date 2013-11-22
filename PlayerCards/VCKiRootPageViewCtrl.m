@@ -8,6 +8,7 @@
 
 #import "VCKiRootPageViewCtrl.h"
 #import "VCKiManualPagesViewCtrl.h"
+#import "VCKiAppDelegate.h"
 
 @interface VCKiRootPageViewCtrl ()
 
@@ -31,7 +32,11 @@
 {
     self.allViewControllers = [[NSMutableArray alloc]initWithCapacity:4];
     VCKiManualPagesViewCtrl *page;
-    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"iPhonePlayerCardsMain" bundle:[NSBundle mainBundle]];
+    
+    VCKiAppDelegate* appDelegate = [[UIApplication sharedApplication] delegate];
+    
+    
+    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:appDelegate.storyBoardInUse bundle:[NSBundle mainBundle]];
     
     for(int i=0; i<4; i++){
         page = [storyBoard instantiateViewControllerWithIdentifier:@"VCKiManualPages"];

@@ -65,11 +65,13 @@ NSMutableArray* _playersList;
     static NSString *CellIdentifier = @"playerRow";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
+    
     VCKiPlayerEntity* player = [_playersList objectAtIndex:indexPath.row];
     
     cell.textLabel.text = player.fullName;
     cell.detailTextLabel.text = player.team;
     cell.imageView.image = [UIImage imageNamed:player.playerPicture];
+    cell.imageView.layer.cornerRadius = 10;
     
     return cell;
 }
