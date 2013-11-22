@@ -798,7 +798,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.98431378599999997" green="0.46274513010000001" blue="0.039215687659999998" alpha="0.29999999999999999" colorSpace="deviceRGB"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
-                                <state key="normal" title=" Review squads &amp; begin" image="156-controlpad.png"/>
+                                <state key="normal" title=" Begin by reviewing Squads" image="156-controlpad.png"/>
                                 <connections>
                                     <segue destination="f0n-bl-HEc" kind="modal" id="wBe-3Y-eyR"/>
                                 </connections>
