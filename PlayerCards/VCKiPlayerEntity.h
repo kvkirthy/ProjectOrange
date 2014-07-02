@@ -12,6 +12,7 @@
 
 @property (atomic) NSString *fullName;
 @property (atomic) NSString *team;
+@property (atomic) NSString *span;
 @property (atomic) NSString *playerPicture;
 @property (atomic) NSUInteger numberOfTests;
 @property (atomic) NSUInteger totalTestRuns;

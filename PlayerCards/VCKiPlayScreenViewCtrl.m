@@ -41,6 +41,8 @@
 {
     [super viewDidLoad];
     
+#warning All code should have null checks like span.
+    
     //NSUInteger randomNumber = arc4random() % 11;
 	
     //VCKiPlayerEntity *player = [ [[VCKiPlayerRecordReader alloc]init] getPlayerRecordWithIndex:[NSString stringWithFormat:@"%d",randomNumber]];
@@ -54,7 +56,13 @@
     self.oppositionCount.text = [NSString stringWithFormat:@"%d", recordReader.oppositionSquadCount];
     
     self.fullName.text = player.fullName;
-    self.teamName.text = player.team;
+    self.teamName.text = [NSString stringWithFormat:@"National Team - %@", player.team];
+    
+    if(player.span){
+        self.span.text = [NSString stringWithFormat:@"( %@ )", player.span];
+    }else{
+        self.span.text = @"";
+    }
     
     self.playerImage.image = [UIImage imageNamed:player.playerPicture];
     

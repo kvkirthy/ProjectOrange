@@ -324,31 +324,61 @@
 	<key>1</key>
 	<dict>
 		<key>fullName</key>
-		<string>Mominul Haque 1</string>
+		<string>Sachin R Tendulkar</string>
 		<key>playerPictureResName</key>
-		<string>MahimulHaq.jpg</string>
+		<string>SachinTendulkar.jpg</string>
 		<key>team</key>
-		<string>Bangladesh</string>
+		<string>India</string>
 		<key>numberOfTests</key>
-		<integer>3</integer>
+		<integer>200</integer>
+		<key>totalCatchCount</key>
+		<integer>256</integer>
 		<key>totalTestWickets</key>
-		<integer>0</integer>
+		<integer>46</integer>
+		<key>testBattingAvg</key>
+		<real>53.78</real>
+		<key>odiBattingAvg</key>
+		<real>44.83</real>
+		<key>t20BattingAvg</key>
+		<integer>10</integer>
+		<key>testBowlingAvg</key>
+		<real>54.17</real>
+		<key>odiBowlingAvg</key>
+		<real>44.48</real>
+		<key>t20BowlingAvg</key>
+		<integer>12</integer>
+		<key>testBowlingEconomy</key>
+		<real>3.52</real>
+		<key>odiBowlingEconomy</key>
+		<real>5.1</real>
+		<key>t20BowlingEconomy</key>
+		<real>4.8</real>
 		<key>totalTestRuns</key>
-		<integer>11000</integer>
+		<real>15921</real>
+		<key>testsHighestScore</key>
+		<integer>248</integer>
+		<key>odiHighestScore</key>
+		<integer>200</integer>
+		<key>t20highestScore</key>
+		<integer>10</integer>
 		<key>numberOfODIs</key>
-		<integer>9</integer>
+		<integer>463</integer>
 		<key>totalODIRuns</key>
-		<integer>142</integer>
+		<integer>18426</integer>
 		<key>totalODIWickets</key>
-		<integer>2</integer>
+		<integer>154</integer>
 		<key>numberOfT20s</key>
-		<integer>3</integer>
+		<integer>1</integer>
 		<key>totalT20Runs</key>
-		<integer>35</integer>
+		<integer>10</integer>
 		<key>totalT20Wickets</key>
-		<integer>0</integer>
+		<integer>1</integer>
+		<key>odiStrikeRate</key>
+		<real>86.23</real>
+		<key>t20StrikeRate</key>
+		<real>83.33</real>
 		<key>tip1</key>
-		<string></string>
+		<string>Best batsman world has ever seen. Bet more on number batting figures...</string>
 	</dict>
 </dict>
 </plist>

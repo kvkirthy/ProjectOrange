@@ -18,6 +18,14 @@
     self.team = [dictionaryObject objectForKey:@"team"];
     self.tip1 =[dictionaryObject objectForKey:@"tip1"];
     self.playerPicture = [dictionaryObject objectForKey:@"playerPictureResName"];
+    
+    /*
+    id span = [dictionaryObject objectForKey:@"span"];
+    if(span){
+        self.span = span;
+    }else{
+        self.span = @"";
+    } */
 
     self.numberOfTests = [[dictionaryObject objectForKey:@"numberOfTests"] unsignedIntegerValue];
     self.totalTestRuns =[[dictionaryObject objectForKey:@"totalTestRuns"] unsignedIntegerValue];
