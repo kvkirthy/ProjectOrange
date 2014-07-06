@@ -68,15 +68,15 @@
     
     [self.testMatches setTitle:[NSString stringWithFormat:@"%d", player.numberOfTests] forState:UIControlStateNormal];
     [self.testRuns setTitle:[NSString stringWithFormat:@"%d", player.totalTestRuns] forState:UIControlStateNormal];
-    [self.testWickets setTitle:[NSString stringWithFormat:@"%d", player.totalTestWickets] forState:UIControlStateNormal];
+    [self.testWickets setTitle:[NSString stringWithFormat:@"%@", player.totalTestWickets] forState:UIControlStateNormal];
     
     [self.oDIMatches setTitle:[NSString stringWithFormat:@"%d", player.numberOfODIs] forState:UIControlStateNormal];
     [self.oDIRuns setTitle:[NSString stringWithFormat:@"%d", player.totalODIRuns] forState:UIControlStateNormal];
-    [self.oDIWickets setTitle: [NSString stringWithFormat:@"%d", player.totalODIWickets] forState:UIControlStateNormal];
+    [self.oDIWickets setTitle: [NSString stringWithFormat:@"%@", player.totalODIWickets] forState:UIControlStateNormal];
     
     [self.t20Matches setTitle:[NSString stringWithFormat:@"%d", player.numberOfT20s] forState: UIControlStateNormal] ;
     [self.t20Runs setTitle: [NSString stringWithFormat:@"%d", player.totalT20Runs] forState:UIControlStateNormal];
-    [self.t20Wickets setTitle:[NSString stringWithFormat:@"%d", player.totalT20Wickets] forState: UIControlStateNormal];
+    [self.t20Wickets setTitle:[NSString stringWithFormat:@"%@", player.totalT20Wickets] forState: UIControlStateNormal];
 
 }
 
