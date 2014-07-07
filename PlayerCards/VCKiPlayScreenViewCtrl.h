@@ -43,4 +43,8 @@
 
 - (IBAction)testRunBet:(id)sender;
 
+
+-(void) initializeScreen;
+- (void) returnToViewController;
+
 @end

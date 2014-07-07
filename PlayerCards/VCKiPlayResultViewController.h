@@ -22,7 +22,7 @@
 @property double primaryStatValue;
 @property NSString* secondaryPlayerName;
 @property double secondaryStatValue;
-
+@property id previousVcReference;
 
 - (IBAction)buttonPlayOnClicked:(id)sender;
 @end

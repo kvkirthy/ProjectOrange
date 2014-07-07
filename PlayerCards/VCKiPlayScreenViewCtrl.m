@@ -22,6 +22,9 @@
     NSUInteger _primaryPlayerIndex;
     NSUInteger _secondaryPlayerIndex;
 }
+
+-(void) renderPlayerData;
+
 @end
 
 @implementation VCKiPlayScreenViewCtrl
@@ -42,7 +45,12 @@
     [super viewDidLoad];
     
 #warning All code should have null checks like span.
-    
+    [self renderPlayerData];
+
+}
+
+-(void) renderPlayerData
+{
     //NSUInteger randomNumber = arc4random() % 11;
 	
     //VCKiPlayerEntity *player = [ [[VCKiPlayerRecordReader alloc]init] getPlayerRecordWithIndex:[NSString stringWithFormat:@"%d",randomNumber]];
@@ -50,9 +58,9 @@
     VCKiPlayerRecordReader* recordReader = [[VCKiPlayerRecordReader alloc]init];
     VCKiPlayerEntity *player = [recordReader getRandomPrimaryPlayer: &_primaryPlayerIndex];
     _secondPlayer = [recordReader getRandomSecondaryPlayer: &_secondaryPlayerIndex];
-
+    
     self.playerCount.text = [NSString stringWithFormat:@"%d", recordReader.playerSquadCount];
-
+    
     self.oppositionCount.text = [NSString stringWithFormat:@"%d", recordReader.oppositionSquadCount];
     
     self.fullName.text = player.fullName;
@@ -77,7 +85,13 @@
     [self.t20Matches setTitle:[NSString stringWithFormat:@"%d", player.numberOfT20s] forState: UIControlStateNormal] ;
     [self.t20Runs setTitle: [NSString stringWithFormat:@"%d", player.totalT20Runs] forState:UIControlStateNormal];
     [self.t20Wickets setTitle:[NSString stringWithFormat:@"%@", player.totalT20Wickets] forState: UIControlStateNormal];
+}
 
+
+-(void) returnToViewController
+{
+    [self renderPlayerData];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -101,6 +115,7 @@
     else if([segue.identifier isEqual:@"playStatusSegue"])
     {
         VCKiPlayResultViewController *resultVc = [segue destinationViewController];
+        resultVc.previousVcReference = self;
         resultVc.primaryStatValue = _givenPlayerStatValue;
         resultVc.secondaryStatValue = _secondPlayerStatValue;
         resultVc.statCaption = _givenPlayerStatCaption;

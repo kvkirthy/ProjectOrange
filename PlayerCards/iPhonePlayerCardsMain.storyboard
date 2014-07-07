@@ -738,7 +738,6 @@
                         <outlet property="secondaryPlayerPicture" destination="tEe-h1-dYZ" id="jea-mY-2cq"/>
                         <outlet property="winnerMessage" destination="VcF-mA-0A7" id="USD-Cx-Xue"/>
                         <segue destination="jak-ZO-EXC" kind="modal" identifier="finalResultSegue" id="7kJ-3h-HIR"/>
-                        <segue destination="Cdk-7q-jlc" kind="modal" identifier="seguePlayOn" id="bCc-E8-VfK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e0c-EK-8Of" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -845,6 +844,5 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="LvC-Tc-zzm"/>
-        <segue reference="HrQ-rQ-NFo"/>
     </inferredMetricsTieBreakers>
 </document>

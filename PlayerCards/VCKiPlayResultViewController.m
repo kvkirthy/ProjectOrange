@@ -90,8 +90,8 @@ VCKiPlayScreenViewCtrl *playscreen;
         [self performSegueWithIdentifier:@"finalResultSegue" sender:self];
         self._hasPrimaryPlayerWon = NO;
     }
-    else{
-        [self performSegueWithIdentifier:@"seguePlayOn" sender:self];
+    else{      
+        [self.previousVcReference returnToViewController];
     }
     
    
