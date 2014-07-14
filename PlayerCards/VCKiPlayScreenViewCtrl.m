@@ -77,14 +77,23 @@
     [self.testMatches setTitle:[NSString stringWithFormat:@"%d", player.numberOfTests] forState:UIControlStateNormal];
     [self.testRuns setTitle:[NSString stringWithFormat:@"%d", player.totalTestRuns] forState:UIControlStateNormal];
     [self.testWickets setTitle:[NSString stringWithFormat:@"%@", player.totalTestWickets] forState:UIControlStateNormal];
+    [self.testHighScore setTitle:[NSString stringWithFormat:@"%@", player.testHighScore] forState:UIControlStateNormal];
+    [self.testCenturies setTitle:[NSString stringWithFormat:@"%d", player.testCenturiesCount] forState:UIControlStateNormal];
     
     [self.oDIMatches setTitle:[NSString stringWithFormat:@"%d", player.numberOfODIs] forState:UIControlStateNormal];
     [self.oDIRuns setTitle:[NSString stringWithFormat:@"%d", player.totalODIRuns] forState:UIControlStateNormal];
     [self.oDIWickets setTitle: [NSString stringWithFormat:@"%@", player.totalODIWickets] forState:UIControlStateNormal];
+    [self.odiHighScore setTitle: [NSString stringWithFormat:@"%@", player.odiHighScore] forState:UIControlStateNormal];
+    [self.odiCenturies setTitle: [NSString stringWithFormat:@"%d", player.odiCenturiesCount] forState:UIControlStateNormal];
     
     [self.t20Matches setTitle:[NSString stringWithFormat:@"%d", player.numberOfT20s] forState: UIControlStateNormal] ;
     [self.t20Runs setTitle: [NSString stringWithFormat:@"%d", player.totalT20Runs] forState:UIControlStateNormal];
     [self.t20Wickets setTitle:[NSString stringWithFormat:@"%@", player.totalT20Wickets] forState: UIControlStateNormal];
+    [self.t20HighScore setTitle:[NSString stringWithFormat:@"%@", player.t20HighScore] forState: UIControlStateNormal];
+    [self.t20Centuries setTitle:[NSString stringWithFormat:@"%d", player.t20CenturiesCount] forState: UIControlStateNormal];
+    
+    
+    
 }
 
 
@@ -135,4 +144,161 @@
     _secondPlayerStatValue =_secondPlayer.totalTestRuns ;
     [self performSegueWithIdentifier:@"goToConfirmScreen" sender:self];
 }
+
+- (IBAction)odiRunBet:(id)sender {
+    _givenPlayerStatCaption = self.odiRunsCaption.text;
+    _givenPlayerStatValue = [self.oDIRuns.titleLabel.text doubleValue];
+    _secondPlayerStatValue =_secondPlayer.totalODIRuns ;
+    [self performSegueWithIdentifier:@"goToConfirmScreen" sender:self];
+    
+}
+
+- (IBAction)t20RunBet:(id)sender {
+    _givenPlayerStatCaption = self.t20RunsCaption.text;
+    _givenPlayerStatValue = [self.t20Runs.titleLabel.text doubleValue];
+    _secondPlayerStatValue =_secondPlayer.totalT20Runs ;
+    [self performSegueWithIdentifier:@"goToConfirmScreen" sender:self];
+}
+
+- (IBAction)testMatchesBet:(id)sender {
+    _givenPlayerStatCaption = self.testMatchesCaption.text;
+    _givenPlayerStatValue = [self.testMatches.titleLabel.text doubleValue];
+    _secondPlayerStatValue =_secondPlayer.numberOfTests ;
+    [self performSegueWithIdentifier:@"goToConfirmScreen" sender:self];
+}
+
+- (IBAction)odiMatchesBet:(id)sender {
+    _givenPlayerStatCaption = self.odiMatchesCaption.text;
+    _givenPlayerStatValue = [self.oDIMatches.titleLabel.text doubleValue];
+    _secondPlayerStatValue =_secondPlayer.numberOfODIs ;
+    [self performSegueWithIdentifier:@"goToConfirmScreen" sender:self];
+}
+
+- (IBAction)t20MatchesBet:(id)sender {
+    _givenPlayerStatCaption = self.t20MatchesCaption.text;
+    _givenPlayerStatValue = [self.t20Matches.titleLabel.text doubleValue];
+    _secondPlayerStatValue =_secondPlayer.numberOfT20s ;
+    [self performSegueWithIdentifier:@"goToConfirmScreen" sender:self];
+}
+
+- (IBAction)testWicketsBet:(id)sender {
+    _givenPlayerStatCaption = self.testWicketsCaption.text;
+    
+    NSString *givePlayerStat = [self.testWickets.titleLabel.text componentsSeparatedByString:@"/"][0];
+    NSString *secondPlayerStat = [_secondPlayer.totalTestWickets componentsSeparatedByString:@"/"][0];
+    
+    if ([givePlayerStat  isEqual: @"-"] && [secondPlayerStat isEqual: @"-"]) {
+        return;
+    }
+    
+    _givenPlayerStatValue = [givePlayerStat doubleValue];
+    _secondPlayerStatValue = [secondPlayerStat doubleValue];
+    
+    if (_givenPlayerStatValue == _secondPlayerStatValue) {
+        givePlayerStat = [self.testWickets.titleLabel.text componentsSeparatedByString:@"/"][1];
+        secondPlayerStat = [_secondPlayer.totalTestWickets componentsSeparatedByString:@"/"][1];
+        
+        _givenPlayerStatValue = [givePlayerStat doubleValue];
+        _secondPlayerStatValue = [secondPlayerStat doubleValue];
+    }
+    
+    [self performSegueWithIdentifier:@"goToConfirmScreen" sender:self];
+}
+
+- (IBAction)odiWicketsBet:(id)sender {
+    _givenPlayerStatCaption = self.odiWicketsCaption.text;
+    
+    NSString *givePlayerStat = [self.oDIWickets.titleLabel.text componentsSeparatedByString:@"/"][0];
+    NSString *secondPlayerStat = [_secondPlayer.totalODIWickets componentsSeparatedByString:@"/"][0];
+    
+    if ([givePlayerStat  isEqual: @"-"] && [secondPlayerStat isEqual: @"-"]) {
+        return;
+    }
+    
+    _givenPlayerStatValue = [givePlayerStat doubleValue];
+    _secondPlayerStatValue = [secondPlayerStat doubleValue];
+    
+    if (_givenPlayerStatValue == _secondPlayerStatValue) {
+        givePlayerStat = [self.oDIWickets.titleLabel.text componentsSeparatedByString:@"/"][1];
+        secondPlayerStat = [_secondPlayer.totalODIWickets componentsSeparatedByString:@"/"][1];
+        
+        _givenPlayerStatValue = [givePlayerStat doubleValue];
+        _secondPlayerStatValue = [secondPlayerStat doubleValue];
+    }
+    
+    [self performSegueWithIdentifier:@"goToConfirmScreen" sender:self];
+}
+
+- (IBAction)t20WicketsBet:(id)sender {
+    _givenPlayerStatCaption = self.t20WicketsCaption.text;
+    
+    NSString *givePlayerStat = [self.t20Wickets.titleLabel.text componentsSeparatedByString:@"/"][0];
+    NSString *secondPlayerStat = [_secondPlayer.totalT20Wickets componentsSeparatedByString:@"/"][0];
+    
+    if ([givePlayerStat  isEqual: @"-"] && [secondPlayerStat isEqual: @"-"]) {
+        return;
+    }
+    
+    _givenPlayerStatValue = [givePlayerStat doubleValue];
+    _secondPlayerStatValue = [secondPlayerStat doubleValue];
+    
+    if (_givenPlayerStatValue == _secondPlayerStatValue) {
+        givePlayerStat = [self.t20Wickets.titleLabel.text componentsSeparatedByString:@"/"][1];
+        secondPlayerStat = [_secondPlayer.totalT20Wickets componentsSeparatedByString:@"/"][1];
+        
+        _givenPlayerStatValue = [givePlayerStat doubleValue];
+        _secondPlayerStatValue = [secondPlayerStat doubleValue];
+    }
+    
+    [self performSegueWithIdentifier:@"goToConfirmScreen" sender:self];
+}
+
+-(void)testHighScoreBet:(id)sender
+{
+    _givenPlayerStatCaption = self.testHighScoreCaption.text;
+    _givenPlayerStatValue = [self.testHighScore.titleLabel.text doubleValue];
+    _secondPlayerStatValue =[[_secondPlayer.testHighScore componentsSeparatedByString:@"*"][0] doubleValue] ;
+    [self performSegueWithIdentifier:@"goToConfirmScreen" sender:self];
+}
+
+- (void)odiHighScoreBet:(id)sender
+{
+    _givenPlayerStatCaption = self.odiHighScoreCaption.text;
+    _givenPlayerStatValue = [self.odiHighScore.titleLabel.text doubleValue];
+    _secondPlayerStatValue =[[_secondPlayer.odiHighScore componentsSeparatedByString:@"*"][0] doubleValue] ;
+    [self performSegueWithIdentifier:@"goToConfirmScreen" sender:self];
+}
+
+- (void)t20HighScoreBet:(id)sender
+{
+    _givenPlayerStatCaption = self.t20HighScoreCaption.text;
+    _givenPlayerStatValue = [self.t20HighScore.titleLabel.text doubleValue];
+    _secondPlayerStatValue =[[_secondPlayer.t20HighScore componentsSeparatedByString:@"*"][0] doubleValue] ;
+    [self performSegueWithIdentifier:@"goToConfirmScreen" sender:self];
+}
+
+-(void)testCenturiesBet:(id)sender
+{
+    _givenPlayerStatCaption = self.testCenturiesCaption.text;
+    _givenPlayerStatValue = [self.testCenturies.titleLabel.text doubleValue];
+    _secondPlayerStatValue =_secondPlayer.testCenturiesCount ;
+    [self performSegueWithIdentifier:@"goToConfirmScreen" sender:self];
+}
+
+-(void)odiCenturiesBet:(id)sender
+{
+    _givenPlayerStatCaption = self.odiCenturiesCaption.text;
+    _givenPlayerStatValue = [self.odiCenturies.titleLabel.text doubleValue];
+    _secondPlayerStatValue =_secondPlayer.odiCenturiesCount ;
+    [self performSegueWithIdentifier:@"goToConfirmScreen" sender:self];
+}
+
+-(void)t20CenturiesBet:(id)sender
+{
+    _givenPlayerStatCaption = self.t20CenturiesCaption.text;
+    _givenPlayerStatValue = [self.t20Centuries.titleLabel.text doubleValue];
+    _secondPlayerStatValue =_secondPlayer.t20CenturiesCount ;
+    [self performSegueWithIdentifier:@"goToConfirmScreen" sender:self];
+}
+
 @end

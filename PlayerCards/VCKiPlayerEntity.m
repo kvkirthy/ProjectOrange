@@ -38,6 +38,15 @@
     self.numberOfT20s = [[dictionaryObject objectForKey:@"numberOfT20s"] unsignedIntegerValue];
     self.totalT20Runs =[[dictionaryObject objectForKey:@"totalT20Runs"] unsignedIntegerValue];
     self.totalT20Wickets =[dictionaryObject objectForKey:@"totalT20Wickets"];
+    
+    self.testCenturiesCount = [[dictionaryObject objectForKey:@"totalTest100s"] unsignedIntegerValue];
+    self.odiCenturiesCount =[[dictionaryObject objectForKey:@"totalODI100s"] unsignedIntegerValue];
+    self.t20CenturiesCount =[[dictionaryObject objectForKey:@"totalT20100s"] unsignedIntegerValue];
+    
+    self.testHighScore = [dictionaryObject objectForKey:@"totalTestHS"];
+    self.odiHighScore =[dictionaryObject objectForKey:@"totalODIHS"];
+    self.t20HighScore =[dictionaryObject objectForKey:@"totalT20HS"];
+    
     return self;
 }
 

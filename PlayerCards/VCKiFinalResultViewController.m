@@ -27,6 +27,7 @@
 {
     [super viewDidLoad];
     
+#warning "Win was shown as loss. need to fix."
     if (self.isPrimaryPlayerWon) {
         self.finalResultMessage.text = @"Congratulations";
     }

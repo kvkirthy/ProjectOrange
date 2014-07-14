@@ -378,11 +378,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PlayerCards/VCKiPlayerEntity.m"
-            timestampString = "426355565.196566"
+            timestampString = "427059916.236051"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
             landmarkName = "-initWithDictionaryObject:"
             landmarkType = "5">
          </BreakpointContent>

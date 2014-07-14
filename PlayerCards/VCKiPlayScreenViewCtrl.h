@@ -41,8 +41,37 @@
 @property (weak, nonatomic) IBOutlet UIButton *t20Matches;
 @property (weak, nonatomic) IBOutlet UIButton *t20Wickets;
 
-- (IBAction)testRunBet:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *testHighScoreCaption;
+@property (weak, nonatomic) IBOutlet UIButton *testHighScore;
+@property (weak, nonatomic) IBOutlet UILabel *odiHighScoreCaption;
+@property (weak, nonatomic) IBOutlet UIButton *odiHighScore;
+@property (weak, nonatomic) IBOutlet UILabel *t20HighScoreCaption;
+@property (weak, nonatomic) IBOutlet UIButton *t20HighScore;
 
+@property (weak, nonatomic) IBOutlet UILabel *testCenturiesCaption;
+@property (weak, nonatomic) IBOutlet UIButton *testCenturies;
+@property (weak, nonatomic) IBOutlet UILabel *odiCenturiesCaption;
+@property (weak, nonatomic) IBOutlet UIButton *odiCenturies;
+@property (weak, nonatomic) IBOutlet UILabel *t20CenturiesCaption;
+@property (weak, nonatomic) IBOutlet UIButton *t20Centuries;
+
+
+
+- (IBAction)testRunBet:(id)sender;
+- (IBAction)odiRunBet:(id)sender;
+- (IBAction)t20RunBet:(id)sender;
+- (IBAction)testMatchesBet:(id)sender;
+- (IBAction)odiMatchesBet:(id)sender;
+- (IBAction)t20MatchesBet:(id)sender;
+- (IBAction)testWicketsBet:(id)sender;
+- (IBAction)odiWicketsBet:(id)sender;
+- (IBAction)t20WicketsBet:(id)sender;
+- (IBAction)testHighScoreBet:(id)sender;
+- (IBAction)odiHighScoreBet:(id)sender;
+- (IBAction)t20HighScoreBet:(id)sender;
+- (IBAction)testCenturiesBet:(id)sender;
+- (IBAction)odiCenturiesBet:(id)sender;
+- (IBAction)t20CenturiesBet:(id)sender;
 
 -(void) initializeScreen;
 - (void) returnToViewController;

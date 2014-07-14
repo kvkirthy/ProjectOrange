@@ -24,6 +24,12 @@
 @property (atomic) NSUInteger totalT20Runs;
 @property (atomic) NSString *totalT20Wickets;
 @property (atomic) NSString *tip1;
+@property (atomic) NSString* testHighScore;
+@property (atomic) NSString* odiHighScore;
+@property (atomic) NSString* t20HighScore;
+@property (atomic) NSUInteger testCenturiesCount;
+@property (atomic) NSUInteger odiCenturiesCount;
+@property (atomic) NSUInteger t20CenturiesCount;
 
 -(id) initWithDictionaryObject: (NSDictionary *) dictionaryObject;
 

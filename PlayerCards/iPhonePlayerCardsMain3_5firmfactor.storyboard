@@ -286,14 +286,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Team" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kVD-js-4qh">
-                                <rect key="frame" x="143" y="108" width="148" height="33"/>
+                                <rect key="frame" x="143" y="114" width="148" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="11"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Span" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HpH-Id-SOP">
-                                <rect key="frame" x="143" y="126" width="148" height="33"/>
+                                <rect key="frame" x="143" y="132" width="148" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="11"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -366,6 +366,9 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="testMatchesBet:" destination="Cdk-7q-jlc" eventType="touchUpInside" id="dRv-Mg-cip"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SIk-SE-GvT">
                                         <rect key="frame" x="16" y="125" width="75" height="30"/>
@@ -375,6 +378,9 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="testWicketsBet:" destination="Cdk-7q-jlc" eventType="touchUpInside" id="0Se-bm-W4G"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ODI Runs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aL9-XM-7Yk">
                                         <rect key="frame" x="122" y="15" width="61" height="21"/>
@@ -405,6 +411,9 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="odiRunBet:" destination="Cdk-7q-jlc" eventType="touchUpInside" id="rND-Y3-RIR"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ws-Na-gEX">
                                         <rect key="frame" x="115" y="77" width="75" height="29"/>
@@ -414,6 +423,9 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="odiMatchesBet:" destination="Cdk-7q-jlc" eventType="touchUpInside" id="K2w-UI-OwP"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vGn-za-brr">
                                         <rect key="frame" x="115" y="125" width="75" height="30"/>
@@ -423,6 +435,9 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="odiWicketsBet:" destination="Cdk-7q-jlc" eventType="touchUpInside" id="sua-C0-ML3"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Test Highest Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YU0-JB-Sln">
                                         <rect key="frame" x="23" y="163" width="75" height="21"/>
@@ -446,6 +461,9 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="testHighScoreBet:" destination="Cdk-7q-jlc" eventType="touchUpInside" id="Miv-I0-p3i"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6X1-Sa-n9O">
                                         <rect key="frame" x="213" y="125" width="75" height="30"/>
@@ -455,6 +473,9 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="t20WicketsBet:" destination="Cdk-7q-jlc" eventType="touchUpInside" id="eRr-6q-YW4"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ODI Highest Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9TL-eu-pX7">
                                         <rect key="frame" x="117" y="163" width="77" height="21"/>
@@ -478,6 +499,9 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="odiHighScoreBet:" destination="Cdk-7q-jlc" eventType="touchUpInside" id="gKA-jM-n1a"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1LV-Is-t99">
                                         <rect key="frame" x="213" y="178" width="75" height="30"/>
@@ -487,6 +511,10 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="t20HighScoreBet:" destination="Cdk-7q-jlc" eventType="touchUpInside" id="3gr-s5-hEL"/>
+                                            <action selector="t20highScoreBet:" destination="Cdk-7q-jlc" eventType="touchUpInside" id="WMN-Ut-acS"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Test Centuries" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PxG-1u-Rdz">
                                         <rect key="frame" x="25" y="216" width="61" height="21"/>
@@ -517,6 +545,9 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="testCenturiesBet:" destination="Cdk-7q-jlc" eventType="touchUpInside" id="8Ex-cj-r8W"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mwO-TH-res">
                                         <rect key="frame" x="117" y="229" width="75" height="30"/>
@@ -526,6 +557,9 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="odiCenturiesBet:" destination="Cdk-7q-jlc" eventType="touchUpInside" id="c6U-Jq-xk8"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ue-lA-Ngb">
                                         <rect key="frame" x="213" y="229" width="75" height="30"/>
@@ -535,6 +569,9 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="t20CenturiesBet:" destination="Cdk-7q-jlc" eventType="touchUpInside" id="CLm-SH-9pG"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j6M-cG-HQ4">
                                         <rect key="frame" x="213" y="29" width="75" height="30"/>
@@ -544,6 +581,9 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="t20RunBet:" destination="Cdk-7q-jlc" eventType="touchUpInside" id="Iio-rS-bhS"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="T20 Runs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kNm-cK-RRr">
                                         <rect key="frame" x="213" y="15" width="75" height="21"/>
@@ -560,6 +600,9 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="t20MatchesBet:" destination="Cdk-7q-jlc" eventType="touchUpInside" id="mHN-ND-JqR"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="T20 Matches" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ZY-j5-8yE">
                                         <rect key="frame" x="220" y="62" width="61" height="21"/>
@@ -578,6 +621,10 @@
                         <outlet property="oDIMatches" destination="2Ws-Na-gEX" id="W01-v0-sp6"/>
                         <outlet property="oDIRuns" destination="u8L-b4-Hcp" id="1pp-0v-Xaf"/>
                         <outlet property="oDIWickets" destination="vGn-za-brr" id="lSh-sU-fZk"/>
+                        <outlet property="odiCenturies" destination="mwO-TH-res" id="dhd-n9-MKD"/>
+                        <outlet property="odiCenturiesCaption" destination="lSi-VH-5bf" id="M6G-yp-Igm"/>
+                        <outlet property="odiHighScore" destination="uw7-4R-4ib" id="DKL-dM-k1P"/>
+                        <outlet property="odiHighScoreCaption" destination="9TL-eu-pX7" id="A6O-xi-Jyl"/>
                         <outlet property="odiMatchesCaption" destination="klo-Gu-ufp" id="sFq-XO-FHN"/>
                         <outlet property="odiRunsCaption" destination="aL9-XM-7Yk" id="B5m-hh-odc"/>
                         <outlet property="odiWicketsCaption" destination="OpC-3b-iJS" id="AcI-Vv-lil"/>
@@ -585,6 +632,10 @@
                         <outlet property="playerCount" destination="dhU-VO-Bb0" id="dmY-CL-ESx"/>
                         <outlet property="playerImage" destination="bin-eP-d1L" id="hl1-fA-aap"/>
                         <outlet property="span" destination="HpH-Id-SOP" id="Fib-fw-V91"/>
+                        <outlet property="t20Centuries" destination="3Ue-lA-Ngb" id="CSR-6r-52h"/>
+                        <outlet property="t20CenturiesCaption" destination="dCU-fF-djy" id="3Gy-io-R1B"/>
+                        <outlet property="t20HighScore" destination="1LV-Is-t99" id="iRX-xx-vTk"/>
+                        <outlet property="t20HighScoreCaption" destination="raY-aO-S8f" id="C5d-CM-PIf"/>
                         <outlet property="t20Matches" destination="5uc-yt-3xO" id="lOZ-ze-YNw"/>
                         <outlet property="t20MatchesCaption" destination="kNm-cK-RRr" id="T9k-yc-Pzi"/>
                         <outlet property="t20Runs" destination="j6M-cG-HQ4" id="lrQ-4p-o6H"/>
@@ -592,6 +643,10 @@
                         <outlet property="t20Wickets" destination="6X1-Sa-n9O" id="KEa-OT-HQ2"/>
                         <outlet property="t20WicketsCaption" destination="NpY-Zf-gw1" id="3WB-mo-BjK"/>
                         <outlet property="teamName" destination="kVD-js-4qh" id="xX6-Cz-GWK"/>
+                        <outlet property="testCenturies" destination="iKe-1r-N1a" id="8N0-9q-Hdd"/>
+                        <outlet property="testCenturiesCaption" destination="PxG-1u-Rdz" id="NfK-cf-5Me"/>
+                        <outlet property="testHighScore" destination="E8q-cB-1XG" id="Eb0-5i-TAa"/>
+                        <outlet property="testHighScoreCaption" destination="YU0-JB-Sln" id="Ns7-9g-JRQ"/>
                         <outlet property="testMatches" destination="sEI-yd-1Oz" id="F1R-lQ-WqF"/>
                         <outlet property="testMatchesCaption" destination="rYX-Qo-0ZM" id="QSA-aB-PQ5"/>
                         <outlet property="testRuns" destination="7eH-ur-Rc4" id="BwI-wu-2ej"/>
