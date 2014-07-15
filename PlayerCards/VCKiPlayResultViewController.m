@@ -35,8 +35,8 @@ VCKiPlayScreenViewCtrl *playscreen;
     [super viewDidLoad];
     
     #warning "rounded corners not applied"
-    self.primaryPlayerPicture.layer.cornerRadius = 10;
-    self.secondaryPlayerPicture.layer.cornerRadius = 10;
+    self.primaryPlayerPicture.layer.cornerRadius = 30;
+    self.secondaryPlayerPicture.layer.cornerRadius = 30;
     
     player = [[VCKiPlayerRecordReader alloc]init];
     if(!self.comparisionOperator){
@@ -84,12 +84,14 @@ VCKiPlayScreenViewCtrl *playscreen;
 - (IBAction)buttonPlayOnClicked:(id)sender {
     
     if(player.playerSquadCount <= 0){
-        [self performSegueWithIdentifier:@"finalResultSegue" sender:self];
         self._hasPrimaryPlayerWon = NO;
+        [self performSegueWithIdentifier:@"finalResultSegue" sender:self];
+
     }
     else if(player.oppositionSquadCount <= 0){
-        [self performSegueWithIdentifier:@"finalResultSegue" sender:self];
         self._hasPrimaryPlayerWon = YES;
+        [self performSegueWithIdentifier:@"finalResultSegue" sender:self];
+
     }
     else{      
         [self.previousVcReference returnToViewController];
