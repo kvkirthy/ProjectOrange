@@ -18,6 +18,7 @@
     NSString* _givenPlayerStatCaption;
     double _givenPlayerStatValue;
     double _secondPlayerStatValue;
+    NSString* _comparisionOperator;
     VCKiPlayerEntity *_secondPlayer;
     NSUInteger _primaryPlayerIndex;
     NSUInteger _secondaryPlayerIndex;
@@ -91,9 +92,7 @@
     [self.t20Wickets setTitle:[NSString stringWithFormat:@"%@", player.totalT20Wickets] forState: UIControlStateNormal];
     [self.t20HighScore setTitle:[NSString stringWithFormat:@"%@", player.t20HighScore] forState: UIControlStateNormal];
     [self.t20Centuries setTitle:[NSString stringWithFormat:@"%d", player.t20CenturiesCount] forState: UIControlStateNormal];
-    
-    
-    
+    _comparisionOperator = @">";
 }
 
 
@@ -119,7 +118,7 @@
         
 #warning TODO: .00 doesn't make sense for some and does for someother. Need to think through.
         
-        confirmVc.givenPlayerStatValue = [[NSString alloc]initWithFormat:@"%f", _givenPlayerStatValue];
+        confirmVc.givenPlayerStatValue = [[NSString alloc]initWithFormat:@"%lu", (unsigned long)_givenPlayerStatValue];
     }
     else if([segue.identifier isEqual:@"playStatusSegue"])
     {
@@ -133,8 +132,7 @@
         resultVc.secondaryPlayerPicture.image = [UIImage imageNamed:_secondPlayer.playerPicture];
         resultVc.primaryPlayerIndex = _primaryPlayerIndex;
         resultVc.secondaryPlayerIndex = _secondaryPlayerIndex;
-        
-        
+        resultVc.comparisionOperator = _comparisionOperator;
     }
 }
 
@@ -197,7 +195,7 @@
     if (_givenPlayerStatValue == _secondPlayerStatValue) {
         givePlayerStat = [self.testWickets.titleLabel.text componentsSeparatedByString:@"/"][1];
         secondPlayerStat = [_secondPlayer.totalTestWickets componentsSeparatedByString:@"/"][1];
-        
+        _comparisionOperator = @"<";
         _givenPlayerStatValue = [givePlayerStat doubleValue];
         _secondPlayerStatValue = [secondPlayerStat doubleValue];
     }
@@ -221,7 +219,7 @@
     if (_givenPlayerStatValue == _secondPlayerStatValue) {
         givePlayerStat = [self.oDIWickets.titleLabel.text componentsSeparatedByString:@"/"][1];
         secondPlayerStat = [_secondPlayer.totalODIWickets componentsSeparatedByString:@"/"][1];
-        
+        _comparisionOperator = @"<";
         _givenPlayerStatValue = [givePlayerStat doubleValue];
         _secondPlayerStatValue = [secondPlayerStat doubleValue];
     }
@@ -245,7 +243,7 @@
     if (_givenPlayerStatValue == _secondPlayerStatValue) {
         givePlayerStat = [self.t20Wickets.titleLabel.text componentsSeparatedByString:@"/"][1];
         secondPlayerStat = [_secondPlayer.totalT20Wickets componentsSeparatedByString:@"/"][1];
-        
+        _comparisionOperator = @"<";
         _givenPlayerStatValue = [givePlayerStat doubleValue];
         _secondPlayerStatValue = [secondPlayerStat doubleValue];
     }

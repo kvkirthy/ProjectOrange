@@ -39,30 +39,31 @@ VCKiPlayScreenViewCtrl *playscreen;
     self.secondaryPlayerPicture.layer.cornerRadius = 10;
     
     player = [[VCKiPlayerRecordReader alloc]init];
-    
+    if(!self.comparisionOperator){
+        self.comparisionOperator = @">";
+    }
     playscreen = (VCKiPlayScreenViewCtrl *)[self presentingViewController];
     
     if(self.primaryStatValue == self.secondaryStatValue){
         self.winnerMessage.text = [NSString stringWithFormat:@"About %@, %@ drew with %@.", self.statCaption,self.secondaryPlayerName, playscreen.fullName.text];
         self.primaryPlayerWinLossMessage.text = @"Players stay as is! No body moves!!!";
-        self.playerScores.text = [NSString stringWithFormat:@"%@ and %@ both have %@ %f.", playscreen.fullName.text, self.secondaryPlayerName, self.statCaption, self.secondaryStatValue ];
+        self.playerScores.text = [NSString stringWithFormat:@"%@ and %@ both have %@ %lu.", playscreen.fullName.text, self.secondaryPlayerName, self.statCaption, (unsigned long)self.secondaryStatValue ];
 
     }
-    else if (self.primaryStatValue > self.secondaryStatValue){
+    else if ((self.primaryStatValue > self.secondaryStatValue && [self.comparisionOperator isEqualToString:@">"]) || (self.primaryStatValue < self.secondaryStatValue && [self.comparisionOperator isEqualToString:@"<"])){
         if([player moveSecondaryPlayerToPrimary:self.secondaryPlayerIndex]){
             self.winnerMessage.text = [NSString stringWithFormat:@"About %@, %@ wins over %@.", self.statCaption,playscreen.fullName.text, self.secondaryPlayerName];
             self.primaryPlayerWinLossMessage.text = @"You won over the player!";
-            self.playerScores.text = [NSString stringWithFormat:@"%@ %@ is %f. And for %@ it's %f",self.statCaption,playscreen.fullName.text, self.primaryStatValue, self.secondaryPlayerName, self.secondaryStatValue ];
+            self.playerScores.text = [NSString stringWithFormat:@"%@ %@ is %lu. And for %@ it's %lu",self.statCaption,playscreen.fullName.text, (unsigned long)self.primaryStatValue, self.secondaryPlayerName, (unsigned long)self.secondaryStatValue ];
         }
     }
     else {
         if([player movePrimaryPlayerToSecondary:self.primaryPlayerIndex]){
             self.winnerMessage.text = [NSString stringWithFormat:@"About %@, %@ wins over %@.", self.statCaption,self.secondaryPlayerName, playscreen.fullName.text];
             self.primaryPlayerWinLossMessage.text = @"You lost the player!";
-            self.playerScores.text = [NSString stringWithFormat:@"%@ %@ is %f. And for %@ it's %f",self.statCaption,playscreen.fullName.text, self.primaryStatValue, self.secondaryPlayerName, self.secondaryStatValue ];
+            self.playerScores.text = [NSString stringWithFormat:@"%@ %@ is %lu. And for %@ it's %lu",self.statCaption,playscreen.fullName.text, (unsigned long)self.primaryStatValue, self.secondaryPlayerName, (unsigned long)self.secondaryStatValue ];
         }
     }
-	
 }
 
 - (void)didReceiveMemoryWarning
@@ -84,11 +85,11 @@ VCKiPlayScreenViewCtrl *playscreen;
     
     if(player.playerSquadCount <= 0){
         [self performSegueWithIdentifier:@"finalResultSegue" sender:self];
-        self._hasPrimaryPlayerWon = YES;
+        self._hasPrimaryPlayerWon = NO;
     }
     else if(player.oppositionSquadCount <= 0){
         [self performSegueWithIdentifier:@"finalResultSegue" sender:self];
-        self._hasPrimaryPlayerWon = NO;
+        self._hasPrimaryPlayerWon = YES;
     }
     else{      
         [self.previousVcReference returnToViewController];
