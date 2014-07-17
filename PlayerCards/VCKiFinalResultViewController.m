@@ -27,7 +27,7 @@
 {
     [super viewDidLoad];
     
-#warning "Win was shown as loss. need to fix."
+#warning "Need to implement play again!"
     if (self.isPrimaryPlayerWon) {
         self.finalResultMessage.text = @"Congratulations";
     }

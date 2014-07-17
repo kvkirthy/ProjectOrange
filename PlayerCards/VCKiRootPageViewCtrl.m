@@ -30,7 +30,7 @@
 
 -(void) createViews
 {
-    self.allViewControllers = [[NSMutableArray alloc]initWithCapacity:4];
+    self.allViewControllers = [[NSMutableArray alloc]initWithCapacity:2];
     VCKiManualPagesViewCtrl *page;
     
     VCKiAppDelegate* appDelegate = [[UIApplication sharedApplication] delegate];
@@ -38,11 +38,19 @@
     
     UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:appDelegate.storyBoardInUse bundle:[NSBundle mainBundle]];
     
-    for(int i=0; i<4; i++){
+    page = [storyBoard instantiateViewControllerWithIdentifier:@"VCKiManualPages"];
+    page.pageIndex = [NSNumber numberWithInt:0];
+    [self.allViewControllers addObject:page];
+    
+    page = [storyBoard instantiateViewControllerWithIdentifier:@"2ndManualPage"];
+    page.pageIndex = [NSNumber numberWithInt:1];
+    [self.allViewControllers addObject:page];
+    
+    /*for(int i=0; i<4; i++){
         page = [storyBoard instantiateViewControllerWithIdentifier:@"VCKiManualPages"];
         page.pageIndex = [NSNumber numberWithInt:i];
         [self.allViewControllers addObject:page];
-    }
+    }*/
 }
 
 -(UIViewController *) pageViewController: (UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController
@@ -50,7 +58,7 @@
     VCKiManualPagesViewCtrl *vc = (VCKiManualPagesViewCtrl *)viewController;
     NSUInteger index = [vc.pageIndex integerValue];
     
-    if(index == 3){
+    if(index == 1){
         return nil;
     }
     index = index + 1;

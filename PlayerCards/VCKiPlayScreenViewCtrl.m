@@ -67,6 +67,7 @@
     self.fullName.text = player.fullName;
     self.teamName.text = [NSString stringWithFormat:@"National Team - %@", player.team];
     
+#warning "some times span is coming up as big number"
     if(player.span){
         self.span.text = [NSString stringWithFormat:@"( %@ )", player.span];
     }else{

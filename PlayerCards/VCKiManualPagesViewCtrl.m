@@ -28,33 +28,13 @@
 
 -(void) setPageIndex:(NSNumber *)pageIndex
 {
-    //_titleText.text =[pageIndex stringValue];
     _pageIndex = pageIndex;
-    //self.titleText.text = @"test label";
 }
 
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    // heights 585, 480
-    // width 341
-    
-    
-    //self.titleText.text = [self.pageIndex stringValue]; // @"a sample text";//[self.pageIndex stringValue];
-    if([_pageIndex integerValue] == 0){
-        self.titleText.text = [VCKiManualPageContentSerializer getSingletonObject].page1;
-    }
-    else if([_pageIndex integerValue] == 1){
-        self.titleText.text = [VCKiManualPageContentSerializer getSingletonObject].page2;
-    }
-    else if([_pageIndex integerValue] == 2){
-        self.titleText.text = [VCKiManualPageContentSerializer getSingletonObject].page3;
-    }
-    else if([_pageIndex integerValue] == 3){
-        self.titleText.text = [VCKiManualPageContentSerializer getSingletonObject].page4;
-    }
     
 }
 
