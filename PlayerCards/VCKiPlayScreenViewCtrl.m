@@ -137,6 +137,12 @@
 }
 
 - (IBAction)testRunBet:(id)sender {
+    
+    if(self.testRuns.titleLabel.text && [self.testRuns.titleLabel.text isEqualToString:@"-"])
+    {
+        return;
+    }
+    
     _givenPlayerStatCaption = self.testRunsCaption.text;
     _givenPlayerStatValue = [self.testRuns.titleLabel.text doubleValue];
     _secondPlayerStatValue =_secondPlayer.totalTestRuns ;
@@ -144,6 +150,11 @@
 }
 
 - (IBAction)odiRunBet:(id)sender {
+    
+    if(self.oDIRuns.titleLabel.text && [self.oDIRuns.titleLabel.text isEqualToString:@"-"]){
+        return;
+    }
+    
     _givenPlayerStatCaption = self.odiRunsCaption.text;
     _givenPlayerStatValue = [self.oDIRuns.titleLabel.text doubleValue];
     _secondPlayerStatValue =_secondPlayer.totalODIRuns ;
@@ -152,6 +163,9 @@
 }
 
 - (IBAction)t20RunBet:(id)sender {
+    if (self.t20Runs.titleLabel.text && [self.t20Runs.titleLabel.text isEqualToString:@"-"]) {
+        return;
+    }
     _givenPlayerStatCaption = self.t20RunsCaption.text;
     _givenPlayerStatValue = [self.t20Runs.titleLabel.text doubleValue];
     _secondPlayerStatValue =_secondPlayer.totalT20Runs ;
@@ -159,6 +173,9 @@
 }
 
 - (IBAction)testMatchesBet:(id)sender {
+    if (self.testMatches.titleLabel.text && [self.testMatches.titleLabel.text isEqualToString:@"-"]) {
+        return;
+    }
     _givenPlayerStatCaption = self.testMatchesCaption.text;
     _givenPlayerStatValue = [self.testMatches.titleLabel.text doubleValue];
     _secondPlayerStatValue =_secondPlayer.numberOfTests ;
@@ -166,6 +183,9 @@
 }
 
 - (IBAction)odiMatchesBet:(id)sender {
+    if (self.oDIMatches.titleLabel.text && [self.oDIMatches.titleLabel.text isEqualToString:@"-"]) {
+        return;
+    }
     _givenPlayerStatCaption = self.odiMatchesCaption.text;
     _givenPlayerStatValue = [self.oDIMatches.titleLabel.text doubleValue];
     _secondPlayerStatValue =_secondPlayer.numberOfODIs ;
@@ -173,6 +193,9 @@
 }
 
 - (IBAction)t20MatchesBet:(id)sender {
+    if (self.t20Matches.titleLabel.text && [self.t20Matches.titleLabel.text isEqualToString:@"-"]) {
+        return;
+    }
     _givenPlayerStatCaption = self.t20MatchesCaption.text;
     _givenPlayerStatValue = [self.t20Matches.titleLabel.text doubleValue];
     _secondPlayerStatValue =_secondPlayer.numberOfT20s ;
@@ -180,6 +203,11 @@
 }
 
 - (IBAction)testWicketsBet:(id)sender {
+    
+    if (self.testWickets.titleLabel.text && [self.testWickets.titleLabel.text isEqualToString:@"-"]) {
+        return;
+    }
+    
     _givenPlayerStatCaption = self.testWicketsCaption.text;
     
     NSString *givePlayerStat = [self.testWickets.titleLabel.text componentsSeparatedByString:@"/"][0];
@@ -204,6 +232,10 @@
 }
 
 - (IBAction)odiWicketsBet:(id)sender {
+    
+    if (self.oDIWickets.titleLabel.text && [self.oDIWickets.titleLabel.text isEqualToString:@"-"]) {
+        return;
+    }
     _givenPlayerStatCaption = self.odiWicketsCaption.text;
     
     NSString *givePlayerStat = [self.oDIWickets.titleLabel.text componentsSeparatedByString:@"/"][0];
@@ -228,6 +260,9 @@
 }
 
 - (IBAction)t20WicketsBet:(id)sender {
+    if (self.t20Wickets.titleLabel.text && [self.t20Wickets.titleLabel.text isEqualToString:@"-"]) {
+        return;
+    }
     _givenPlayerStatCaption = self.t20WicketsCaption.text;
     
     NSString *givePlayerStat = [self.t20Wickets.titleLabel.text componentsSeparatedByString:@"/"][0];
@@ -253,6 +288,10 @@
 
 -(void)testHighScoreBet:(id)sender
 {
+    if (self.testHighScore.titleLabel.text && [self.testHighScore.titleLabel.text isEqualToString:@"-"]) {
+        return;
+    }
+    
     _givenPlayerStatCaption = self.testHighScoreCaption.text;
     _givenPlayerStatValue = [self.testHighScore.titleLabel.text doubleValue];
     _secondPlayerStatValue =[[_secondPlayer.testHighScore componentsSeparatedByString:@"*"][0] doubleValue] ;
@@ -261,6 +300,10 @@
 
 - (void)odiHighScoreBet:(id)sender
 {
+    if (self.odiHighScore.titleLabel.text && [self.odiHighScore.titleLabel.text isEqualToString:@"-"]) {
+        return;
+    }
+    
     _givenPlayerStatCaption = self.odiHighScoreCaption.text;
     _givenPlayerStatValue = [self.odiHighScore.titleLabel.text doubleValue];
     _secondPlayerStatValue =[[_secondPlayer.odiHighScore componentsSeparatedByString:@"*"][0] doubleValue] ;
@@ -269,6 +312,10 @@
 
 - (void)t20HighScoreBet:(id)sender
 {
+#warning "This function is almost always crashing."
+    if (self.t20HighScore.titleLabel.text && [self.t20HighScore.titleLabel.text isEqualToString:@"-"]) {
+        return;
+    }
     _givenPlayerStatCaption = self.t20HighScoreCaption.text;
     _givenPlayerStatValue = [self.t20HighScore.titleLabel.text doubleValue];
     _secondPlayerStatValue =[[_secondPlayer.t20HighScore componentsSeparatedByString:@"*"][0] doubleValue] ;
@@ -277,6 +324,9 @@
 
 -(void)testCenturiesBet:(id)sender
 {
+    if (self.testCenturies.titleLabel.text && [self.testCenturies.titleLabel.text isEqualToString:@"-"]) {
+        return;
+    }
     _givenPlayerStatCaption = self.testCenturiesCaption.text;
     _givenPlayerStatValue = [self.testCenturies.titleLabel.text doubleValue];
     _secondPlayerStatValue =_secondPlayer.testCenturiesCount ;
@@ -285,6 +335,9 @@
 
 -(void)odiCenturiesBet:(id)sender
 {
+    if (self.odiCenturies.titleLabel.text && [self.odiCenturies.titleLabel.text isEqualToString:@"-"]) {
+        return;
+    }
     _givenPlayerStatCaption = self.odiCenturiesCaption.text;
     _givenPlayerStatValue = [self.odiCenturies.titleLabel.text doubleValue];
     _secondPlayerStatValue =_secondPlayer.odiCenturiesCount ;
@@ -293,6 +346,9 @@
 
 -(void)t20CenturiesBet:(id)sender
 {
+    if (self.t20Centuries.titleLabel.text && [self.t20Centuries.titleLabel.text isEqualToString:@"-"]) {
+        return;
+    }
     _givenPlayerStatCaption = self.t20CenturiesCaption.text;
     _givenPlayerStatValue = [self.t20Centuries.titleLabel.text doubleValue];
     _secondPlayerStatValue =_secondPlayer.t20CenturiesCount ;

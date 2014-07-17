@@ -513,7 +513,6 @@
                                         </state>
                                         <connections>
                                             <action selector="t20HighScoreBet:" destination="Cdk-7q-jlc" eventType="touchUpInside" id="3gr-s5-hEL"/>
-                                            <action selector="t20highScoreBet:" destination="Cdk-7q-jlc" eventType="touchUpInside" id="WMN-Ut-acS"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Test Centuries" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PxG-1u-Rdz">
