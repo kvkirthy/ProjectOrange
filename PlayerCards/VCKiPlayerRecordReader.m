@@ -14,7 +14,7 @@
 static NSMutableArray* _primarySquad;
 static NSMutableArray* _secondSquad;
 
-const int squadBeginCount = 5;
+const int squadBeginCount = 24;
 
 static NSArray* availablePlayers = nil;
 static NSString* _resourcePath = nil;

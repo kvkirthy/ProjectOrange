@@ -25,6 +25,8 @@
 }
 
 -(void) renderPlayerData;
+-(void) setButton: (UIButton*) button WithValue:(id) value;
+
 
 @end
 
@@ -75,27 +77,41 @@
     }
     
     self.playerImage.image = [UIImage imageNamed:player.playerPicture];
+
     
-    [self.testMatches setTitle:[NSString stringWithFormat:@"%d", player.numberOfTests] forState:UIControlStateNormal];
-    [self.testRuns setTitle:[NSString stringWithFormat:@"%d", player.totalTestRuns] forState:UIControlStateNormal];
-    [self.testWickets setTitle:[NSString stringWithFormat:@"%@", player.totalTestWickets] forState:UIControlStateNormal];
-    [self.testHighScore setTitle:[NSString stringWithFormat:@"%@", player.testHighScore] forState:UIControlStateNormal];
-    [self.testCenturies setTitle:[NSString stringWithFormat:@"%d", player.testCenturiesCount] forState:UIControlStateNormal];
+    [self setButton: self.testMatches WithValue:[NSNumber numberWithInt:player.numberOfTests]];
+    [self setButton:self.testMatches WithValue:[NSNumber numberWithInt:player.numberOfTests]];
+    [self setButton:self.testRuns WithValue:[NSNumber numberWithInt:player.totalTestRuns]];
+    [self setButton:self.testWickets WithValue:player.totalTestWickets];
+    [self setButton:self.testHighScore WithValue:player.testHighScore];
+    [self setButton:self.testCenturies WithValue:[NSNumber numberWithInt:player.testCenturiesCount]];
     
-    [self.oDIMatches setTitle:[NSString stringWithFormat:@"%d", player.numberOfODIs] forState:UIControlStateNormal];
-    [self.oDIRuns setTitle:[NSString stringWithFormat:@"%d", player.totalODIRuns] forState:UIControlStateNormal];
-    [self.oDIWickets setTitle: [NSString stringWithFormat:@"%@", player.totalODIWickets] forState:UIControlStateNormal];
-    [self.odiHighScore setTitle: [NSString stringWithFormat:@"%@", player.odiHighScore] forState:UIControlStateNormal];
-    [self.odiCenturies setTitle: [NSString stringWithFormat:@"%d", player.odiCenturiesCount] forState:UIControlStateNormal];
-    
-    [self.t20Matches setTitle:[NSString stringWithFormat:@"%d", player.numberOfT20s] forState: UIControlStateNormal] ;
-    [self.t20Runs setTitle: [NSString stringWithFormat:@"%d", player.totalT20Runs] forState:UIControlStateNormal];
-    [self.t20Wickets setTitle:[NSString stringWithFormat:@"%@", player.totalT20Wickets] forState: UIControlStateNormal];
-    [self.t20HighScore setTitle:[NSString stringWithFormat:@"%@", player.t20HighScore] forState: UIControlStateNormal];
-    [self.t20Centuries setTitle:[NSString stringWithFormat:@"%d", player.t20CenturiesCount] forState: UIControlStateNormal];
+    [self setButton: self.oDIMatches WithValue:[NSNumber numberWithInt:player.numberOfODIs]];
+    [self setButton: self.oDIRuns WithValue:[NSNumber numberWithInt:player.totalODIRuns]];
+    [self setButton: self.oDIWickets WithValue:player.totalODIWickets];
+    [self setButton: self.odiHighScore WithValue:player.odiHighScore];
+    [self setButton: self.odiCenturies WithValue:[NSNumber numberWithInt:player.odiCenturiesCount]];
+
+    [self setButton: self.t20Matches WithValue:[NSNumber numberWithInt:player.numberOfT20s]];
+    [self setButton: self.t20Runs WithValue:[NSNumber numberWithInt:player.totalT20Runs]];
+    [self setButton: self.t20Wickets WithValue:player.totalT20Wickets];
+    [self setButton: self.t20HighScore WithValue:player.t20HighScore];
+    [self setButton: self.t20Centuries WithValue:[NSNumber numberWithInt:player.t20CenturiesCount]];
+   
     _comparisionOperator = @">";
 }
 
+-(void) setButton:(UIButton *)button WithValue:(id)value
+{
+    [button setImage:nil forState:UIControlStateNormal];
+    [button setTitle:nil forState:UIControlStateNormal];
+    
+    if(value == 0 || [value  isEqual: @"-"])
+     [button setImage:[UIImage imageNamed:@"51-outlet.png"] forState:UIControlStateNormal];
+    else
+     [button setTitle:[NSString stringWithFormat:@"%@", value] forState: UIControlStateNormal];
+
+}
 
 -(void) returnToViewController
 {

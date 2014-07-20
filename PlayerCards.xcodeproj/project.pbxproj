@@ -43,8 +43,9 @@
 		105277D71831764E00739B87 /* bluecap.png in Resources */ = {isa = PBXBuildFile; fileRef = 105277D61831764E00739B87 /* bluecap.png */; };
 		105277D918317B7600739B87 /* Redcaps.png in Resources */ = {isa = PBXBuildFile; fileRef = 105277D818317B7600739B87 /* Redcaps.png */; };
 		10710D57180C0B0C003F26BD /* MahimulHaq.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10710D56180C0B0C003F26BD /* MahimulHaq.jpg */; };
-		10964BAA19797F8800142B64 /* 1_digit.png in Resources */ = {isa = PBXBuildFile; fileRef = 10964BA919797F8800142B64 /* 1_digit.png */; };
 		10A49CAC18131BFB00DA5609 /* VCKiPrimarySquadIViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A49CAB18131BFB00DA5609 /* VCKiPrimarySquadIViewCtrl.m */; };
+		10E0EDE7197C400D00D63937 /* emicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 10E0EDE6197C400D00D63937 /* emicon.png */; };
+		10E0EDE9197C448700D63937 /* 51-outlet.png in Resources */ = {isa = PBXBuildFile; fileRef = 10E0EDE8197C448700D63937 /* 51-outlet.png */; };
 		10FE0140180A7527007CF6F8 /* VCKiConfirmBetScreenViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 10FE013F180A7527007CF6F8 /* VCKiConfirmBetScreenViewCtrl.m */; };
 /* End PBXBuildFile section */
 
@@ -110,9 +111,10 @@
 		105277D61831764E00739B87 /* bluecap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bluecap.png; sourceTree = "<group>"; };
 		105277D818317B7600739B87 /* Redcaps.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Redcaps.png; sourceTree = "<group>"; };
 		10710D56180C0B0C003F26BD /* MahimulHaq.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MahimulHaq.jpg; sourceTree = "<group>"; };
-		10964BA919797F8800142B64 /* 1_digit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1_digit.png; sourceTree = "<group>"; };
 		10A49CAA18131BFB00DA5609 /* VCKiPrimarySquadIViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCKiPrimarySquadIViewCtrl.h; sourceTree = "<group>"; };
 		10A49CAB18131BFB00DA5609 /* VCKiPrimarySquadIViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCKiPrimarySquadIViewCtrl.m; sourceTree = "<group>"; };
+		10E0EDE6197C400D00D63937 /* emicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = emicon.png; sourceTree = "<group>"; };
+		10E0EDE8197C448700D63937 /* 51-outlet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "51-outlet.png"; sourceTree = "<group>"; };
 		10FE013E180A7527007CF6F8 /* VCKiConfirmBetScreenViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCKiConfirmBetScreenViewCtrl.h; sourceTree = "<group>"; };
 		10FE013F180A7527007CF6F8 /* VCKiConfirmBetScreenViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCKiConfirmBetScreenViewCtrl.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -256,7 +258,8 @@
 		10FE0142180ACB7C007CF6F8 /* resources */ = {
 			isa = PBXGroup;
 			children = (
-				10964BA919797F8800142B64 /* 1_digit.png */,
+				10E0EDE8197C448700D63937 /* 51-outlet.png */,
+				10E0EDE6197C400D00D63937 /* emicon.png */,
 				10487D47183E17F00087B377 /* 156-controlpad.png */,
 				10487D43183E149F0087B377 /* 132-ghost.png */,
 				10487D44183E149F0087B377 /* 135-hockeymask.png */,
@@ -361,6 +364,7 @@
 			files = (
 				1003900F180957D0008B9453 /* rikcy-pointing.jpg in Resources */,
 				1042BEB517FC82F000FE9298 /* iPhonePlayerCardsMain.storyboard in Resources */,
+				10E0EDE9197C448700D63937 /* 51-outlet.png in Resources */,
 				103433CC180DBF5F00058CC1 /* 2.png in Resources */,
 				10038FFC1807D2A8008B9453 /* manualPages.plist in Resources */,
 				10487D46183E149F0087B377 /* 135-hockeymask.png in Resources */,
@@ -369,12 +373,12 @@
 				10242AB3183EF9FA00DBF9F2 /* iPhonePlayerCardsMain3_5firmfactor.storyboard in Resources */,
 				10038FFA1807B1E6008B9453 /* playerData.plist in Resources */,
 				105277D918317B7600739B87 /* Redcaps.png in Resources */,
+				10E0EDE7197C400D00D63937 /* emicon.png in Resources */,
 				10487D45183E149F0087B377 /* 132-ghost.png in Resources */,
 				1042BE9017FC829D00FE9298 /* InfoPlist.strings in Resources */,
 				10710D57180C0B0C003F26BD /* MahimulHaq.jpg in Resources */,
 				10487D48183E17F00087B377 /* 156-controlpad.png in Resources */,
 				1042BE9817FC829D00FE9298 /* Images.xcassets in Resources */,
-				10964BAA19797F8800142B64 /* 1_digit.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
