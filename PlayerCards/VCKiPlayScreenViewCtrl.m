@@ -105,11 +105,16 @@
 {
     [button setImage:nil forState:UIControlStateNormal];
     [button setTitle:nil forState:UIControlStateNormal];
-    
-    if(value == 0 || [value  isEqual: @"-"])
-     [button setImage:[UIImage imageNamed:@"51-outlet.png"] forState:UIControlStateNormal];
-    else
-     [button setTitle:[NSString stringWithFormat:@"%@", value] forState: UIControlStateNormal];
+    NSString* valueAsString = [NSString stringWithFormat:@"%@",value];
+
+    if([valueAsString  isEqualToString: @"-"] || [valueAsString  isEqualToString: @"0"]){
+        button.userInteractionEnabled = false;
+        [button setImage:[UIImage imageNamed:@"51-outlet.png"] forState:UIControlStateNormal];
+    }
+    else{
+        button.userInteractionEnabled = true;
+        [button setTitle:[NSString stringWithFormat:@"%@", value] forState: UIControlStateNormal];
+    }
 
 }
 
