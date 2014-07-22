@@ -13,7 +13,6 @@
 		1003900218084F9F008B9453 /* VCKiPlayerEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 1003900118084F9F008B9453 /* VCKiPlayerEntity.m */; };
 		10039005180863C8008B9453 /* VCKiPlayerRecordReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 10039004180863C8008B9453 /* VCKiPlayerRecordReader.m */; };
 		100390081808782B008B9453 /* VCKiPlayScreenViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 100390071808782B008B9453 /* VCKiPlayScreenViewCtrl.m */; };
-		1003900F180957D0008B9453 /* rikcy-pointing.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1003900E180957D0008B9453 /* rikcy-pointing.jpg */; };
 		1006120C1834187800FDE096 /* VCKiFinalResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1006120B1834187800FDE096 /* VCKiFinalResultViewController.m */; };
 		101420C01828B448001FF7FF /* VCKiTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 101420BF1828B448001FF7FF /* VCKiTimerViewController.m */; };
 		10185A22182FEC0300F5AF17 /* VCKiPlayResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10185A21182FEC0300F5AF17 /* VCKiPlayResultViewController.m */; };
@@ -42,9 +41,16 @@
 		10487D48183E17F00087B377 /* 156-controlpad.png in Resources */ = {isa = PBXBuildFile; fileRef = 10487D47183E17F00087B377 /* 156-controlpad.png */; };
 		105277D71831764E00739B87 /* bluecap.png in Resources */ = {isa = PBXBuildFile; fileRef = 105277D61831764E00739B87 /* bluecap.png */; };
 		105277D918317B7600739B87 /* Redcaps.png in Resources */ = {isa = PBXBuildFile; fileRef = 105277D818317B7600739B87 /* Redcaps.png */; };
-		10710D57180C0B0C003F26BD /* MahimulHaq.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10710D56180C0B0C003F26BD /* MahimulHaq.jpg */; };
+		107CC152197ED2EC0042C4CF /* Inzamam-ul-Haq.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 107CC14A197ED2EC0042C4CF /* Inzamam-ul-Haq.jpg */; };
+		107CC153197ED2EC0042C4CF /* DPMD Jayawardene.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 107CC14B197ED2EC0042C4CF /* DPMD Jayawardene.jpg */; };
+		107CC154197ED2EC0042C4CF /* Misbah-ul-Haq .jpg in Resources */ = {isa = PBXBuildFile; fileRef = 107CC14C197ED2EC0042C4CF /* Misbah-ul-Haq .jpg */; };
+		107CC155197ED2EC0042C4CF /* RT Ponting.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 107CC14D197ED2EC0042C4CF /* RT Ponting.jpg */; };
+		107CC156197ED2EC0042C4CF /* Shahid Afridi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 107CC14E197ED2EC0042C4CF /* Shahid Afridi.jpg */; };
+		107CC157197ED2EC0042C4CF /* SK Warne.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 107CC14F197ED2EC0042C4CF /* SK Warne.jpg */; };
+		107CC158197ED2EC0042C4CF /* SR Tendulkar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 107CC150197ED2EC0042C4CF /* SR Tendulkar.jpg */; };
+		107CC159197ED2EC0042C4CF /* ST Jayasuriya.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 107CC151197ED2EC0042C4CF /* ST Jayasuriya.jpg */; };
+		107CC15B197ED8D10042C4CF /* avatar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 107CC15A197ED8D10042C4CF /* avatar.jpg */; };
 		10A49CAC18131BFB00DA5609 /* VCKiPrimarySquadIViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A49CAB18131BFB00DA5609 /* VCKiPrimarySquadIViewCtrl.m */; };
-		10E0EDE7197C400D00D63937 /* emicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 10E0EDE6197C400D00D63937 /* emicon.png */; };
 		10E0EDE9197C448700D63937 /* 51-outlet.png in Resources */ = {isa = PBXBuildFile; fileRef = 10E0EDE8197C448700D63937 /* 51-outlet.png */; };
 		10FE0140180A7527007CF6F8 /* VCKiConfirmBetScreenViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 10FE013F180A7527007CF6F8 /* VCKiConfirmBetScreenViewCtrl.m */; };
 /* End PBXBuildFile section */
@@ -70,7 +76,6 @@
 		10039004180863C8008B9453 /* VCKiPlayerRecordReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCKiPlayerRecordReader.m; sourceTree = "<group>"; };
 		100390061808782B008B9453 /* VCKiPlayScreenViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCKiPlayScreenViewCtrl.h; sourceTree = "<group>"; };
 		100390071808782B008B9453 /* VCKiPlayScreenViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCKiPlayScreenViewCtrl.m; sourceTree = "<group>"; };
-		1003900E180957D0008B9453 /* rikcy-pointing.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "rikcy-pointing.jpg"; sourceTree = "<group>"; };
 		1006120A1834187800FDE096 /* VCKiFinalResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCKiFinalResultViewController.h; sourceTree = "<group>"; };
 		1006120B1834187800FDE096 /* VCKiFinalResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCKiFinalResultViewController.m; sourceTree = "<group>"; };
 		101420BE1828B448001FF7FF /* VCKiTimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCKiTimerViewController.h; sourceTree = "<group>"; };
@@ -110,10 +115,17 @@
 		10487D47183E17F00087B377 /* 156-controlpad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "156-controlpad.png"; sourceTree = "<group>"; };
 		105277D61831764E00739B87 /* bluecap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bluecap.png; sourceTree = "<group>"; };
 		105277D818317B7600739B87 /* Redcaps.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Redcaps.png; sourceTree = "<group>"; };
-		10710D56180C0B0C003F26BD /* MahimulHaq.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MahimulHaq.jpg; sourceTree = "<group>"; };
+		107CC14A197ED2EC0042C4CF /* Inzamam-ul-Haq.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Inzamam-ul-Haq.jpg"; path = "playerImages/Inzamam-ul-Haq.jpg"; sourceTree = "<group>"; };
+		107CC14B197ED2EC0042C4CF /* DPMD Jayawardene.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "DPMD Jayawardene.jpg"; path = "playerImages/DPMD Jayawardene.jpg"; sourceTree = "<group>"; };
+		107CC14C197ED2EC0042C4CF /* Misbah-ul-Haq .jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Misbah-ul-Haq .jpg"; path = "playerImages/Misbah-ul-Haq .jpg"; sourceTree = "<group>"; };
+		107CC14D197ED2EC0042C4CF /* RT Ponting.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "RT Ponting.jpg"; path = "playerImages/RT Ponting.jpg"; sourceTree = "<group>"; };
+		107CC14E197ED2EC0042C4CF /* Shahid Afridi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Shahid Afridi.jpg"; path = "playerImages/Shahid Afridi.jpg"; sourceTree = "<group>"; };
+		107CC14F197ED2EC0042C4CF /* SK Warne.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "SK Warne.jpg"; path = "playerImages/SK Warne.jpg"; sourceTree = "<group>"; };
+		107CC150197ED2EC0042C4CF /* SR Tendulkar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "SR Tendulkar.jpg"; path = "playerImages/SR Tendulkar.jpg"; sourceTree = "<group>"; };
+		107CC151197ED2EC0042C4CF /* ST Jayasuriya.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "ST Jayasuriya.jpg"; path = "playerImages/ST Jayasuriya.jpg"; sourceTree = "<group>"; };
+		107CC15A197ED8D10042C4CF /* avatar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = avatar.jpg; path = playerImages/avatar.jpg; sourceTree = "<group>"; };
 		10A49CAA18131BFB00DA5609 /* VCKiPrimarySquadIViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCKiPrimarySquadIViewCtrl.h; sourceTree = "<group>"; };
 		10A49CAB18131BFB00DA5609 /* VCKiPrimarySquadIViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCKiPrimarySquadIViewCtrl.m; sourceTree = "<group>"; };
-		10E0EDE6197C400D00D63937 /* emicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = emicon.png; sourceTree = "<group>"; };
 		10E0EDE8197C448700D63937 /* 51-outlet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "51-outlet.png"; sourceTree = "<group>"; };
 		10FE013E180A7527007CF6F8 /* VCKiConfirmBetScreenViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCKiConfirmBetScreenViewCtrl.h; sourceTree = "<group>"; };
 		10FE013F180A7527007CF6F8 /* VCKiConfirmBetScreenViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCKiConfirmBetScreenViewCtrl.m; sourceTree = "<group>"; };
@@ -146,8 +158,15 @@
 		1003900D18095776008B9453 /* playerImages */ = {
 			isa = PBXGroup;
 			children = (
-				10710D56180C0B0C003F26BD /* MahimulHaq.jpg */,
-				1003900E180957D0008B9453 /* rikcy-pointing.jpg */,
+				107CC15A197ED8D10042C4CF /* avatar.jpg */,
+				107CC14A197ED2EC0042C4CF /* Inzamam-ul-Haq.jpg */,
+				107CC14B197ED2EC0042C4CF /* DPMD Jayawardene.jpg */,
+				107CC14C197ED2EC0042C4CF /* Misbah-ul-Haq .jpg */,
+				107CC14D197ED2EC0042C4CF /* RT Ponting.jpg */,
+				107CC14E197ED2EC0042C4CF /* Shahid Afridi.jpg */,
+				107CC14F197ED2EC0042C4CF /* SK Warne.jpg */,
+				107CC150197ED2EC0042C4CF /* SR Tendulkar.jpg */,
+				107CC151197ED2EC0042C4CF /* ST Jayasuriya.jpg */,
 			);
 			name = playerImages;
 			sourceTree = "<group>";
@@ -259,7 +278,6 @@
 			isa = PBXGroup;
 			children = (
 				10E0EDE8197C448700D63937 /* 51-outlet.png */,
-				10E0EDE6197C400D00D63937 /* emicon.png */,
 				10487D47183E17F00087B377 /* 156-controlpad.png */,
 				10487D43183E149F0087B377 /* 132-ghost.png */,
 				10487D44183E149F0087B377 /* 135-hockeymask.png */,
@@ -362,22 +380,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1003900F180957D0008B9453 /* rikcy-pointing.jpg in Resources */,
 				1042BEB517FC82F000FE9298 /* iPhonePlayerCardsMain.storyboard in Resources */,
 				10E0EDE9197C448700D63937 /* 51-outlet.png in Resources */,
+				107CC154197ED2EC0042C4CF /* Misbah-ul-Haq .jpg in Resources */,
 				103433CC180DBF5F00058CC1 /* 2.png in Resources */,
+				107CC158197ED2EC0042C4CF /* SR Tendulkar.jpg in Resources */,
+				107CC152197ED2EC0042C4CF /* Inzamam-ul-Haq.jpg in Resources */,
 				10038FFC1807D2A8008B9453 /* manualPages.plist in Resources */,
+				107CC155197ED2EC0042C4CF /* RT Ponting.jpg in Resources */,
+				107CC159197ED2EC0042C4CF /* ST Jayasuriya.jpg in Resources */,
 				10487D46183E149F0087B377 /* 135-hockeymask.png in Resources */,
 				105277D71831764E00739B87 /* bluecap.png in Resources */,
+				107CC157197ED2EC0042C4CF /* SK Warne.jpg in Resources */,
 				103433CA180DBA8B00058CC1 /* 1.png in Resources */,
 				10242AB3183EF9FA00DBF9F2 /* iPhonePlayerCardsMain3_5firmfactor.storyboard in Resources */,
 				10038FFA1807B1E6008B9453 /* playerData.plist in Resources */,
+				107CC156197ED2EC0042C4CF /* Shahid Afridi.jpg in Resources */,
 				105277D918317B7600739B87 /* Redcaps.png in Resources */,
-				10E0EDE7197C400D00D63937 /* emicon.png in Resources */,
 				10487D45183E149F0087B377 /* 132-ghost.png in Resources */,
 				1042BE9017FC829D00FE9298 /* InfoPlist.strings in Resources */,
-				10710D57180C0B0C003F26BD /* MahimulHaq.jpg in Resources */,
 				10487D48183E17F00087B377 /* 156-controlpad.png in Resources */,
+				107CC153197ED2EC0042C4CF /* DPMD Jayawardene.jpg in Resources */,
+				107CC15B197ED8D10042C4CF /* avatar.jpg in Resources */,
 				1042BE9817FC829D00FE9298 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -59,7 +59,7 @@
     //VCKiPlayerEntity *player = [ [[VCKiPlayerRecordReader alloc]init] getPlayerRecordWithIndex:[NSString stringWithFormat:@"%d",randomNumber]];
     
     VCKiPlayerRecordReader* recordReader = [[VCKiPlayerRecordReader alloc]init];
-    VCKiPlayerEntity *player = [recordReader getRandomPrimaryPlayer: &_primaryPlayerIndex];
+    VCKiPlayerEntity* player = [recordReader getRandomPrimaryPlayer: &_primaryPlayerIndex];
     _secondPlayer = [recordReader getRandomSecondaryPlayer: &_secondaryPlayerIndex];
     
     self.playerCount.text = [NSString stringWithFormat:@"%d", recordReader.playerSquadCount];
@@ -76,8 +76,9 @@
         self.span.text = @"";
     }
     
-    self.playerImage.image = [UIImage imageNamed:player.playerPicture];
-
+    if([UIImage imageNamed:player.fullName]){
+        self.playerImage.image = [UIImage imageNamed:player.fullName];
+    }
     
     [self setButton: self.testMatches WithValue:[NSNumber numberWithInt:player.numberOfTests]];
     [self setButton:self.testMatches WithValue:[NSNumber numberWithInt:player.numberOfTests]];
