@@ -34,11 +34,104 @@
 		1042BEA117FC829D00FE9298 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1042BE8917FC829D00FE9298 /* UIKit.framework */; };
 		1042BEA917FC829D00FE9298 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1042BEA717FC829D00FE9298 /* InfoPlist.strings */; };
 		1042BEAB17FC829D00FE9298 /* PlayerCardsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1042BEAA17FC829D00FE9298 /* PlayerCardsTests.m */; };
-		1042BEB517FC82F000FE9298 /* iPhonePlayerCardsMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1042BEB417FC82F000FE9298 /* iPhonePlayerCardsMain.storyboard */; };
 		1042BEBE17FDF35100FE9298 /* VCKiIntroViews.m in Sources */ = {isa = PBXBuildFile; fileRef = 1042BEBD17FDF35100FE9298 /* VCKiIntroViews.m */; };
 		10487D45183E149F0087B377 /* 132-ghost.png in Resources */ = {isa = PBXBuildFile; fileRef = 10487D43183E149F0087B377 /* 132-ghost.png */; };
 		10487D46183E149F0087B377 /* 135-hockeymask.png in Resources */ = {isa = PBXBuildFile; fileRef = 10487D44183E149F0087B377 /* 135-hockeymask.png */; };
 		10487D48183E17F00087B377 /* 156-controlpad.png in Resources */ = {isa = PBXBuildFile; fileRef = 10487D47183E17F00087B377 /* 156-controlpad.png */; };
+		104925A7198C083400706441 /* A Flower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10492549198C083300706441 /* A Flower.jpg */; };
+		104925A8198C083400706441 /* A Jadeja.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1049254A198C083300706441 /* A Jadeja.jpg */; };
+		104925A9198C083400706441 /* A Kumble.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1049254B198C083300706441 /* A Kumble.jpg */; };
+		104925AA198C083400706441 /* A Ranatunga.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1049254C198C083300706441 /* A Ranatunga.jpg */; };
+		104925AB198C083400706441 /* A Symonds.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1049254D198C083300706441 /* A Symonds.jpg */; };
+		104925AC198C083400706441 /* AB Agarkar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1049254E198C083300706441 /* AB Agarkar.jpg */; };
+		104925AD198C083400706441 /* Abdul Razzaq.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1049254F198C083300706441 /* Abdul Razzaq.jpg */; };
+		104925AE198C083400706441 /* AC Gilchrist.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10492550198C083300706441 /* AC Gilchrist.jpg */; };
+		104925AF198C083400706441 /* AC Parore.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10492551198C083300706441 /* AC Parore.jpg */; };
+		104925B0198C083400706441 /* ADR Campbell.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10492552198C083400706441 /* ADR Campbell.jpg */; };
+		104925B1198C083400706441 /* AJ Stewart.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10492553198C083400706441 /* AJ Stewart.jpg */; };
+		104925B2198C083400706441 /* AR Border.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10492554198C083400706441 /* AR Border.jpg */; };
+		104925B3198C083400706441 /* B Lee.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10492555198C083400706441 /* B Lee.jpg */; };
+		104925B4198C083400706441 /* BB McCullum.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10492556198C083400706441 /* BB McCullum.jpg */; };
+		104925B5198C083400706441 /* BC Lara.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10492557198C083400706441 /* BC Lara.jpg */; };
+		104925B6198C083400706441 /* CA Walsh.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10492558198C083400706441 /* CA Walsh.jpg */; };
+		104925B7198C083400706441 /* CD McMillan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10492559198C083400706441 /* CD McMillan.jpg */; };
+		104925B8198C083400706441 /* CEL Ambrose.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1049255A198C083400706441 /* CEL Ambrose.jpg */; };
+		104925B9198C083400706441 /* CH Gayle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1049255B198C083400706441 /* CH Gayle.jpg */; };
+		104925BA198C083400706441 /* CL Cairns.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1049255C198C083400706441 /* CL Cairns.jpg */; };
+		104925BB198C083400706441 /* CL Hooper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1049255D198C083400706441 /* CL Hooper.jpg */; };
+		104925BC198C083400706441 /* Corrections.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1049255E198C083400706441 /* Corrections.txt */; };
+		104925BD198C083400706441 /* CZ Harris.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1049255F198C083400706441 /* CZ Harris.jpg */; };
+		104925BE198C083400706441 /* DC Boon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10492560198C083400706441 /* DC Boon.jpg */; };
+		104925BF198C083400706441 /* DL Haynes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10492561198C083400706441 /* DL Haynes.jpg */; };
+		104925C0198C083400706441 /* DL Vettori.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10492562198C083400706441 /* DL Vettori.jpg */; };
+		104925C1198C083400706441 /* DR Martyn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10492563198C083400706441 /* DR Martyn.jpg */; };
+		104925C2198C083400706441 /* G Kirsten.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10492564198C083400706441 /* G Kirsten.jpg */; };
+		104925C3198C083400706441 /* GC Smith.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10492565198C083400706441 /* GC Smith.jpg */; };
+		104925C4198C083400706441 /* GD McGrath.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10492566198C083400706441 /* GD McGrath.jpg */; };
+		104925C5198C083400706441 /* GW Flower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10492567198C083400706441 /* GW Flower.jpg */; };
+		104925C6198C083400706441 /* Harbhajan Singh.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10492568198C083400706441 /* Harbhajan Singh.jpg */; };
+		104925C7198C083400706441 /* HH Gibbs.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10492569198C083400706441 /* HH Gibbs.jpg */; };
+		104925C8198C083400706441 /* HH Streak.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1049256A198C083400706441 /* HH Streak.jpg */; };
+		104925C9198C083400706441 /* HP Tillakaratne.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1049256B198C083400706441 /* HP Tillakaratne.jpg */; };
+		104925CA198C083400706441 /* IA Healy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1049256C198C083400706441 /* IA Healy.jpg */; };
+		104925CB198C083400706441 /* Ijaz Ahmed.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1049256D198C083400706441 /* Ijaz Ahmed.jpg */; };
+		104925CC198C083400706441 /* Imran Khan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1049256E198C083400706441 /* Imran Khan.jpg */; };
+		104925CD198C083400706441 /* IVA Richards.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1049256F198C083400706441 /* IVA Richards.jpg */; };
+		104925CE198C083400706441 /* J Srinath.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10492570198C083400706441 /* J Srinath.jpg */; };
+		104925CF198C083400706441 /* Javed Miandad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10492571198C083400706441 /* Javed Miandad.jpg */; };
+		104925D0198C083400706441 /* JH Kallis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10492572198C083400706441 /* JH Kallis.jpg */; };
+		104925D1198C083400706441 /* JM Anderson.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10492573198C083400706441 /* JM Anderson.jpg */; };
+		104925D2198C083400706441 /* JN Rhodes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10492574198C083400706441 /* JN Rhodes.jpg */; };
+		104925D3198C083400706441 /* Kapil Dev.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10492575198C083400706441 /* Kapil Dev.jpg */; };
+		104925D4198C083400706441 /* KC Sangakkara.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10492576198C083400706441 /* KC Sangakkara.jpg */; };
+		104925D5198C083400706441 /* L Klusener.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10492577198C083400706441 /* L Klusener.jpg */; };
+		104925D6198C083400706441 /* M Azharuddin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10492578198C083400706441 /* M Azharuddin.jpg */; };
+		104925D7198C083400706441 /* M Muralitharan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10492579198C083400706441 /* M Muralitharan.jpg */; };
+		104925D8198C083400706441 /* M Ntini.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1049257A198C083400706441 /* M Ntini.jpg */; };
+		104925D9198C083400706441 /* ME Waugh.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1049257B198C083400706441 /* ME Waugh.jpg */; };
+		104925DA198C083400706441 /* MEK Hussey.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1049257C198C083400706441 /* MEK Hussey.jpg */; };
+		104925DB198C083400706441 /* MG Bevan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1049257D198C083400706441 /* MG Bevan.jpg */; };
+		104925DC198C083400706441 /* MJ Clarke.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1049257E198C083400706441 /* MJ Clarke.jpg */; };
+		104925DD198C083400706441 /* Mohammad Ashraful.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1049257F198C083400706441 /* Mohammad Ashraful.jpg */; };
+		104925DE198C083400706441 /* Mohammad Yousuf.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10492580198C083400706441 /* Mohammad Yousuf.jpg */; };
+		104925DF198C083400706441 /* Moin Khan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10492581198C083400706441 /* Moin Khan.jpg */; };
+		104925E0198C083400706441 /* MS Atapattu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10492582198C083400706441 /* MS Atapattu.jpg */; };
+		104925E1198C083400706441 /* MS Dhoni.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10492583198C083400706441 /* MS Dhoni.jpg */; };
+		104925E2198C083400706441 /* MV Boucher.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10492584198C083400706441 /* MV Boucher.jpg */; };
+		104925E3198C083400706441 /* NJ Astle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10492585198C083400706441 /* NJ Astle.jpg */; };
+		104925E4198C083400706441 /* P Aravinda de Silva.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10492586198C083400706441 /* P Aravinda de Silva.jpg */; };
+		104925E5198C083400706441 /* PD Collingwood.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10492587198C083400706441 /* PD Collingwood.jpg */; };
+		104925E6198C083400706441 /* PJL Dujon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10492588198C083400706441 /* PJL Dujon.jpg */; };
+		104925E7198C083400706441 /* R Dravid.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10492589198C083400706441 /* R Dravid.jpg */; };
+		104925E8198C083400706441 /* Rameez Raja.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1049258A198C083400706441 /* Rameez Raja.jpg */; };
+		104925E9198C083400706441 /* RB Richardson.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1049258B198C083400706441 /* RB Richardson.jpg */; };
+		104925EA198C083400706441 /* RP Arnold.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1049258C198C083400706441 /* RP Arnold.jpg */; };
+		104925EB198C083400706441 /* RR Sarwan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1049258D198C083400706441 /* RR Sarwan.jpg */; };
+		104925EC198C083400706441 /* RS Kaluwitharana.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1049258E198C083400706441 /* RS Kaluwitharana.jpg */; };
+		104925ED198C083400706441 /* RS Mahanama.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1049258F198C083400706441 /* RS Mahanama.jpg */; };
+		104925EE198C083400706441 /* S Chanderpaul.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10492590198C083400706441 /* S Chanderpaul.jpg */; };
+		104925EF198C083400706441 /* Saeed Anwar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10492591198C083400706441 /* Saeed Anwar.jpg */; };
+		104925F0198C083400706441 /* Saleem Malik.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10492592198C083400706441 /* Saleem Malik.jpg */; };
+		104925F1198C083400706441 /* Saqlain Mushtaq.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10492593198C083400706441 /* Saqlain Mushtaq.jpg */; };
+		104925F2198C083400706441 /* SB Styris.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10492594198C083400706441 /* SB Styris.jpg */; };
+		104925F3198C083400706441 /* SC Ganguly.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10492595198C083400706441 /* SC Ganguly.jpg */; };
+		104925F4198C083400706441 /* Shoaib Malik.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10492596198C083400706441 /* Shoaib Malik.jpg */; };
+		104925F5198C083400706441 /* SK Raina.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10492597198C083400706441 /* SK Raina.jpg */; };
+		104925F6198C083400706441 /* SL Malinga.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10492598198C083400706441 /* SL Malinga.jpg */; };
+		104925F7198C083400706441 /* SM Pollock.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10492599198C083400706441 /* SM Pollock.jpg */; };
+		104925F8198C083400706441 /* SP Fleming.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1049259A198C083400706441 /* SP Fleming.jpg */; };
+		104925F9198C083400706441 /* SR Watson.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1049259B198C083400706441 /* SR Watson.jpg */; };
+		104925FA198C083400706441 /* SR Waugh.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1049259C198C083400706441 /* SR Waugh.jpg */; };
+		104925FB198C083400706441 /* TM Dilshan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1049259D198C083400706441 /* TM Dilshan.jpg */; };
+		104925FC198C083400706441 /* V Sehwag.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1049259E198C083400706441 /* V Sehwag.jpg */; };
+		104925FD198C083400706441 /* Waqar Younis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1049259F198C083400706441 /* Waqar Younis.jpg */; };
+		104925FE198C083400706441 /* Wasim Akram.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 104925A0198C083400706441 /* Wasim Akram.jpg */; };
+		104925FF198C083400706441 /* WJ Cronje.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 104925A1198C083400706441 /* WJ Cronje.jpg */; };
+		10492600198C083400706441 /* WPUJC Vaas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 104925A2198C083400706441 /* WPUJC Vaas.jpg */; };
+		10492601198C083400706441 /* WU Tharanga.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 104925A3198C083400706441 /* WU Tharanga.jpg */; };
+		10492602198C083400706441 /* Younis Khan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 104925A4198C083400706441 /* Younis Khan.jpg */; };
+		10492603198C083400706441 /* Yuvraj Singh.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 104925A5198C083400706441 /* Yuvraj Singh.jpg */; };
+		10492604198C083400706441 /* Z Khan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 104925A6198C083400706441 /* Z Khan.jpg */; };
 		105277D71831764E00739B87 /* bluecap.png in Resources */ = {isa = PBXBuildFile; fileRef = 105277D61831764E00739B87 /* bluecap.png */; };
 		105277D918317B7600739B87 /* Redcaps.png in Resources */ = {isa = PBXBuildFile; fileRef = 105277D818317B7600739B87 /* Redcaps.png */; };
 		107CC152197ED2EC0042C4CF /* Inzamam-ul-Haq.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 107CC14A197ED2EC0042C4CF /* Inzamam-ul-Haq.jpg */; };
@@ -107,12 +200,105 @@
 		1042BEA617FC829D00FE9298 /* PlayerCardsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PlayerCardsTests-Info.plist"; sourceTree = "<group>"; };
 		1042BEA817FC829D00FE9298 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1042BEAA17FC829D00FE9298 /* PlayerCardsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayerCardsTests.m; sourceTree = "<group>"; };
-		1042BEB417FC82F000FE9298 /* iPhonePlayerCardsMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhonePlayerCardsMain.storyboard; sourceTree = "<group>"; };
 		1042BEBC17FDF35100FE9298 /* VCKiIntroViews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCKiIntroViews.h; sourceTree = "<group>"; };
 		1042BEBD17FDF35100FE9298 /* VCKiIntroViews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCKiIntroViews.m; sourceTree = "<group>"; };
 		10487D43183E149F0087B377 /* 132-ghost.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "132-ghost.png"; sourceTree = "<group>"; };
 		10487D44183E149F0087B377 /* 135-hockeymask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "135-hockeymask.png"; sourceTree = "<group>"; };
 		10487D47183E17F00087B377 /* 156-controlpad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "156-controlpad.png"; sourceTree = "<group>"; };
+		10492549198C083300706441 /* A Flower.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "A Flower.jpg"; path = "playerImages/A Flower.jpg"; sourceTree = "<group>"; };
+		1049254A198C083300706441 /* A Jadeja.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "A Jadeja.jpg"; path = "playerImages/A Jadeja.jpg"; sourceTree = "<group>"; };
+		1049254B198C083300706441 /* A Kumble.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "A Kumble.jpg"; path = "playerImages/A Kumble.jpg"; sourceTree = "<group>"; };
+		1049254C198C083300706441 /* A Ranatunga.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "A Ranatunga.jpg"; path = "playerImages/A Ranatunga.jpg"; sourceTree = "<group>"; };
+		1049254D198C083300706441 /* A Symonds.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "A Symonds.jpg"; path = "playerImages/A Symonds.jpg"; sourceTree = "<group>"; };
+		1049254E198C083300706441 /* AB Agarkar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "AB Agarkar.jpg"; path = "playerImages/AB Agarkar.jpg"; sourceTree = "<group>"; };
+		1049254F198C083300706441 /* Abdul Razzaq.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Abdul Razzaq.jpg"; path = "playerImages/Abdul Razzaq.jpg"; sourceTree = "<group>"; };
+		10492550198C083300706441 /* AC Gilchrist.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "AC Gilchrist.jpg"; path = "playerImages/AC Gilchrist.jpg"; sourceTree = "<group>"; };
+		10492551198C083300706441 /* AC Parore.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "AC Parore.jpg"; path = "playerImages/AC Parore.jpg"; sourceTree = "<group>"; };
+		10492552198C083400706441 /* ADR Campbell.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "ADR Campbell.jpg"; path = "playerImages/ADR Campbell.jpg"; sourceTree = "<group>"; };
+		10492553198C083400706441 /* AJ Stewart.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "AJ Stewart.jpg"; path = "playerImages/AJ Stewart.jpg"; sourceTree = "<group>"; };
+		10492554198C083400706441 /* AR Border.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "AR Border.jpg"; path = "playerImages/AR Border.jpg"; sourceTree = "<group>"; };
+		10492555198C083400706441 /* B Lee.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "B Lee.jpg"; path = "playerImages/B Lee.jpg"; sourceTree = "<group>"; };
+		10492556198C083400706441 /* BB McCullum.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "BB McCullum.jpg"; path = "playerImages/BB McCullum.jpg"; sourceTree = "<group>"; };
+		10492557198C083400706441 /* BC Lara.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "BC Lara.jpg"; path = "playerImages/BC Lara.jpg"; sourceTree = "<group>"; };
+		10492558198C083400706441 /* CA Walsh.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "CA Walsh.jpg"; path = "playerImages/CA Walsh.jpg"; sourceTree = "<group>"; };
+		10492559198C083400706441 /* CD McMillan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "CD McMillan.jpg"; path = "playerImages/CD McMillan.jpg"; sourceTree = "<group>"; };
+		1049255A198C083400706441 /* CEL Ambrose.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "CEL Ambrose.jpg"; path = "playerImages/CEL Ambrose.jpg"; sourceTree = "<group>"; };
+		1049255B198C083400706441 /* CH Gayle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "CH Gayle.jpg"; path = "playerImages/CH Gayle.jpg"; sourceTree = "<group>"; };
+		1049255C198C083400706441 /* CL Cairns.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "CL Cairns.jpg"; path = "playerImages/CL Cairns.jpg"; sourceTree = "<group>"; };
+		1049255D198C083400706441 /* CL Hooper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "CL Hooper.jpg"; path = "playerImages/CL Hooper.jpg"; sourceTree = "<group>"; };
+		1049255E198C083400706441 /* Corrections.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Corrections.txt; path = playerImages/Corrections.txt; sourceTree = "<group>"; };
+		1049255F198C083400706441 /* CZ Harris.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "CZ Harris.jpg"; path = "playerImages/CZ Harris.jpg"; sourceTree = "<group>"; };
+		10492560198C083400706441 /* DC Boon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "DC Boon.jpg"; path = "playerImages/DC Boon.jpg"; sourceTree = "<group>"; };
+		10492561198C083400706441 /* DL Haynes.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "DL Haynes.jpg"; path = "playerImages/DL Haynes.jpg"; sourceTree = "<group>"; };
+		10492562198C083400706441 /* DL Vettori.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "DL Vettori.jpg"; path = "playerImages/DL Vettori.jpg"; sourceTree = "<group>"; };
+		10492563198C083400706441 /* DR Martyn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "DR Martyn.jpg"; path = "playerImages/DR Martyn.jpg"; sourceTree = "<group>"; };
+		10492564198C083400706441 /* G Kirsten.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "G Kirsten.jpg"; path = "playerImages/G Kirsten.jpg"; sourceTree = "<group>"; };
+		10492565198C083400706441 /* GC Smith.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "GC Smith.jpg"; path = "playerImages/GC Smith.jpg"; sourceTree = "<group>"; };
+		10492566198C083400706441 /* GD McGrath.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "GD McGrath.jpg"; path = "playerImages/GD McGrath.jpg"; sourceTree = "<group>"; };
+		10492567198C083400706441 /* GW Flower.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "GW Flower.jpg"; path = "playerImages/GW Flower.jpg"; sourceTree = "<group>"; };
+		10492568198C083400706441 /* Harbhajan Singh.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Harbhajan Singh.jpg"; path = "playerImages/Harbhajan Singh.jpg"; sourceTree = "<group>"; };
+		10492569198C083400706441 /* HH Gibbs.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "HH Gibbs.jpg"; path = "playerImages/HH Gibbs.jpg"; sourceTree = "<group>"; };
+		1049256A198C083400706441 /* HH Streak.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "HH Streak.jpg"; path = "playerImages/HH Streak.jpg"; sourceTree = "<group>"; };
+		1049256B198C083400706441 /* HP Tillakaratne.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "HP Tillakaratne.jpg"; path = "playerImages/HP Tillakaratne.jpg"; sourceTree = "<group>"; };
+		1049256C198C083400706441 /* IA Healy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "IA Healy.jpg"; path = "playerImages/IA Healy.jpg"; sourceTree = "<group>"; };
+		1049256D198C083400706441 /* Ijaz Ahmed.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Ijaz Ahmed.jpg"; path = "playerImages/Ijaz Ahmed.jpg"; sourceTree = "<group>"; };
+		1049256E198C083400706441 /* Imran Khan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Imran Khan.jpg"; path = "playerImages/Imran Khan.jpg"; sourceTree = "<group>"; };
+		1049256F198C083400706441 /* IVA Richards.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "IVA Richards.jpg"; path = "playerImages/IVA Richards.jpg"; sourceTree = "<group>"; };
+		10492570198C083400706441 /* J Srinath.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "J Srinath.jpg"; path = "playerImages/J Srinath.jpg"; sourceTree = "<group>"; };
+		10492571198C083400706441 /* Javed Miandad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Javed Miandad.jpg"; path = "playerImages/Javed Miandad.jpg"; sourceTree = "<group>"; };
+		10492572198C083400706441 /* JH Kallis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "JH Kallis.jpg"; path = "playerImages/JH Kallis.jpg"; sourceTree = "<group>"; };
+		10492573198C083400706441 /* JM Anderson.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "JM Anderson.jpg"; path = "playerImages/JM Anderson.jpg"; sourceTree = "<group>"; };
+		10492574198C083400706441 /* JN Rhodes.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "JN Rhodes.jpg"; path = "playerImages/JN Rhodes.jpg"; sourceTree = "<group>"; };
+		10492575198C083400706441 /* Kapil Dev.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Kapil Dev.jpg"; path = "playerImages/Kapil Dev.jpg"; sourceTree = "<group>"; };
+		10492576198C083400706441 /* KC Sangakkara.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "KC Sangakkara.jpg"; path = "playerImages/KC Sangakkara.jpg"; sourceTree = "<group>"; };
+		10492577198C083400706441 /* L Klusener.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "L Klusener.jpg"; path = "playerImages/L Klusener.jpg"; sourceTree = "<group>"; };
+		10492578198C083400706441 /* M Azharuddin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "M Azharuddin.jpg"; path = "playerImages/M Azharuddin.jpg"; sourceTree = "<group>"; };
+		10492579198C083400706441 /* M Muralitharan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "M Muralitharan.jpg"; path = "playerImages/M Muralitharan.jpg"; sourceTree = "<group>"; };
+		1049257A198C083400706441 /* M Ntini.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "M Ntini.jpg"; path = "playerImages/M Ntini.jpg"; sourceTree = "<group>"; };
+		1049257B198C083400706441 /* ME Waugh.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "ME Waugh.jpg"; path = "playerImages/ME Waugh.jpg"; sourceTree = "<group>"; };
+		1049257C198C083400706441 /* MEK Hussey.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "MEK Hussey.jpg"; path = "playerImages/MEK Hussey.jpg"; sourceTree = "<group>"; };
+		1049257D198C083400706441 /* MG Bevan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "MG Bevan.jpg"; path = "playerImages/MG Bevan.jpg"; sourceTree = "<group>"; };
+		1049257E198C083400706441 /* MJ Clarke.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "MJ Clarke.jpg"; path = "playerImages/MJ Clarke.jpg"; sourceTree = "<group>"; };
+		1049257F198C083400706441 /* Mohammad Ashraful.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Mohammad Ashraful.jpg"; path = "playerImages/Mohammad Ashraful.jpg"; sourceTree = "<group>"; };
+		10492580198C083400706441 /* Mohammad Yousuf.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Mohammad Yousuf.jpg"; path = "playerImages/Mohammad Yousuf.jpg"; sourceTree = "<group>"; };
+		10492581198C083400706441 /* Moin Khan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Moin Khan.jpg"; path = "playerImages/Moin Khan.jpg"; sourceTree = "<group>"; };
+		10492582198C083400706441 /* MS Atapattu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "MS Atapattu.jpg"; path = "playerImages/MS Atapattu.jpg"; sourceTree = "<group>"; };
+		10492583198C083400706441 /* MS Dhoni.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "MS Dhoni.jpg"; path = "playerImages/MS Dhoni.jpg"; sourceTree = "<group>"; };
+		10492584198C083400706441 /* MV Boucher.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "MV Boucher.jpg"; path = "playerImages/MV Boucher.jpg"; sourceTree = "<group>"; };
+		10492585198C083400706441 /* NJ Astle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "NJ Astle.jpg"; path = "playerImages/NJ Astle.jpg"; sourceTree = "<group>"; };
+		10492586198C083400706441 /* P Aravinda de Silva.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "P Aravinda de Silva.jpg"; path = "playerImages/P Aravinda de Silva.jpg"; sourceTree = "<group>"; };
+		10492587198C083400706441 /* PD Collingwood.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "PD Collingwood.jpg"; path = "playerImages/PD Collingwood.jpg"; sourceTree = "<group>"; };
+		10492588198C083400706441 /* PJL Dujon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "PJL Dujon.jpg"; path = "playerImages/PJL Dujon.jpg"; sourceTree = "<group>"; };
+		10492589198C083400706441 /* R Dravid.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "R Dravid.jpg"; path = "playerImages/R Dravid.jpg"; sourceTree = "<group>"; };
+		1049258A198C083400706441 /* Rameez Raja.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Rameez Raja.jpg"; path = "playerImages/Rameez Raja.jpg"; sourceTree = "<group>"; };
+		1049258B198C083400706441 /* RB Richardson.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "RB Richardson.jpg"; path = "playerImages/RB Richardson.jpg"; sourceTree = "<group>"; };
+		1049258C198C083400706441 /* RP Arnold.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "RP Arnold.jpg"; path = "playerImages/RP Arnold.jpg"; sourceTree = "<group>"; };
+		1049258D198C083400706441 /* RR Sarwan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "RR Sarwan.jpg"; path = "playerImages/RR Sarwan.jpg"; sourceTree = "<group>"; };
+		1049258E198C083400706441 /* RS Kaluwitharana.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "RS Kaluwitharana.jpg"; path = "playerImages/RS Kaluwitharana.jpg"; sourceTree = "<group>"; };
+		1049258F198C083400706441 /* RS Mahanama.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "RS Mahanama.jpg"; path = "playerImages/RS Mahanama.jpg"; sourceTree = "<group>"; };
+		10492590198C083400706441 /* S Chanderpaul.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "S Chanderpaul.jpg"; path = "playerImages/S Chanderpaul.jpg"; sourceTree = "<group>"; };
+		10492591198C083400706441 /* Saeed Anwar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Saeed Anwar.jpg"; path = "playerImages/Saeed Anwar.jpg"; sourceTree = "<group>"; };
+		10492592198C083400706441 /* Saleem Malik.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Saleem Malik.jpg"; path = "playerImages/Saleem Malik.jpg"; sourceTree = "<group>"; };
+		10492593198C083400706441 /* Saqlain Mushtaq.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Saqlain Mushtaq.jpg"; path = "playerImages/Saqlain Mushtaq.jpg"; sourceTree = "<group>"; };
+		10492594198C083400706441 /* SB Styris.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "SB Styris.jpg"; path = "playerImages/SB Styris.jpg"; sourceTree = "<group>"; };
+		10492595198C083400706441 /* SC Ganguly.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "SC Ganguly.jpg"; path = "playerImages/SC Ganguly.jpg"; sourceTree = "<group>"; };
+		10492596198C083400706441 /* Shoaib Malik.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Shoaib Malik.jpg"; path = "playerImages/Shoaib Malik.jpg"; sourceTree = "<group>"; };
+		10492597198C083400706441 /* SK Raina.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "SK Raina.jpg"; path = "playerImages/SK Raina.jpg"; sourceTree = "<group>"; };
+		10492598198C083400706441 /* SL Malinga.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "SL Malinga.jpg"; path = "playerImages/SL Malinga.jpg"; sourceTree = "<group>"; };
+		10492599198C083400706441 /* SM Pollock.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "SM Pollock.jpg"; path = "playerImages/SM Pollock.jpg"; sourceTree = "<group>"; };
+		1049259A198C083400706441 /* SP Fleming.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "SP Fleming.jpg"; path = "playerImages/SP Fleming.jpg"; sourceTree = "<group>"; };
+		1049259B198C083400706441 /* SR Watson.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "SR Watson.jpg"; path = "playerImages/SR Watson.jpg"; sourceTree = "<group>"; };
+		1049259C198C083400706441 /* SR Waugh.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "SR Waugh.jpg"; path = "playerImages/SR Waugh.jpg"; sourceTree = "<group>"; };
+		1049259D198C083400706441 /* TM Dilshan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "TM Dilshan.jpg"; path = "playerImages/TM Dilshan.jpg"; sourceTree = "<group>"; };
+		1049259E198C083400706441 /* V Sehwag.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "V Sehwag.jpg"; path = "playerImages/V Sehwag.jpg"; sourceTree = "<group>"; };
+		1049259F198C083400706441 /* Waqar Younis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Waqar Younis.jpg"; path = "playerImages/Waqar Younis.jpg"; sourceTree = "<group>"; };
+		104925A0198C083400706441 /* Wasim Akram.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Wasim Akram.jpg"; path = "playerImages/Wasim Akram.jpg"; sourceTree = "<group>"; };
+		104925A1198C083400706441 /* WJ Cronje.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "WJ Cronje.jpg"; path = "playerImages/WJ Cronje.jpg"; sourceTree = "<group>"; };
+		104925A2198C083400706441 /* WPUJC Vaas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "WPUJC Vaas.jpg"; path = "playerImages/WPUJC Vaas.jpg"; sourceTree = "<group>"; };
+		104925A3198C083400706441 /* WU Tharanga.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "WU Tharanga.jpg"; path = "playerImages/WU Tharanga.jpg"; sourceTree = "<group>"; };
+		104925A4198C083400706441 /* Younis Khan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Younis Khan.jpg"; path = "playerImages/Younis Khan.jpg"; sourceTree = "<group>"; };
+		104925A5198C083400706441 /* Yuvraj Singh.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Yuvraj Singh.jpg"; path = "playerImages/Yuvraj Singh.jpg"; sourceTree = "<group>"; };
+		104925A6198C083400706441 /* Z Khan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Z Khan.jpg"; path = "playerImages/Z Khan.jpg"; sourceTree = "<group>"; };
 		105277D61831764E00739B87 /* bluecap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bluecap.png; sourceTree = "<group>"; };
 		105277D818317B7600739B87 /* Redcaps.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Redcaps.png; sourceTree = "<group>"; };
 		107CC14A197ED2EC0042C4CF /* Inzamam-ul-Haq.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Inzamam-ul-Haq.jpg"; path = "playerImages/Inzamam-ul-Haq.jpg"; sourceTree = "<group>"; };
@@ -158,6 +344,100 @@
 		1003900D18095776008B9453 /* playerImages */ = {
 			isa = PBXGroup;
 			children = (
+				10492549198C083300706441 /* A Flower.jpg */,
+				1049254A198C083300706441 /* A Jadeja.jpg */,
+				1049254B198C083300706441 /* A Kumble.jpg */,
+				1049254C198C083300706441 /* A Ranatunga.jpg */,
+				1049254D198C083300706441 /* A Symonds.jpg */,
+				1049254E198C083300706441 /* AB Agarkar.jpg */,
+				1049254F198C083300706441 /* Abdul Razzaq.jpg */,
+				10492550198C083300706441 /* AC Gilchrist.jpg */,
+				10492551198C083300706441 /* AC Parore.jpg */,
+				10492552198C083400706441 /* ADR Campbell.jpg */,
+				10492553198C083400706441 /* AJ Stewart.jpg */,
+				10492554198C083400706441 /* AR Border.jpg */,
+				10492555198C083400706441 /* B Lee.jpg */,
+				10492556198C083400706441 /* BB McCullum.jpg */,
+				10492557198C083400706441 /* BC Lara.jpg */,
+				10492558198C083400706441 /* CA Walsh.jpg */,
+				10492559198C083400706441 /* CD McMillan.jpg */,
+				1049255A198C083400706441 /* CEL Ambrose.jpg */,
+				1049255B198C083400706441 /* CH Gayle.jpg */,
+				1049255C198C083400706441 /* CL Cairns.jpg */,
+				1049255D198C083400706441 /* CL Hooper.jpg */,
+				1049255E198C083400706441 /* Corrections.txt */,
+				1049255F198C083400706441 /* CZ Harris.jpg */,
+				10492560198C083400706441 /* DC Boon.jpg */,
+				10492561198C083400706441 /* DL Haynes.jpg */,
+				10492562198C083400706441 /* DL Vettori.jpg */,
+				10492563198C083400706441 /* DR Martyn.jpg */,
+				10492564198C083400706441 /* G Kirsten.jpg */,
+				10492565198C083400706441 /* GC Smith.jpg */,
+				10492566198C083400706441 /* GD McGrath.jpg */,
+				10492567198C083400706441 /* GW Flower.jpg */,
+				10492568198C083400706441 /* Harbhajan Singh.jpg */,
+				10492569198C083400706441 /* HH Gibbs.jpg */,
+				1049256A198C083400706441 /* HH Streak.jpg */,
+				1049256B198C083400706441 /* HP Tillakaratne.jpg */,
+				1049256C198C083400706441 /* IA Healy.jpg */,
+				1049256D198C083400706441 /* Ijaz Ahmed.jpg */,
+				1049256E198C083400706441 /* Imran Khan.jpg */,
+				1049256F198C083400706441 /* IVA Richards.jpg */,
+				10492570198C083400706441 /* J Srinath.jpg */,
+				10492571198C083400706441 /* Javed Miandad.jpg */,
+				10492572198C083400706441 /* JH Kallis.jpg */,
+				10492573198C083400706441 /* JM Anderson.jpg */,
+				10492574198C083400706441 /* JN Rhodes.jpg */,
+				10492575198C083400706441 /* Kapil Dev.jpg */,
+				10492576198C083400706441 /* KC Sangakkara.jpg */,
+				10492577198C083400706441 /* L Klusener.jpg */,
+				10492578198C083400706441 /* M Azharuddin.jpg */,
+				10492579198C083400706441 /* M Muralitharan.jpg */,
+				1049257A198C083400706441 /* M Ntini.jpg */,
+				1049257B198C083400706441 /* ME Waugh.jpg */,
+				1049257C198C083400706441 /* MEK Hussey.jpg */,
+				1049257D198C083400706441 /* MG Bevan.jpg */,
+				1049257E198C083400706441 /* MJ Clarke.jpg */,
+				1049257F198C083400706441 /* Mohammad Ashraful.jpg */,
+				10492580198C083400706441 /* Mohammad Yousuf.jpg */,
+				10492581198C083400706441 /* Moin Khan.jpg */,
+				10492582198C083400706441 /* MS Atapattu.jpg */,
+				10492583198C083400706441 /* MS Dhoni.jpg */,
+				10492584198C083400706441 /* MV Boucher.jpg */,
+				10492585198C083400706441 /* NJ Astle.jpg */,
+				10492586198C083400706441 /* P Aravinda de Silva.jpg */,
+				10492587198C083400706441 /* PD Collingwood.jpg */,
+				10492588198C083400706441 /* PJL Dujon.jpg */,
+				10492589198C083400706441 /* R Dravid.jpg */,
+				1049258A198C083400706441 /* Rameez Raja.jpg */,
+				1049258B198C083400706441 /* RB Richardson.jpg */,
+				1049258C198C083400706441 /* RP Arnold.jpg */,
+				1049258D198C083400706441 /* RR Sarwan.jpg */,
+				1049258E198C083400706441 /* RS Kaluwitharana.jpg */,
+				1049258F198C083400706441 /* RS Mahanama.jpg */,
+				10492590198C083400706441 /* S Chanderpaul.jpg */,
+				10492591198C083400706441 /* Saeed Anwar.jpg */,
+				10492592198C083400706441 /* Saleem Malik.jpg */,
+				10492593198C083400706441 /* Saqlain Mushtaq.jpg */,
+				10492594198C083400706441 /* SB Styris.jpg */,
+				10492595198C083400706441 /* SC Ganguly.jpg */,
+				10492596198C083400706441 /* Shoaib Malik.jpg */,
+				10492597198C083400706441 /* SK Raina.jpg */,
+				10492598198C083400706441 /* SL Malinga.jpg */,
+				10492599198C083400706441 /* SM Pollock.jpg */,
+				1049259A198C083400706441 /* SP Fleming.jpg */,
+				1049259B198C083400706441 /* SR Watson.jpg */,
+				1049259C198C083400706441 /* SR Waugh.jpg */,
+				1049259D198C083400706441 /* TM Dilshan.jpg */,
+				1049259E198C083400706441 /* V Sehwag.jpg */,
+				1049259F198C083400706441 /* Waqar Younis.jpg */,
+				104925A0198C083400706441 /* Wasim Akram.jpg */,
+				104925A1198C083400706441 /* WJ Cronje.jpg */,
+				104925A2198C083400706441 /* WPUJC Vaas.jpg */,
+				104925A3198C083400706441 /* WU Tharanga.jpg */,
+				104925A4198C083400706441 /* Younis Khan.jpg */,
+				104925A5198C083400706441 /* Yuvraj Singh.jpg */,
+				104925A6198C083400706441 /* Z Khan.jpg */,
 				107CC15A197ED8D10042C4CF /* avatar.jpg */,
 				107CC14A197ED2EC0042C4CF /* Inzamam-ul-Haq.jpg */,
 				107CC14B197ED2EC0042C4CF /* DPMD Jayawardene.jpg */,
@@ -205,7 +485,6 @@
 			isa = PBXGroup;
 			children = (
 				10242AB2183EF9FA00DBF9F2 /* iPhonePlayerCardsMain3_5firmfactor.storyboard */,
-				1042BEB417FC82F000FE9298 /* iPhonePlayerCardsMain.storyboard */,
 				10FE0143180ACBC4007CF6F8 /* applicationLogic */,
 				10FE0142180ACB7C007CF6F8 /* resources */,
 				10FE0141180ACAB3007CF6F8 /* viewControllers */,
@@ -380,28 +659,121 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1042BEB517FC82F000FE9298 /* iPhonePlayerCardsMain.storyboard in Resources */,
+				104925BC198C083400706441 /* Corrections.txt in Resources */,
 				10E0EDE9197C448700D63937 /* 51-outlet.png in Resources */,
 				107CC154197ED2EC0042C4CF /* Misbah-ul-Haq .jpg in Resources */,
+				104925F4198C083400706441 /* Shoaib Malik.jpg in Resources */,
+				104925AE198C083400706441 /* AC Gilchrist.jpg in Resources */,
+				104925F0198C083400706441 /* Saleem Malik.jpg in Resources */,
+				104925B5198C083400706441 /* BC Lara.jpg in Resources */,
+				104925D7198C083400706441 /* M Muralitharan.jpg in Resources */,
+				104925FD198C083400706441 /* Waqar Younis.jpg in Resources */,
+				104925EA198C083400706441 /* RP Arnold.jpg in Resources */,
+				104925A9198C083400706441 /* A Kumble.jpg in Resources */,
+				104925DB198C083400706441 /* MG Bevan.jpg in Resources */,
+				104925C9198C083400706441 /* HP Tillakaratne.jpg in Resources */,
 				103433CC180DBF5F00058CC1 /* 2.png in Resources */,
+				104925CA198C083400706441 /* IA Healy.jpg in Resources */,
+				104925C3198C083400706441 /* GC Smith.jpg in Resources */,
+				104925D6198C083400706441 /* M Azharuddin.jpg in Resources */,
+				104925C6198C083400706441 /* Harbhajan Singh.jpg in Resources */,
+				104925ED198C083400706441 /* RS Mahanama.jpg in Resources */,
+				104925DA198C083400706441 /* MEK Hussey.jpg in Resources */,
+				104925D3198C083400706441 /* Kapil Dev.jpg in Resources */,
+				104925F1198C083400706441 /* Saqlain Mushtaq.jpg in Resources */,
 				107CC158197ED2EC0042C4CF /* SR Tendulkar.jpg in Resources */,
+				104925BB198C083400706441 /* CL Hooper.jpg in Resources */,
+				104925B3198C083400706441 /* B Lee.jpg in Resources */,
+				104925D0198C083400706441 /* JH Kallis.jpg in Resources */,
 				107CC152197ED2EC0042C4CF /* Inzamam-ul-Haq.jpg in Resources */,
+				104925C2198C083400706441 /* G Kirsten.jpg in Resources */,
+				104925B4198C083400706441 /* BB McCullum.jpg in Resources */,
 				10038FFC1807D2A8008B9453 /* manualPages.plist in Resources */,
+				104925CD198C083400706441 /* IVA Richards.jpg in Resources */,
+				104925B7198C083400706441 /* CD McMillan.jpg in Resources */,
+				104925DD198C083400706441 /* Mohammad Ashraful.jpg in Resources */,
+				104925FC198C083400706441 /* V Sehwag.jpg in Resources */,
+				104925F5198C083400706441 /* SK Raina.jpg in Resources */,
 				107CC155197ED2EC0042C4CF /* RT Ponting.jpg in Resources */,
+				104925DF198C083400706441 /* Moin Khan.jpg in Resources */,
 				107CC159197ED2EC0042C4CF /* ST Jayasuriya.jpg in Resources */,
+				104925EE198C083400706441 /* S Chanderpaul.jpg in Resources */,
+				104925C7198C083400706441 /* HH Gibbs.jpg in Resources */,
+				104925FB198C083400706441 /* TM Dilshan.jpg in Resources */,
 				10487D46183E149F0087B377 /* 135-hockeymask.png in Resources */,
+				104925D2198C083400706441 /* JN Rhodes.jpg in Resources */,
 				105277D71831764E00739B87 /* bluecap.png in Resources */,
+				104925C1198C083400706441 /* DR Martyn.jpg in Resources */,
+				104925B1198C083400706441 /* AJ Stewart.jpg in Resources */,
+				104925E3198C083400706441 /* NJ Astle.jpg in Resources */,
+				104925AB198C083400706441 /* A Symonds.jpg in Resources */,
+				104925AF198C083400706441 /* AC Parore.jpg in Resources */,
 				107CC157197ED2EC0042C4CF /* SK Warne.jpg in Resources */,
 				103433CA180DBA8B00058CC1 /* 1.png in Resources */,
 				10242AB3183EF9FA00DBF9F2 /* iPhonePlayerCardsMain3_5firmfactor.storyboard in Resources */,
+				104925E7198C083400706441 /* R Dravid.jpg in Resources */,
 				10038FFA1807B1E6008B9453 /* playerData.plist in Resources */,
+				104925C8198C083400706441 /* HH Streak.jpg in Resources */,
+				10492602198C083400706441 /* Younis Khan.jpg in Resources */,
+				104925FE198C083400706441 /* Wasim Akram.jpg in Resources */,
 				107CC156197ED2EC0042C4CF /* Shahid Afridi.jpg in Resources */,
+				104925E1198C083400706441 /* MS Dhoni.jpg in Resources */,
+				104925E9198C083400706441 /* RB Richardson.jpg in Resources */,
 				105277D918317B7600739B87 /* Redcaps.png in Resources */,
+				104925D8198C083400706441 /* M Ntini.jpg in Resources */,
+				104925F7198C083400706441 /* SM Pollock.jpg in Resources */,
 				10487D45183E149F0087B377 /* 132-ghost.png in Resources */,
+				104925EC198C083400706441 /* RS Kaluwitharana.jpg in Resources */,
+				10492604198C083400706441 /* Z Khan.jpg in Resources */,
 				1042BE9017FC829D00FE9298 /* InfoPlist.strings in Resources */,
+				10492600198C083400706441 /* WPUJC Vaas.jpg in Resources */,
+				104925BA198C083400706441 /* CL Cairns.jpg in Resources */,
+				104925D4198C083400706441 /* KC Sangakkara.jpg in Resources */,
+				104925E0198C083400706441 /* MS Atapattu.jpg in Resources */,
+				104925F2198C083400706441 /* SB Styris.jpg in Resources */,
+				104925B0198C083400706441 /* ADR Campbell.jpg in Resources */,
+				104925F9198C083400706441 /* SR Watson.jpg in Resources */,
+				104925A7198C083400706441 /* A Flower.jpg in Resources */,
+				104925A8198C083400706441 /* A Jadeja.jpg in Resources */,
+				104925F6198C083400706441 /* SL Malinga.jpg in Resources */,
 				10487D48183E17F00087B377 /* 156-controlpad.png in Resources */,
+				104925AA198C083400706441 /* A Ranatunga.jpg in Resources */,
+				104925BF198C083400706441 /* DL Haynes.jpg in Resources */,
 				107CC153197ED2EC0042C4CF /* DPMD Jayawardene.jpg in Resources */,
+				104925B2198C083400706441 /* AR Border.jpg in Resources */,
+				104925E2198C083400706441 /* MV Boucher.jpg in Resources */,
+				104925AC198C083400706441 /* AB Agarkar.jpg in Resources */,
+				104925CB198C083400706441 /* Ijaz Ahmed.jpg in Resources */,
+				104925E5198C083400706441 /* PD Collingwood.jpg in Resources */,
+				104925CE198C083400706441 /* J Srinath.jpg in Resources */,
+				104925FA198C083400706441 /* SR Waugh.jpg in Resources */,
+				104925D9198C083400706441 /* ME Waugh.jpg in Resources */,
+				104925C5198C083400706441 /* GW Flower.jpg in Resources */,
+				104925D1198C083400706441 /* JM Anderson.jpg in Resources */,
+				104925E4198C083400706441 /* P Aravinda de Silva.jpg in Resources */,
+				104925E6198C083400706441 /* PJL Dujon.jpg in Resources */,
+				10492603198C083400706441 /* Yuvraj Singh.jpg in Resources */,
+				104925EB198C083400706441 /* RR Sarwan.jpg in Resources */,
+				104925E8198C083400706441 /* Rameez Raja.jpg in Resources */,
+				104925C4198C083400706441 /* GD McGrath.jpg in Resources */,
+				104925B8198C083400706441 /* CEL Ambrose.jpg in Resources */,
+				104925BE198C083400706441 /* DC Boon.jpg in Resources */,
+				104925DC198C083400706441 /* MJ Clarke.jpg in Resources */,
+				104925F8198C083400706441 /* SP Fleming.jpg in Resources */,
+				10492601198C083400706441 /* WU Tharanga.jpg in Resources */,
+				104925EF198C083400706441 /* Saeed Anwar.jpg in Resources */,
+				104925D5198C083400706441 /* L Klusener.jpg in Resources */,
+				104925CF198C083400706441 /* Javed Miandad.jpg in Resources */,
+				104925F3198C083400706441 /* SC Ganguly.jpg in Resources */,
+				104925AD198C083400706441 /* Abdul Razzaq.jpg in Resources */,
+				104925FF198C083400706441 /* WJ Cronje.jpg in Resources */,
+				104925C0198C083400706441 /* DL Vettori.jpg in Resources */,
+				104925CC198C083400706441 /* Imran Khan.jpg in Resources */,
+				104925B9198C083400706441 /* CH Gayle.jpg in Resources */,
+				104925DE198C083400706441 /* Mohammad Yousuf.jpg in Resources */,
 				107CC15B197ED8D10042C4CF /* avatar.jpg in Resources */,
+				104925B6198C083400706441 /* CA Walsh.jpg in Resources */,
+				104925BD198C083400706441 /* CZ Harris.jpg in Resources */,
 				1042BE9817FC829D00FE9298 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

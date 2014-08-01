@@ -36,7 +36,7 @@
     VCKiAppDelegate* appDelegate = [[UIApplication sharedApplication] delegate];
     
     
-    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:appDelegate.storyBoardInUse bundle:[NSBundle mainBundle]];
+    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"iPhonePlayerCardsMain3_5firmfactor" bundle:[NSBundle mainBundle]];
     
     page = [storyBoard instantiateViewControllerWithIdentifier:@"VCKiManualPages"];
     page.pageIndex = [NSNumber numberWithInt:0];

@@ -76,8 +76,9 @@
         self.span.text = @"";
     }
     
-    if([UIImage imageNamed:player.fullName]){
-        self.playerImage.image = [UIImage imageNamed:player.fullName];
+    UIImage* playerImage = [UIImage imageNamed: [NSString stringWithFormat:@"%@.jpg", player.fullName]];
+    if(playerImage){
+        self.playerImage.image = playerImage;
     }
     
     [self setButton: self.testMatches WithValue:[NSNumber numberWithInt:player.numberOfTests]];
