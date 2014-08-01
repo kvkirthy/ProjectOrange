@@ -80,6 +80,9 @@
     if(playerImage){
         self.playerImage.image = playerImage;
     }
+    else{
+        self.playerImage.image = [UIImage imageNamed:@"avatar.jpg"];
+    }
     
     [self setButton: self.testMatches WithValue:[NSNumber numberWithInt:player.numberOfTests]];
     [self setButton:self.testMatches WithValue:[NSNumber numberWithInt:player.numberOfTests]];
@@ -152,8 +155,8 @@
         resultVc.secondaryStatValue = _secondPlayerStatValue;
         resultVc.statCaption = _givenPlayerStatCaption;
         resultVc.secondaryPlayerName = _secondPlayer.fullName;
-        resultVc.primaryPlayerPicture.image = self.playerImage.image;
-        resultVc.secondaryPlayerPicture.image = [UIImage imageNamed:_secondPlayer.playerPicture];
+        resultVc.primaryPlayerPictureName =[NSString stringWithFormat:@"%@.jpg",self.fullName.text];
+        resultVc.secondaryPlayerPictureName = [NSString stringWithFormat:@"%@.jpg",_secondPlayer.fullName];
         resultVc.primaryPlayerIndex = _primaryPlayerIndex;
         resultVc.secondaryPlayerIndex = _secondaryPlayerIndex;
         resultVc.comparisionOperator = _comparisionOperator;

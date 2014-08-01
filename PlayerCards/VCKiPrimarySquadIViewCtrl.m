@@ -70,7 +70,7 @@ NSMutableArray* _playersList;
     
     cell.textLabel.text = player.fullName;
     cell.detailTextLabel.text = player.team;
-    cell.imageView.image = [UIImage imageNamed:player.playerPicture];
+    cell.imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.jpg", player.fullName ]];
     cell.imageView.layer.cornerRadius = 10;
     
     return cell;

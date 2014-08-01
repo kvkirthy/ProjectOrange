@@ -59,7 +59,6 @@
 		104925B9198C083400706441 /* CH Gayle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1049255B198C083400706441 /* CH Gayle.jpg */; };
 		104925BA198C083400706441 /* CL Cairns.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1049255C198C083400706441 /* CL Cairns.jpg */; };
 		104925BB198C083400706441 /* CL Hooper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1049255D198C083400706441 /* CL Hooper.jpg */; };
-		104925BC198C083400706441 /* Corrections.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1049255E198C083400706441 /* Corrections.txt */; };
 		104925BD198C083400706441 /* CZ Harris.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1049255F198C083400706441 /* CZ Harris.jpg */; };
 		104925BE198C083400706441 /* DC Boon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10492560198C083400706441 /* DC Boon.jpg */; };
 		104925BF198C083400706441 /* DL Haynes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10492561198C083400706441 /* DL Haynes.jpg */; };
@@ -226,7 +225,6 @@
 		1049255B198C083400706441 /* CH Gayle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "CH Gayle.jpg"; path = "playerImages/CH Gayle.jpg"; sourceTree = "<group>"; };
 		1049255C198C083400706441 /* CL Cairns.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "CL Cairns.jpg"; path = "playerImages/CL Cairns.jpg"; sourceTree = "<group>"; };
 		1049255D198C083400706441 /* CL Hooper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "CL Hooper.jpg"; path = "playerImages/CL Hooper.jpg"; sourceTree = "<group>"; };
-		1049255E198C083400706441 /* Corrections.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Corrections.txt; path = playerImages/Corrections.txt; sourceTree = "<group>"; };
 		1049255F198C083400706441 /* CZ Harris.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "CZ Harris.jpg"; path = "playerImages/CZ Harris.jpg"; sourceTree = "<group>"; };
 		10492560198C083400706441 /* DC Boon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "DC Boon.jpg"; path = "playerImages/DC Boon.jpg"; sourceTree = "<group>"; };
 		10492561198C083400706441 /* DL Haynes.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "DL Haynes.jpg"; path = "playerImages/DL Haynes.jpg"; sourceTree = "<group>"; };
@@ -365,7 +363,6 @@
 				1049255B198C083400706441 /* CH Gayle.jpg */,
 				1049255C198C083400706441 /* CL Cairns.jpg */,
 				1049255D198C083400706441 /* CL Hooper.jpg */,
-				1049255E198C083400706441 /* Corrections.txt */,
 				1049255F198C083400706441 /* CZ Harris.jpg */,
 				10492560198C083400706441 /* DC Boon.jpg */,
 				10492561198C083400706441 /* DL Haynes.jpg */,
@@ -659,7 +656,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				104925BC198C083400706441 /* Corrections.txt in Resources */,
 				10E0EDE9197C448700D63937 /* 51-outlet.png in Resources */,
 				107CC154197ED2EC0042C4CF /* Misbah-ul-Haq .jpg in Resources */,
 				104925F4198C083400706441 /* Shoaib Malik.jpg in Resources */,

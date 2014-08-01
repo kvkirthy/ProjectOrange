@@ -34,9 +34,17 @@ VCKiPlayScreenViewCtrl *playscreen;
 {
     [super viewDidLoad];
     
-    #warning "rounded corners not applied"
-    self.primaryPlayerPicture.layer.cornerRadius = 30;
-    self.secondaryPlayerPicture.layer.cornerRadius = 30;
+    UIImage* image = [UIImage imageNamed:self.primaryPlayerPictureName];
+    if(!image){
+        image = [UIImage imageNamed:@"avatar.jpg"];
+    }
+     self.primaryPlayerPicture.image = image;
+    
+    image = [UIImage imageNamed:self.secondaryPlayerPictureName];
+    if(!image){
+        image = [UIImage imageNamed:@"avatar.jpg"];
+    }
+    self.secondaryPlayerPicture.image = image;
     
     player = [[VCKiPlayerRecordReader alloc]init];
     if(!self.comparisionOperator){
