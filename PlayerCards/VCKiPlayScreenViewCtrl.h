@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <iAd/iAd.h>
 
-@interface VCKiPlayScreenViewCtrl : UIViewController
+@interface VCKiPlayScreenViewCtrl : UIViewController<ADBannerViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *playerImage;
 

@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <iAd/iAd.h>
 
-@interface VCKiPlayResultViewController : UIViewController
+@interface VCKiPlayResultViewController : UIViewController<ADBannerViewDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *primaryPlayerPicture;
 @property (weak, nonatomic) IBOutlet UIImageView *secondaryPlayerPicture;
 @property (weak, nonatomic) IBOutlet UILabel *winnerMessage;

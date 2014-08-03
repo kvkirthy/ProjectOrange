@@ -143,6 +143,7 @@
 		107CC159197ED2EC0042C4CF /* ST Jayasuriya.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 107CC151197ED2EC0042C4CF /* ST Jayasuriya.jpg */; };
 		107CC15B197ED8D10042C4CF /* avatar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 107CC15A197ED8D10042C4CF /* avatar.jpg */; };
 		10A49CAC18131BFB00DA5609 /* VCKiPrimarySquadIViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A49CAB18131BFB00DA5609 /* VCKiPrimarySquadIViewCtrl.m */; };
+		10A86330198D3A25009F2CCD /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10A8632F198D3A25009F2CCD /* iAd.framework */; };
 		10E0EDE9197C448700D63937 /* 51-outlet.png in Resources */ = {isa = PBXBuildFile; fileRef = 10E0EDE8197C448700D63937 /* 51-outlet.png */; };
 		10FE0140180A7527007CF6F8 /* VCKiConfirmBetScreenViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 10FE013F180A7527007CF6F8 /* VCKiConfirmBetScreenViewCtrl.m */; };
 /* End PBXBuildFile section */
@@ -310,6 +311,7 @@
 		107CC15A197ED8D10042C4CF /* avatar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = avatar.jpg; path = playerImages/avatar.jpg; sourceTree = "<group>"; };
 		10A49CAA18131BFB00DA5609 /* VCKiPrimarySquadIViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCKiPrimarySquadIViewCtrl.h; sourceTree = "<group>"; };
 		10A49CAB18131BFB00DA5609 /* VCKiPrimarySquadIViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCKiPrimarySquadIViewCtrl.m; sourceTree = "<group>"; };
+		10A8632F198D3A25009F2CCD /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		10E0EDE8197C448700D63937 /* 51-outlet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "51-outlet.png"; sourceTree = "<group>"; };
 		10FE013E180A7527007CF6F8 /* VCKiConfirmBetScreenViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCKiConfirmBetScreenViewCtrl.h; sourceTree = "<group>"; };
 		10FE013F180A7527007CF6F8 /* VCKiConfirmBetScreenViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCKiConfirmBetScreenViewCtrl.m; sourceTree = "<group>"; };
@@ -320,6 +322,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10A86330198D3A25009F2CCD /* iAd.framework in Frameworks */,
 				1042BE8817FC829D00FE9298 /* CoreGraphics.framework in Frameworks */,
 				1042BE8A17FC829D00FE9298 /* UIKit.framework in Frameworks */,
 				1042BE8617FC829D00FE9298 /* Foundation.framework in Frameworks */,
@@ -470,6 +473,7 @@
 		1042BE8417FC829D00FE9298 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				10A8632F198D3A25009F2CCD /* iAd.framework */,
 				1042BE8517FC829D00FE9298 /* Foundation.framework */,
 				1042BE8717FC829D00FE9298 /* CoreGraphics.framework */,
 				1042BE8917FC829D00FE9298 /* UIKit.framework */,
