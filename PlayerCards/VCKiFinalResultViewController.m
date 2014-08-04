@@ -35,7 +35,7 @@
     }
     else
     {
-        self.finalResultMessage.text = @"You should try again. Hope you enjoyed the game!";
+        self.finalResultMessage.text = @"Game Over. You should try again. Hope you enjoyed the game!";
         self.winnerImage.hidden = YES;
         self.looserImage.hidden = NO;
     }
