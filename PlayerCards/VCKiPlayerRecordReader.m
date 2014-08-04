@@ -14,11 +14,17 @@
 static NSMutableArray* _primarySquad;
 static NSMutableArray* _secondSquad;
 
-const int squadBeginCount = 3;
+const int squadBeginCount = 24;
 
 static NSArray* availablePlayers = nil;
 static NSString* _resourcePath = nil;
 static NSDictionary* _playerDataCollection = nil;
+
+- (void)resetSquads
+{
+    _primarySquad = nil;
+    _secondSquad = nil;
+}
 
 -(VCKiPlayerEntity *) getRandomPrimaryPlayer: (NSUInteger *) refPlayerIndex
 {
@@ -97,7 +103,6 @@ static NSDictionary* _playerDataCollection = nil;
 - (id) init{
     self = [super init];
     
-
     [self createSquad];
     
     return self;

@@ -29,7 +29,7 @@ NSTimer *timer;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    counter = 3;
    timer = [NSTimer scheduledTimerWithTimeInterval:0.7 target:self selector:@selector(timerTicked:) userInfo:nil repeats:YES];
 }
 

@@ -35,6 +35,9 @@ NSMutableArray* _playersList;
     _tableView.dataSource = self;
     _playersList = [[NSMutableArray alloc]init];
     
+    if(playerManager){
+        [playerManager resetSquads];
+    }
     playerManager = [[VCKiPlayerRecordReader alloc]init];
     
     VCKiPlayerEntity *player = [playerManager getNextPrimaryPlayer];
