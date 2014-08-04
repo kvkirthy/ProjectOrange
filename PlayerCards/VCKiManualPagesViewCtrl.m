@@ -7,7 +7,6 @@
 //
 
 #import "VCKiManualPagesViewCtrl.h"
-#import "VCKiManualPageContentSerializer.h"
 
 @interface VCKiManualPagesViewCtrl ()
 - (UIImage *)resizeImage:(UIImage*)originalImage scaledToSize:(CGSize)size;

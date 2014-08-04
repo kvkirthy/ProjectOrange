@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		10038FFA1807B1E6008B9453 /* playerData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 10038FF91807B1E6008B9453 /* playerData.plist */; };
 		10038FFC1807D2A8008B9453 /* manualPages.plist in Resources */ = {isa = PBXBuildFile; fileRef = 10038FFB1807D2A8008B9453 /* manualPages.plist */; };
-		10038FFF1807D41C008B9453 /* VCKiManualPageContentSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 10038FFE1807D41C008B9453 /* VCKiManualPageContentSerializer.m */; };
 		1003900218084F9F008B9453 /* VCKiPlayerEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 1003900118084F9F008B9453 /* VCKiPlayerEntity.m */; };
 		10039005180863C8008B9453 /* VCKiPlayerRecordReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 10039004180863C8008B9453 /* VCKiPlayerRecordReader.m */; };
 		100390081808782B008B9453 /* VCKiPlayScreenViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 100390071808782B008B9453 /* VCKiPlayScreenViewCtrl.m */; };
@@ -163,8 +162,6 @@
 /* Begin PBXFileReference section */
 		10038FF91807B1E6008B9453 /* playerData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = playerData.plist; sourceTree = "<group>"; };
 		10038FFB1807D2A8008B9453 /* manualPages.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = manualPages.plist; sourceTree = "<group>"; };
-		10038FFD1807D41C008B9453 /* VCKiManualPageContentSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCKiManualPageContentSerializer.h; sourceTree = "<group>"; };
-		10038FFE1807D41C008B9453 /* VCKiManualPageContentSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCKiManualPageContentSerializer.m; sourceTree = "<group>"; };
 		1003900018084F9F008B9453 /* VCKiPlayerEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCKiPlayerEntity.h; sourceTree = "<group>"; };
 		1003900118084F9F008B9453 /* VCKiPlayerEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCKiPlayerEntity.m; sourceTree = "<group>"; };
 		10039003180863C8008B9453 /* VCKiPlayerRecordReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCKiPlayerRecordReader.h; sourceTree = "<group>"; };
@@ -580,8 +577,6 @@
 		10FE0143180ACBC4007CF6F8 /* applicationLogic */ = {
 			isa = PBXGroup;
 			children = (
-				10038FFD1807D41C008B9453 /* VCKiManualPageContentSerializer.h */,
-				10038FFE1807D41C008B9453 /* VCKiManualPageContentSerializer.m */,
 				1003900018084F9F008B9453 /* VCKiPlayerEntity.h */,
 				1003900118084F9F008B9453 /* VCKiPlayerEntity.m */,
 				10039003180863C8008B9453 /* VCKiPlayerRecordReader.h */,
@@ -813,7 +808,6 @@
 				1031F980182E2C1F00637D9E /* VCKiSeondarySquatViewController.m in Sources */,
 				1003900218084F9F008B9453 /* VCKiPlayerEntity.m in Sources */,
 				100390081808782B008B9453 /* VCKiPlayScreenViewCtrl.m in Sources */,
-				10038FFF1807D41C008B9453 /* VCKiManualPageContentSerializer.m in Sources */,
 				10039005180863C8008B9453 /* VCKiPlayerRecordReader.m in Sources */,
 				10FE0140180A7527007CF6F8 /* VCKiConfirmBetScreenViewCtrl.m in Sources */,
 			);
