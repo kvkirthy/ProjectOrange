@@ -30,14 +30,14 @@
 #warning "Need to implement play again!"
     if (self.isPrimaryPlayerWon) {
         self.finalResultMessage.text = @"Congratulations, Excellent game. You are a stats champ!";
-        self.winnerImage.hidden = NO;
-        self.looserImage.hidden = YES;
+        [self.winnerImage setHidden: NO];
+        [self.looserImage setHidden: YES];
     }
     else
     {
         self.finalResultMessage.text = @"Game Over. You should try again. Hope you enjoyed the game!";
-        self.winnerImage.hidden = YES;
-        self.looserImage.hidden = NO;
+        [self.winnerImage setHidden: YES];
+        [self.looserImage setHidden: NO];
     }
 	
 }
