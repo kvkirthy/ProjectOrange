@@ -144,6 +144,8 @@
 		107CC15B197ED8D10042C4CF /* avatar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 107CC15A197ED8D10042C4CF /* avatar.jpg */; };
 		10A49CAC18131BFB00DA5609 /* VCKiPrimarySquadIViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A49CAB18131BFB00DA5609 /* VCKiPrimarySquadIViewCtrl.m */; };
 		10A86330198D3A25009F2CCD /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10A8632F198D3A25009F2CCD /* iAd.framework */; };
+		10C00A56198E67AD0050F5A7 /* trophy.png in Resources */ = {isa = PBXBuildFile; fileRef = 10C00A55198E67AD0050F5A7 /* trophy.png */; };
+		10C00A58198FF9490050F5A7 /* Sad.png in Resources */ = {isa = PBXBuildFile; fileRef = 10C00A57198FF9490050F5A7 /* Sad.png */; };
 		10E0EDE9197C448700D63937 /* 51-outlet.png in Resources */ = {isa = PBXBuildFile; fileRef = 10E0EDE8197C448700D63937 /* 51-outlet.png */; };
 		10FE0140180A7527007CF6F8 /* VCKiConfirmBetScreenViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 10FE013F180A7527007CF6F8 /* VCKiConfirmBetScreenViewCtrl.m */; };
 /* End PBXBuildFile section */
@@ -312,6 +314,8 @@
 		10A49CAA18131BFB00DA5609 /* VCKiPrimarySquadIViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCKiPrimarySquadIViewCtrl.h; sourceTree = "<group>"; };
 		10A49CAB18131BFB00DA5609 /* VCKiPrimarySquadIViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCKiPrimarySquadIViewCtrl.m; sourceTree = "<group>"; };
 		10A8632F198D3A25009F2CCD /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		10C00A55198E67AD0050F5A7 /* trophy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trophy.png; sourceTree = "<group>"; };
+		10C00A57198FF9490050F5A7 /* Sad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sad.png; sourceTree = "<group>"; };
 		10E0EDE8197C448700D63937 /* 51-outlet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "51-outlet.png"; sourceTree = "<group>"; };
 		10FE013E180A7527007CF6F8 /* VCKiConfirmBetScreenViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCKiConfirmBetScreenViewCtrl.h; sourceTree = "<group>"; };
 		10FE013F180A7527007CF6F8 /* VCKiConfirmBetScreenViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCKiConfirmBetScreenViewCtrl.m; sourceTree = "<group>"; };
@@ -557,6 +561,8 @@
 		10FE0142180ACB7C007CF6F8 /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				10C00A57198FF9490050F5A7 /* Sad.png */,
+				10C00A55198E67AD0050F5A7 /* trophy.png */,
 				10E0EDE8197C448700D63937 /* 51-outlet.png */,
 				10487D47183E17F00087B377 /* 156-controlpad.png */,
 				10487D43183E149F0087B377 /* 132-ghost.png */,
@@ -672,6 +678,7 @@
 				104925A9198C083400706441 /* A Kumble.jpg in Resources */,
 				104925DB198C083400706441 /* MG Bevan.jpg in Resources */,
 				104925C9198C083400706441 /* HP Tillakaratne.jpg in Resources */,
+				10C00A58198FF9490050F5A7 /* Sad.png in Resources */,
 				103433CC180DBF5F00058CC1 /* 2.png in Resources */,
 				104925CA198C083400706441 /* IA Healy.jpg in Resources */,
 				104925C3198C083400706441 /* GC Smith.jpg in Resources */,
@@ -719,6 +726,7 @@
 				107CC156197ED2EC0042C4CF /* Shahid Afridi.jpg in Resources */,
 				104925E1198C083400706441 /* MS Dhoni.jpg in Resources */,
 				104925E9198C083400706441 /* RB Richardson.jpg in Resources */,
+				10C00A56198E67AD0050F5A7 /* trophy.png in Resources */,
 				105277D918317B7600739B87 /* Redcaps.png in Resources */,
 				104925D8198C083400706441 /* M Ntini.jpg in Resources */,
 				104925F7198C083400706441 /* SM Pollock.jpg in Resources */,

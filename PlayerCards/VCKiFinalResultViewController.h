@@ -12,5 +12,7 @@
 
 @property BOOL isPrimaryPlayerWon;
 @property (weak, nonatomic) IBOutlet UILabel *finalResultMessage;
+@property (weak, nonatomic) IBOutlet UIImageView *winnerImage;
+@property (weak, nonatomic) IBOutlet UIImageView *looserImage;
 
 @end
