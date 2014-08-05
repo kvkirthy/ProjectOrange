@@ -20,6 +20,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *oppositionCount;
 
 
+
 @property (weak, nonatomic) IBOutlet UILabel *testRunsCaption;
 @property (weak, nonatomic) IBOutlet UIButton *testRuns;
 @property (weak, nonatomic) IBOutlet UILabel *testMatchesCaption;
@@ -57,7 +58,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *t20Centuries;
 
 
-
+- (IBAction)restartClicked:(id)sender;
 - (IBAction)testRunBet:(id)sender;
 - (IBAction)odiRunBet:(id)sender;
 - (IBAction)t20RunBet:(id)sender;

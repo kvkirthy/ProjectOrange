@@ -12,6 +12,8 @@
 #import "VCKiPlayerRecordReader.h"
 #import "VCKiConfirmBetScreenViewCtrl.h"
 #import "VCKiPlayResultViewController.h"
+#import "VCKiRootPageViewCtrl.h"
+#import "VCKiApplicationState.h"
 
 @interface VCKiPlayScreenViewCtrl (){
     
@@ -398,4 +400,24 @@
     [UIView commitAnimations];
 }
 
+- (IBAction)restartClicked:(id)sender {
+    UIAlertView* alert =[[UIAlertView alloc]initWithTitle:@"Reset Game" message:@"Sure about it? This will start a new game." delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Yes Please!", nil];
+    [alert show];
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    switch (buttonIndex) {
+        case 0:{}
+            // Cancel clicked
+            break;
+        case 1:{
+            VCKiApplicationState* state = [[VCKiApplicationState alloc]init];
+            VCKiRootPageViewCtrl* ctrl = (VCKiRootPageViewCtrl* )[state getValueForKey:@"restAppScreen"];
+            [ctrl resetAppHere];
+        }
+            break;
+        default:
+            break;
+    }
+}
 @end

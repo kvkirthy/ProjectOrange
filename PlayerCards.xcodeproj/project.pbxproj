@@ -133,6 +133,7 @@
 		10492604198C083400706441 /* Z Khan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 104925A6198C083400706441 /* Z Khan.jpg */; };
 		105277D71831764E00739B87 /* bluecap.png in Resources */ = {isa = PBXBuildFile; fileRef = 105277D61831764E00739B87 /* bluecap.png */; };
 		105277D918317B7600739B87 /* Redcaps.png in Resources */ = {isa = PBXBuildFile; fileRef = 105277D818317B7600739B87 /* Redcaps.png */; };
+		10550D25199160B90015F827 /* 03-loopback.png in Resources */ = {isa = PBXBuildFile; fileRef = 10550D24199160B90015F827 /* 03-loopback.png */; };
 		107CC152197ED2EC0042C4CF /* Inzamam-ul-Haq.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 107CC14A197ED2EC0042C4CF /* Inzamam-ul-Haq.jpg */; };
 		107CC153197ED2EC0042C4CF /* DPMD Jayawardene.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 107CC14B197ED2EC0042C4CF /* DPMD Jayawardene.jpg */; };
 		107CC154197ED2EC0042C4CF /* Misbah-ul-Haq .jpg in Resources */ = {isa = PBXBuildFile; fileRef = 107CC14C197ED2EC0042C4CF /* Misbah-ul-Haq .jpg */; };
@@ -302,6 +303,7 @@
 		104925A6198C083400706441 /* Z Khan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Z Khan.jpg"; path = "playerImages/Z Khan.jpg"; sourceTree = "<group>"; };
 		105277D61831764E00739B87 /* bluecap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bluecap.png; sourceTree = "<group>"; };
 		105277D818317B7600739B87 /* Redcaps.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Redcaps.png; sourceTree = "<group>"; };
+		10550D24199160B90015F827 /* 03-loopback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "03-loopback.png"; sourceTree = "<group>"; };
 		107CC14A197ED2EC0042C4CF /* Inzamam-ul-Haq.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Inzamam-ul-Haq.jpg"; path = "playerImages/Inzamam-ul-Haq.jpg"; sourceTree = "<group>"; };
 		107CC14B197ED2EC0042C4CF /* DPMD Jayawardene.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "DPMD Jayawardene.jpg"; path = "playerImages/DPMD Jayawardene.jpg"; sourceTree = "<group>"; };
 		107CC14C197ED2EC0042C4CF /* Misbah-ul-Haq .jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Misbah-ul-Haq .jpg"; path = "playerImages/Misbah-ul-Haq .jpg"; sourceTree = "<group>"; };
@@ -561,6 +563,7 @@
 		10FE0142180ACB7C007CF6F8 /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				10550D24199160B90015F827 /* 03-loopback.png */,
 				10C00A57198FF9490050F5A7 /* Sad.png */,
 				10C00A55198E67AD0050F5A7 /* trophy.png */,
 				10E0EDE8197C448700D63937 /* 51-outlet.png */,
@@ -749,6 +752,7 @@
 				104925BF198C083400706441 /* DL Haynes.jpg in Resources */,
 				107CC153197ED2EC0042C4CF /* DPMD Jayawardene.jpg in Resources */,
 				104925B2198C083400706441 /* AR Border.jpg in Resources */,
+				10550D25199160B90015F827 /* 03-loopback.png in Resources */,
 				104925E2198C083400706441 /* MV Boucher.jpg in Resources */,
 				104925AC198C083400706441 /* AB Agarkar.jpg in Resources */,
 				104925CB198C083400706441 /* Ijaz Ahmed.jpg in Resources */,
