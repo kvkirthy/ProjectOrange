@@ -9,6 +9,7 @@
 #import "VCKiRootPageViewCtrl.h"
 #import "VCKiManualPagesViewCtrl.h"
 #import "VCKiAppDelegate.h"
+#import "VCKiApplicationState.h"
 
 @interface VCKiRootPageViewCtrl ()
 
@@ -87,6 +88,8 @@
 	// Do any additional setup after loading the view.
     
     [self createViews];
+    VCKiApplicationState* state= [[VCKiApplicationState alloc]init];
+    [state addValue:self :@"restAppScreen" ];
     self.dataSource = self;
     [self setViewControllers: [NSArray arrayWithObject:[self.allViewControllers objectAtIndex:0]] direction:UIPageViewControllerNavigationDirectionForward animated:TRUE completion:nil];
 }
@@ -95,6 +98,11 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)resetAppHere
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

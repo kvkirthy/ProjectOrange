@@ -856,7 +856,7 @@
                                 </state>
                                 <connections>
                                     <action selector="buttonPlayOnClicked:" destination="rtR-sr-hR2" eventType="touchUpInside" id="kLh-FZ-k4W"/>
-                                    <segue destination="f0n-bl-HEc" kind="modal" id="dQw-96-WVa"/>
+                                    <action selector="playAgainClicked:" destination="jak-ZO-EXC" eventType="touchUpInside" id="qBU-90-wUI"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Sad.png" translatesAutoresizingMaskIntoConstraints="NO" id="0fL-xe-xJo">
@@ -1179,7 +1179,7 @@ Cg
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="LvC-Tc-zzm"/>
         <segue reference="nLd-tb-rtl"/>
+        <segue reference="LvC-Tc-zzm"/>
     </inferredMetricsTieBreakers>
 </document>

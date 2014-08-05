@@ -7,6 +7,8 @@
 //
 
 #import "VCKiFinalResultViewController.h"
+#import "VCKiApplicationState.h"
+#import "VCKiRootPageViewCtrl.h"
 
 @interface VCKiFinalResultViewController ()
 
@@ -48,4 +50,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)playAgainClicked:(id)sender {
+    VCKiApplicationState* state = [[VCKiApplicationState alloc]init];
+    VCKiRootPageViewCtrl* ctrl = (VCKiRootPageViewCtrl* )[state getValueForKey:@"restAppScreen"];
+    [ctrl resetAppHere];
+}
 @end

@@ -11,4 +11,6 @@
 @interface VCKiRootPageViewCtrl : UIPageViewController< UIPageViewControllerDataSource>
 @property (nonatomic) NSMutableArray *allViewControllers;
 
+-(void) resetAppHere;
+
 @end
