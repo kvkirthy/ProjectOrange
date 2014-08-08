@@ -10,6 +10,7 @@
 #import "VCKiPlayScreenViewCtrl.h"
 #import "VCKiPlayerRecordReader.h"
 #import "VCKiFinalResultViewController.h"
+#import <Social/Social.h>
 
 @interface VCKiPlayResultViewController ()
 @property BOOL _hasPrimaryPlayerWon;
@@ -19,6 +20,7 @@
 
 VCKiPlayerRecordReader* player;
 VCKiPlayScreenViewCtrl *playscreen;
+NSString *facebookMessage;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -54,6 +56,7 @@ VCKiPlayScreenViewCtrl *playscreen;
     
     if(self.primaryStatValue == self.secondaryStatValue){
         self.winnerMessage.text = [NSString stringWithFormat:@"About %@, %@ drew with %@.", self.statCaption,self.secondaryPlayerName, playscreen.fullName.text];
+        facebookMessage = @"Huh !!!";
         self.primaryPlayerWinLossMessage.text = @"Players stay as is! No body moves!!!";
         self.playerScores.text = [NSString stringWithFormat:@"%@ and %@ both have %@ %lu.", playscreen.fullName.text, self.secondaryPlayerName, self.statCaption, (unsigned long)self.secondaryStatValue ];
 
@@ -61,6 +64,7 @@ VCKiPlayScreenViewCtrl *playscreen;
     else if ((self.primaryStatValue > self.secondaryStatValue && [self.comparisionOperator isEqualToString:@">"]) || (self.primaryStatValue < self.secondaryStatValue && [self.comparisionOperator isEqualToString:@"<"])){
         if([player moveSecondaryPlayerToPrimary:self.secondaryPlayerIndex]){
             self.winnerMessage.text = [NSString stringWithFormat:@"About %@, %@ wins over %@.", self.statCaption,playscreen.fullName.text, self.secondaryPlayerName];
+            facebookMessage = @"I Won!";
             self.primaryPlayerWinLossMessage.text = @"You won over the player!";
             self.playerScores.text = [NSString stringWithFormat:@"%@ %@ is %lu. And for %@ it's %lu",self.statCaption,playscreen.fullName.text, (unsigned long)self.primaryStatValue, self.secondaryPlayerName, (unsigned long)self.secondaryStatValue ];
         }
@@ -68,6 +72,7 @@ VCKiPlayScreenViewCtrl *playscreen;
     else {
         if([player movePrimaryPlayerToSecondary:self.primaryPlayerIndex]){
             self.winnerMessage.text = [NSString stringWithFormat:@"About %@, %@ wins over %@.", self.statCaption,self.secondaryPlayerName, playscreen.fullName.text];
+            facebookMessage = @"Aghhh :(";
             self.primaryPlayerWinLossMessage.text = @"You lost the player!";
             self.playerScores.text = [NSString stringWithFormat:@"%@ %@ is %lu. And for %@ it's %lu",self.statCaption,playscreen.fullName.text, (unsigned long)self.primaryStatValue, self.secondaryPlayerName, (unsigned long)self.secondaryStatValue ];
         }
@@ -106,6 +111,20 @@ VCKiPlayScreenViewCtrl *playscreen;
     }
     
 }
+
+- (IBAction)facebookClicked:(id)sender {
+        SLComposeViewController *facebookDialog = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
+        [facebookDialog setInitialText:[NSString stringWithFormat:@"%@ %@ %@. #BreakARecord iOS game on Cricket stats.", facebookMessage, self.winnerMessage.text, self.playerScores.text]];
+        [self presentViewController:facebookDialog animated:YES completion:nil];
+
+}
+
+- (IBAction)twitterClicked:(id)sender {
+        SLComposeViewController *twitterDialog = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
+        [twitterDialog setInitialText:[NSString stringWithFormat:@"%@ %@ #BreakARecord", facebookMessage, self.playerScores.text]];
+        [self presentViewController:twitterDialog animated:YES completion:nil];
+}
+
 
 - (void)bannerViewDidLoadAd:(ADBannerView *)banner
 {

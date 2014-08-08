@@ -28,4 +28,7 @@
 @property id previousVcReference;
 
 - (IBAction)buttonPlayOnClicked:(id)sender;
+- (IBAction)facebookClicked:(id)sender;
+- (IBAction)twitterClicked:(id)sender;
+
 @end
