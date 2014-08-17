@@ -19,7 +19,7 @@
 
 - (VCKiPlayerEntity *) getNextPrimaryPlayer;
 - (VCKiPlayerEntity *) getNextSecondaryPlayer;
-- (VCKiPlayerEntity *) getPlayerRecordWithIndex: (NSString *) indexValue;
+- (VCKiPlayerEntity *) getPlayerRecordWithKey: (NSString *) indexValue fromCollection: (NSMutableDictionary* )playerList;
 -(void) resetSquads;
 
 -(BOOL) movePrimaryPlayerToSecondary: (NSUInteger ) player;

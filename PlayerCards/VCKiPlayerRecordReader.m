@@ -9,16 +9,26 @@
 #import "VCKiPlayerRecordReader.h"
 #import "VCKiPlayerEntity.h"
 
+#warning null record scenario fix required. One of the record turns up to be all null
+
+@interface VCKiPlayerEntity()
+-(void) createPrimarySquad;
+-(void) createSecondarySquad;
+
+@end
+
 @implementation VCKiPlayerRecordReader
 
 static NSMutableArray* _primarySquad;
 static NSMutableArray* _secondSquad;
 
-const int squadBeginCount = 24;
+const int squadBeginCount = 50;
 
-static NSArray* availablePlayers = nil;
+static NSMutableArray* availablePlayers = nil;
+static NSMutableArray* availableNewbees = nil;
 static NSString* _resourcePath = nil;
-static NSDictionary* _playerDataCollection = nil;
+static NSMutableDictionary* _playerDataCollection = nil;
+static NSMutableDictionary* _newbeeDataCollection = nil;
 
 - (void)resetSquads
 {
@@ -111,51 +121,89 @@ static NSDictionary* _playerDataCollection = nil;
 
 - (void) createSquad
 {
+    _resourcePath = [[NSBundle mainBundle] pathForResource:@"playerData" ofType:@"plist"];
+    _playerDataCollection  = [[NSMutableDictionary alloc]initWithContentsOfFile:_resourcePath];
+    availablePlayers = [NSMutableArray arrayWithArray: [_playerDataCollection allKeys]];
+    
+    NSString* newbeesResourcePath = [[NSBundle mainBundle] pathForResource:@"newbees" ofType:@"plist"];
+    _newbeeDataCollection =[[NSMutableDictionary alloc]initWithContentsOfFile:newbeesResourcePath];
+    availableNewbees = [NSMutableArray arrayWithArray: [_newbeeDataCollection allKeys]];
+  
+    [self createPrimarySquad];
+    [self createSecondarySquad];
+   
+}
+
+- (VCKiPlayerEntity *) getPlayerRecordWithKey: (NSString *) keyValue fromCollection:(NSMutableDictionary *)playerList
+{
+    NSDictionary *playerDataCollection = [playerList objectForKey:keyValue];
+    return [[VCKiPlayerEntity alloc]initWithDictionaryObject:playerDataCollection];
+}
+
+- (void)createPrimarySquad
+{
     if(!_primarySquad){
         _primarySquad = [[NSMutableArray alloc]init];
     }
     
+    if ([_primarySquad count] <= 0) {
+
+        NSArray* primePlayers = generateAvailablePlayers(availablePlayers);
+        NSArray* newbees = generateAvailablePlayers(availableNewbees);
+        for(int i=0; i< [primePlayers count]; i++){
+            NSString* playerKey = [primePlayers objectAtIndex:i];
+            VCKiPlayerEntity *player =[self getPlayerRecordWithKey:  playerKey fromCollection:_playerDataCollection];
+            [_primarySquad addObject: player];
+            
+            NSString* newbeeKey = [newbees objectAtIndex:i];
+            if (newbeeKey) {
+                VCKiPlayerEntity *playerNewbee =[self getPlayerRecordWithKey:  newbeeKey fromCollection:_newbeeDataCollection];
+                [_primarySquad addObject: playerNewbee];
+            }
+        }
+
+    }
+    self.playerSquadCount = _primarySquad.count;
+}
+
+NSArray* generateAvailablePlayers(NSMutableArray* players)
+{
+    NSMutableSet* allSquadData = [[NSMutableSet alloc]init];
+    
+    while ([allSquadData count] < squadBeginCount/2) {
+        NSString* randomPlayerKey = [NSString stringWithFormat:@"%@", [players objectAtIndex: arc4random_uniform([players count])]];
+        [allSquadData addObject: randomPlayerKey];
+        [players removeObject:randomPlayerKey];
+    }
+    
+    return [allSquadData allObjects];
+}
+
+
+-(void) createSecondarySquad
+{
     if(!_secondSquad){
         _secondSquad = [[NSMutableArray alloc]init];
     }
     
-    if ([_primarySquad count] <= 0 && [_secondSquad count] <=0) {
-        
-        _resourcePath = [[NSBundle mainBundle] pathForResource:@"playerData" ofType:@"plist"];
-        _playerDataCollection  = [[NSDictionary alloc]initWithContentsOfFile:_resourcePath];
-        
-        availablePlayers =  [_playerDataCollection allKeys];
-        
+    if ([_secondSquad count] <=0) {
         NSMutableSet* allSquadData = [[NSMutableSet alloc]init];
         
-        while ([allSquadData count] < squadBeginCount * 2) {
-            [allSquadData addObject: [NSString stringWithFormat:@"%d", arc4random_uniform([availablePlayers count])]];
+        while ([allSquadData count] < squadBeginCount) {
+            NSString* randomPlayerKey = [NSString stringWithFormat:@"%@", [availablePlayers objectAtIndex: arc4random_uniform([availablePlayers count])]];
+            [allSquadData addObject: randomPlayerKey];
+            [availablePlayers removeObject:randomPlayerKey];
         }
-        
         NSArray* ps = [allSquadData allObjects];
         int i;
         
-        for(i=0; i< [ps count]/2; i++){
+        for(i=0; i< [ps count]; i++){
             NSString* playerIndex = [ps objectAtIndex:i];
-            //NSLog(playerIndex);
-            VCKiPlayerEntity *player =[self getPlayerRecordWithIndex:  playerIndex];
-            [_primarySquad addObject: player];
-        }
-        
-        for(; i< [ps count]; i++){
-            [_secondSquad addObject:[self getPlayerRecordWithIndex:  [ps objectAtIndex:i]]];
+            VCKiPlayerEntity *player =[self getPlayerRecordWithKey:  playerIndex fromCollection:_playerDataCollection];
+            [_secondSquad addObject: player];
         }
     }
-    self.playerSquadCount = _primarySquad.count;
     self.oppositionSquadCount = _secondSquad.count;
-   
-}
-
-- (VCKiPlayerEntity *) getPlayerRecordWithIndex: (NSString *) indexValue
-{
-    NSDictionary *playerDataCollection = [_playerDataCollection objectForKey:indexValue];
-    return [[VCKiPlayerEntity alloc]initWithDictionaryObject:playerDataCollection];
-    
 }
 
 @end
