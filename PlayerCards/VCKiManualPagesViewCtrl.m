@@ -44,6 +44,7 @@
 }
 
 - (IBAction)skipToAction:(id)sender {
+    [self performSegueWithIdentifier:@"segueToReviewSquads" sender:self];
 }
 
 - (UIImage *)resizeImage:(UIImage*)originalImage scaledToSize:(CGSize)size

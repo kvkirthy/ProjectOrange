@@ -1124,6 +1124,9 @@ But here, in this app, just chill and play with these numbers and have lots of f
                                 <color key="backgroundColor" red="0.98431378599999997" green="0.46274513010000001" blue="0.039215687659999998" alpha="0.29999999999999999" colorSpace="deviceRGB"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
                                 <state key="normal" title=" Begin by reviewing Squads" image="156-controlpad.png"/>
+                                <connections>
+                                    <action selector="skipToAction:" destination="Cn2-5j-Dxq" eventType="touchUpInside" id="doV-64-Mr9"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acs-Ng-AWe">
                                 <rect key="frame" x="18" y="52" width="285" height="109"/>
@@ -1187,7 +1190,7 @@ Yashwant - for helping me test this app.</string>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="45"/>
                                 <state key="normal" title="  Begin" image="156-controlpad.png"/>
                                 <connections>
-                                    <segue destination="f0n-bl-HEc" kind="modal" id="VGf-Ym-PVc"/>
+                                    <segue destination="f0n-bl-HEc" kind="modal" identifier="segueToReviewSquads" id="VGf-Ym-PVc"/>
                                 </connections>
                             </button>
                         </subviews>
