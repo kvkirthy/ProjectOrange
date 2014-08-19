@@ -29,7 +29,7 @@
 {
     [super viewDidLoad];
     
-#warning "Need to implement play again!"
+
     if (self.isPrimaryPlayerWon) {
         self.finalResultMessage.text = @"Congratulations, Excellent game. You are a stats champ!";
         [self.winnerImage setHidden: NO];

@@ -33,7 +33,6 @@
     [super viewDidLoad];
     
     VCKiPlayScreenViewCtrl *playScreen = (VCKiPlayScreenViewCtrl *)[self presentingViewController];
-#warning "rounded corners not applied"
     self.playerImage.layer.cornerRadius = 10;
     self.playerImage.image = playScreen.playerImage.image;
     self.playerName.text = playScreen.fullName.text;

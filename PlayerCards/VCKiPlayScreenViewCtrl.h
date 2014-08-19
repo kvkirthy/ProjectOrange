@@ -19,8 +19,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *playerCount;
 @property (weak, nonatomic) IBOutlet UILabel *oppositionCount;
 
-
-
 @property (weak, nonatomic) IBOutlet UILabel *testRunsCaption;
 @property (weak, nonatomic) IBOutlet UIButton *testRuns;
 @property (weak, nonatomic) IBOutlet UILabel *testMatchesCaption;
@@ -34,7 +32,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *oDIMatches;
 @property (weak, nonatomic) IBOutlet UIButton *oDIWickets;
 @property (weak, nonatomic) IBOutlet UILabel *odiWicketsCaption;
-
 
 @property (weak, nonatomic) IBOutlet UILabel *t20WicketsCaption;
 @property (weak, nonatomic) IBOutlet UILabel *t20MatchesCaption;
@@ -75,7 +72,6 @@
 - (IBAction)odiCenturiesBet:(id)sender;
 - (IBAction)t20CenturiesBet:(id)sender;
 
--(void) initializeScreen;
 - (void) returnToViewController;
 
 @end

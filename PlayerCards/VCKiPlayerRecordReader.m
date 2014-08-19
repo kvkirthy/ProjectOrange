@@ -9,8 +9,6 @@
 #import "VCKiPlayerRecordReader.h"
 #import "VCKiPlayerEntity.h"
 
-#warning null record scenario fix required. One of the record turns up to be all null
-
 @interface VCKiPlayerEntity()
 -(void) createPrimarySquad;
 -(void) createSecondarySquad;

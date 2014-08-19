@@ -56,7 +56,7 @@
 		<key>totalTestWickets</key>
 		<string>9/83</string>
 		<key>team</key>
-		<string>Dev</string>
+		<string>India</string>
 		<key>totalT20Wickets</key>
 		<string>-</string>
 		<key>numberOfTests</key>
@@ -64,7 +64,7 @@
 		<key>totalODIWickets</key>
 		<string>5/43</string>
 		<key>fullName</key>
-		<string>N Kapil</string>
+		<string>Kapil Dev</string>
 		<key>totalTestHS</key>
 		<string>163</string>
 		<key>totalODIHS</key>
@@ -3254,7 +3254,7 @@
 		<key>totalTestWickets</key>
 		<string>3/30</string>
 		<key>team</key>
-		<string>Silva</string>
+		<string>Sri Lanka</string>
 		<key>totalT20Wickets</key>
 		<string>-</string>
 		<key>numberOfTests</key>
@@ -3262,7 +3262,7 @@
 		<key>totalODIWickets</key>
 		<string>4/30</string>
 		<key>fullName</key>
-		<string>PA de</string>
+		<string>P Aravinda de Silva</string>
 		<key>totalTestHS</key>
 		<string>267</string>
 		<key>totalODIHS</key>
@@ -4853,7 +4853,7 @@
 		<key>totalTestWickets</key>
 		<string>7/36</string>
 		<key>team</key>
-		<string>Hasan</string>
+		<string>Bangladesh</string>
 		<key>totalT20Wickets</key>
 		<string>4/21</string>
 		<key>numberOfTests</key>
@@ -4861,7 +4861,7 @@
 		<key>totalODIWickets</key>
 		<string>4/16</string>
 		<key>fullName</key>
-		<string>Shakib Al</string>
+		<string>Shakib Al Hasan</string>
 		<key>totalTestHS</key>
 		<string>144</string>
 		<key>totalODIHS</key>
@@ -5087,7 +5087,7 @@
 		<key>totalTestWickets</key>
 		<string>2/49</string>
 		<key>team</key>
-		<string>Villiers</string>
+		<string>South Africa</string>
 		<key>totalT20Wickets</key>
 		<string>-</string>
 		<key>numberOfTests</key>
@@ -5095,7 +5095,7 @@
 		<key>totalODIWickets</key>
 		<string>-</string>
 		<key>fullName</key>
-		<string>AB de</string>
+		<string>AB de Villiers</string>
 		<key>totalTestHS</key>
 		<string>278*</string>
 		<key>totalODIHS</key>

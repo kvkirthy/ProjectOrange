@@ -48,8 +48,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-#warning All code should have null checks like span.
     [self renderPlayerData];
 
 }
@@ -71,7 +69,6 @@
     self.fullName.text = player.fullName;
     self.teamName.text = [NSString stringWithFormat:@"National Team - %@", player.team];
     
-#warning "some times span is coming up as big number"
     if(player.span){
         self.span.text = [NSString stringWithFormat:@"( %@ )", player.span];
     }else{
@@ -144,8 +141,6 @@
         confirmVc.givenPlayerStatCaption = _givenPlayerStatCaption;
         
         confirmVc.playerImage.image = self.playerImage.image;
-        
-#warning TODO: .00 doesn't make sense for some and does for someother. Need to think through.
         
         confirmVc.givenPlayerStatValue = [[NSString alloc]initWithFormat:@"%lu", (unsigned long)_givenPlayerStatValue];
     }
@@ -341,7 +336,6 @@
 
 - (void)t20HighScoreBet:(id)sender
 {
-#warning "This function is almost always crashing."
     if (self.t20HighScore.titleLabel.text && [self.t20HighScore.titleLabel.text isEqualToString:@"-"]) {
         return;
     }
