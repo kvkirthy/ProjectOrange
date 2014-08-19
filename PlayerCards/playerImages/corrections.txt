@@ -3,3 +3,15 @@ on this record fix team to South Africa
 
 fix name on Shakib Al to Shakib Al Hasan
 Add Country as Bangladesh
+
+fix name on Q de to Q de Kock
+Add Country as South Africa
+
+fix name on SI de to SI de Saram
+Add Country as Sri Lanka
+
+fix C de to C de Grandhomme
+country nz
+
+fix M De to M De Lange
+Country SA
